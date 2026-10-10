@@ -1,0 +1,1353 @@
+{
+  "schemaVersion": 1,
+  "trip": {
+    "title": "Voyage au Japon",
+    "subtitle": "Automne 2026",
+    "travelers": [
+      "Marco",
+      "Nadia"
+    ],
+    "start": "2026-10-26",
+    "end": "2026-11-07",
+    "japanStay": {
+      "start": "2026-10-27",
+      "end": "2026-11-06"
+    },
+    "timezone": "Asia/Tokyo",
+    "route": [
+      "Tokyo",
+      "Hakone",
+      "Nagoya",
+      "Kyoto",
+      "Hiroshima",
+      "Osaka"
+    ],
+    "bookingRef": "XRYOXU",
+    "cover": "cover.jpg",
+    "farewell": "Bon voyage, Marco · 良い旅を！"
+  },
+  "flights": [
+    {
+      "id": "KL1944",
+      "airline": "KLM",
+      "number": "KL1944",
+      "from": {
+        "city": "Bâle-Mulhouse",
+        "code": "BSL",
+        "tz": "Europe/Paris"
+      },
+      "to": {
+        "city": "Amsterdam",
+        "code": "AMS",
+        "tz": "Europe/Amsterdam"
+      },
+      "departure": {
+        "date": "2026-10-26",
+        "time": "10:05"
+      },
+      "arrival": {
+        "date": "2026-10-26",
+        "time": "11:40"
+      }
+    },
+    {
+      "id": "KL0861",
+      "airline": "KLM",
+      "number": "KL0861",
+      "from": {
+        "city": "Amsterdam",
+        "code": "AMS",
+        "tz": "Europe/Amsterdam"
+      },
+      "to": {
+        "city": "Tokyo Narita",
+        "code": "NRT",
+        "tz": "Asia/Tokyo"
+      },
+      "departure": {
+        "date": "2026-10-26",
+        "time": "14:20"
+      },
+      "arrival": {
+        "date": "2026-10-27",
+        "time": "11:45"
+      }
+    },
+    {
+      "id": "AF0279",
+      "airline": "Air France",
+      "number": "AF0279",
+      "from": {
+        "city": "Tokyo Haneda",
+        "code": "HND",
+        "tz": "Asia/Tokyo"
+      },
+      "to": {
+        "city": "Paris Charles-de-Gaulle",
+        "code": "CDG",
+        "tz": "Europe/Paris"
+      },
+      "departure": {
+        "date": "2026-11-06",
+        "time": "23:30"
+      },
+      "arrival": {
+        "date": "2026-11-07",
+        "time": "06:25"
+      },
+      "note": "Vol retour depuis HANEDA (Tokyo), pas depuis Osaka. Prévoir le trajet Osaka → Haneda le 6 novembre en soirée (~3h)."
+    },
+    {
+      "id": "AF1192",
+      "airline": "Air France (HOP)",
+      "number": "AF1192",
+      "from": {
+        "city": "Paris Charles-de-Gaulle",
+        "code": "CDG",
+        "tz": "Europe/Paris"
+      },
+      "to": {
+        "city": "Bâle-Mulhouse",
+        "code": "BSL",
+        "tz": "Europe/Paris"
+      },
+      "departure": {
+        "date": "2026-11-07",
+        "time": "08:50"
+      },
+      "arrival": {
+        "date": "2026-11-07",
+        "time": "10:00"
+      }
+    }
+  ],
+  "hotels": [
+    {
+      "id": "ginza",
+      "name": "ibis Styles Tokyo Ginza",
+      "area": "Ginza, Chuo-ku",
+      "city": "tokyo",
+      "checkIn": {
+        "date": "2026-10-27",
+        "time": "14:00"
+      },
+      "checkOut": {
+        "date": "2026-10-30",
+        "time": "11:00"
+      },
+      "nights": 3,
+      "mapQuery": "ibis Styles Tokyo Ginza"
+    },
+    {
+      "id": "hakone",
+      "name": "Hotel Green Plaza Hakone",
+      "area": "Sengokuhara",
+      "city": "hakone",
+      "checkIn": {
+        "date": "2026-10-30",
+        "time": "15:00",
+        "timeUntil": "20:00"
+      },
+      "checkOut": {
+        "date": "2026-10-31",
+        "time": "11:00"
+      },
+      "nights": 1,
+      "mapQuery": "Hotel Green Plaza Hakone Sengokuhara",
+      "note": "Onsen en extérieur + dîner à l'hôtel."
+    },
+    {
+      "id": "nagoya",
+      "name": "ibis Styles Nagoya",
+      "area": "Meieki",
+      "city": "nagoya",
+      "checkIn": {
+        "date": "2026-10-31",
+        "time": "14:00"
+      },
+      "checkOut": {
+        "date": "2026-11-01",
+        "time": "11:00"
+      },
+      "nights": 1,
+      "mapQuery": "ibis Styles Nagoya Meieki"
+    },
+    {
+      "id": "kyoto",
+      "name": "Mercure Kyoto Station",
+      "area": "Shimogyo-ku",
+      "city": "kyoto",
+      "checkIn": {
+        "date": "2026-11-01",
+        "time": "14:00"
+      },
+      "checkOut": {
+        "date": "2026-11-03",
+        "time": "11:00"
+      },
+      "nights": 2,
+      "mapQuery": "Mercure Kyoto Station"
+    },
+    {
+      "id": "hiroshima",
+      "name": "Mercure Tokyu Stay Hiroshima",
+      "area": "Naka-ku",
+      "city": "hiroshima",
+      "checkIn": {
+        "date": "2026-11-03",
+        "time": "14:00"
+      },
+      "checkOut": {
+        "date": "2026-11-04",
+        "time": "11:00"
+      },
+      "nights": 1,
+      "mapQuery": "Mercure Tokyu Stay Hiroshima",
+      "note": "Hôtel neuf, ouverture mai 2026."
+    },
+    {
+      "id": "osaka",
+      "name": "Mercure Tokyu Stay Osaka Namba",
+      "area": "Nishishinsaibashi",
+      "city": "osaka",
+      "checkIn": {
+        "date": "2026-11-04",
+        "time": "14:00"
+      },
+      "checkOut": {
+        "date": "2026-11-06",
+        "time": "11:00"
+      },
+      "nights": 2,
+      "mapQuery": "Mercure Tokyu Stay Osaka Namba"
+    }
+  ],
+  "cities": [
+    {
+      "id": "tokyo",
+      "name": "Tokyo",
+      "dates": "27–30 octobre",
+      "image": "tokyo.jpg",
+      "baseNote": "Base : ibis Styles Tokyo Ginza · 3 nuits · Quartier Ginza, Chuo-ku"
+    },
+    {
+      "id": "hakone",
+      "name": "Hakone",
+      "dates": "30–31 octobre",
+      "image": "hakone.jpg",
+      "baseNote": "Base : Hotel Green Plaza Hakone · Sengokuhara · 1 nuit"
+    },
+    {
+      "id": "nagoya",
+      "name": "Nagoya · Ghibli Park",
+      "dates": "31 octobre – 1er novembre",
+      "image": "nagoya-ghibli.jpg",
+      "baseNote": "Transition : Nagoya → Kyoto · Mercure Kyoto Station"
+    },
+    {
+      "id": "kyoto",
+      "name": "Kyoto",
+      "dates": "1er–3 novembre",
+      "image": "kyoto.jpg",
+      "baseNote": "Base : Mercure Kyoto Station · Shimogyo-ku · 2 nuits"
+    },
+    {
+      "id": "hiroshima",
+      "name": "Hiroshima",
+      "dates": "3–4 novembre",
+      "image": "hiroshima.jpg",
+      "baseNote": "Base : Mercure Tokyu Stay Hiroshima · 1 nuit · Puis → Osaka"
+    },
+    {
+      "id": "osaka",
+      "name": "Osaka",
+      "dates": "4–6 novembre",
+      "image": "osaka.jpg",
+      "baseNote": "Base : Mercure Tokyu Stay Osaka Namba · Nishishinsaibashi · 2 nuits"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-10-26",
+      "weekday": "lundi",
+      "label": "Lundi 26 octobre",
+      "title": "Départ · Bâle → Amsterdam → Tokyo",
+      "city": null,
+      "overnightHotel": null,
+      "alerts": [],
+      "images": [],
+      "events": [
+        {
+          "time": "10:05",
+          "title": "Vol KL1944 Bâle-Mulhouse → Amsterdam",
+          "category": "flight",
+          "detail": "Arrivée 11h40.",
+          "mapQuery": "EuroAirport Basel Mulhouse Freiburg"
+        },
+        {
+          "time": "14:20",
+          "title": "Vol KL0861 Amsterdam → Tokyo Narita (NRT)",
+          "category": "flight",
+          "detail": "Arrivée le 27 oct à 11h45."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "weekday": "mardi",
+      "label": "Mardi 27 octobre",
+      "title": "Arrivée",
+      "city": "tokyo",
+      "overnightHotel": "ginza",
+      "alerts": [],
+      "images": [
+        "tokyo.jpg"
+      ],
+      "events": [
+        {
+          "time": "11:45",
+          "title": "Atterrissage Narita (NRT)",
+          "category": "flight",
+          "mapQuery": "Narita International Airport"
+        },
+        {
+          "time": "13:00",
+          "title": "Narita Express → Tokyo",
+          "category": "transport",
+          "approx": true,
+          "detail": "~60 min."
+        },
+        {
+          "time": "14:00",
+          "title": "Check-in ibis Styles Tokyo Ginza",
+          "category": "hotel",
+          "mapQuery": "ibis Styles Tokyo Ginza"
+        },
+        {
+          "time": "14:30",
+          "title": "Tsukiji Outer Market",
+          "category": "food",
+          "detail": "Marché extérieur, snacks de rue (10 min à pied).",
+          "mapQuery": "Tsukiji Outer Market, Tokyo"
+        },
+        {
+          "time": "16:00",
+          "title": "Hamarikyu Gardens",
+          "category": "sightseeing",
+          "detail": "Jardin classé, étang tidal, vue sur la ville (15 min à pied).",
+          "cost": "¥300",
+          "mapQuery": "Hamarikyu Gardens, Tokyo"
+        },
+        {
+          "time": "17:30",
+          "title": "Cours d'aïkido — Hombu Dojo (Fujimaki)",
+          "category": "aikido",
+          "endTime": "18:30",
+          "optional": true,
+          "detail": "Optionnel — jet lag à prévoir. Source : planning des cours.",
+          "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
+        },
+        {
+          "time": null,
+          "title": "Dîner quartier Ginza · Yurakucho yakitori",
+          "category": "food",
+          "slot": "evening",
+          "detail": "Soirée légère conseillée : cours Doshu demain à 6h30.",
+          "mapQuery": "Yurakucho yakitori alley, Tokyo"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "weekday": "mercredi",
+      "label": "Mercredi 28 octobre",
+      "title": "Aïkido + Shinjuku / Harajuku",
+      "city": "tokyo",
+      "overnightHotel": "ginza",
+      "alerts": [
+        "Rester dans l'ouest de Tokyo toute la journée — Meiji Jingu, Harajuku et Shibuya sont tous dans le même secteur, à quelques stations/minutes du Dojo."
+      ],
+      "images": [
+        "hombu-dojo.jpg",
+        "meiji-jingu.jpg",
+        "shibuya-golden-gai.jpg"
+      ],
+      "events": [
+        {
+          "time": "05:55",
+          "title": "Départ hôtel vers Hombu Dojo",
+          "category": "aikido",
+          "detail": "Trajet ~30 min. Le plan initial indiquait 5h00 : voir « À vérifier ».",
+          "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
+        },
+        {
+          "time": "06:30",
+          "title": "COURS DOSHU — Aikikai Hombu Dojo (classe spéciale)",
+          "category": "aikido",
+          "endTime": "07:30",
+          "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
+        },
+        {
+          "time": "08:00",
+          "title": "Petit déjeuner Shinjuku",
+          "category": "food"
+        },
+        {
+          "time": "10:00",
+          "title": "Meiji Jingu",
+          "category": "sightseeing",
+          "detail": "Forêt sacrée, torii géant (20 min à pied du Dojo).",
+          "duration": "1h",
+          "mapQuery": "Meiji Jingu, Tokyo"
+        },
+        {
+          "time": "11:30",
+          "title": "Harajuku",
+          "category": "sightseeing",
+          "detail": "Takeshita-dori · Omotesando.",
+          "duration": "1h30",
+          "mapQuery": "Takeshita Street, Harajuku"
+        },
+        {
+          "time": "13:00",
+          "title": "Déjeuner Shibuya",
+          "category": "food"
+        },
+        {
+          "time": "14:00",
+          "title": "Shibuya crossing + Golden Gai",
+          "category": "sightseeing",
+          "detail": "Ruelles d'izakayas.",
+          "duration": "2h",
+          "mapQuery": "Shibuya Crossing"
+        },
+        {
+          "time": "17:25",
+          "title": "Retour Hombu Dojo",
+          "category": "aikido",
+          "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
+        },
+        {
+          "time": "17:30",
+          "title": "2ème cours — Classe de Kuribayashi",
+          "category": "aikido",
+          "endTime": "18:30",
+          "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
+        },
+        {
+          "time": null,
+          "title": "Dîner Omoide Yokocho",
+          "category": "food",
+          "slot": "evening",
+          "detail": "Ruelle yakitori de Shinjuku.",
+          "mapQuery": "Omoide Yokocho, Shinjuku"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "weekday": "jeudi",
+      "label": "Jeudi 29 octobre",
+      "title": "Excursion Hiyodori Hills + Sawara",
+      "city": "tokyo",
+      "overnightHotel": "ginza",
+      "alerts": [],
+      "images": [
+        "sawara.jpg",
+        "senso-ji.jpg"
+      ],
+      "events": [
+        {
+          "time": null,
+          "title": "Départ tôt depuis Tokyo",
+          "category": "transport",
+          "slot": "morning"
+        },
+        {
+          "time": null,
+          "title": "Hiyodori Hills",
+          "category": "sightseeing",
+          "slot": "morning",
+          "detail": "Forêt de bambou + village samouraï. Trajet Tokyo → Hiyodori Hills ~1h15.",
+          "mapQuery": "Hiyodori Hills"
+        },
+        {
+          "time": null,
+          "title": "Sawara",
+          "category": "sightseeing",
+          "slot": "afternoon",
+          "detail": "Vieux quartier de canaux. Trajet Hiyodori Hills → Sawara ~1h20.",
+          "mapQuery": "Sawara, Katori, Chiba"
+        },
+        {
+          "time": null,
+          "title": "Retour Sawara → Tokyo",
+          "category": "transport",
+          "slot": "afternoon",
+          "detail": "~2h10 · retour vers 19h."
+        },
+        {
+          "time": null,
+          "title": "Senso-ji / Asakusa le soir",
+          "category": "sightseeing",
+          "slot": "evening",
+          "optional": true,
+          "detail": "Lanternes allumées, très atmosphérique.",
+          "duration": "45 min",
+          "mapQuery": "Senso-ji, Asakusa"
+        },
+        {
+          "time": null,
+          "title": "Takkyubin : bagages → Green Plaza Hakone",
+          "category": "logistics",
+          "slot": "evening",
+          "detail": "Demander à la réception d'organiser l'envoi des bagages. Livraison le 30 oct après-midi."
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "weekday": "vendredi",
+      "label": "Vendredi 30 octobre",
+      "title": "Cours matin · Tokyo → Hakone",
+      "city": "tokyo",
+      "overnightHotel": "hakone",
+      "alerts": [],
+      "images": [],
+      "events": [
+        {
+          "time": "07:25",
+          "title": "Départ hôtel vers Hombu Dojo",
+          "category": "aikido",
+          "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
+        },
+        {
+          "time": "08:00",
+          "title": "Cours d'aïkido (classe de Katsurada)",
+          "category": "aikido",
+          "endTime": "09:00",
+          "detail": "Dernier cours.",
+          "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
+        },
+        {
+          "time": "09:30",
+          "title": "Retour ibis Ginza",
+          "category": "hotel",
+          "detail": "Bagages déjà expédiés, juste un sac de nuit.",
+          "mapQuery": "ibis Styles Tokyo Ginza"
+        },
+        {
+          "time": "11:00",
+          "title": "Check-out ibis Ginza",
+          "category": "hotel"
+        },
+        {
+          "time": "13:00",
+          "title": "Odakyu Romancecar Shinjuku → Hakone Yumoto",
+          "category": "transport",
+          "approx": true,
+          "detail": "~1h30.",
+          "mapQuery": "Shinjuku Station"
+        },
+        {
+          "time": "15:00",
+          "title": "Check-in Hotel Green Plaza Hakone · Sengokuhara",
+          "category": "hotel",
+          "endTime": "20:00",
+          "detail": "Possible de 15h à 20h. Bagages déjà dans la chambre.",
+          "mapQuery": "Hotel Green Plaza Hakone Sengokuhara"
+        },
+        {
+          "time": null,
+          "title": "Onsen en extérieur + dîner à l'hôtel",
+          "category": "onsen",
+          "slot": "evening"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "weekday": "samedi",
+      "label": "Samedi 31 octobre",
+      "title": "Randonnée · Hakone → Nagoya",
+      "city": "hakone",
+      "overnightHotel": "nagoya",
+      "alerts": [
+        "⏰ Lever impératif à 6h30 — check-out à 11h. Ce matin : demander à la réception le takkyubin vers ibis Styles Nagoya avant de partir randonner."
+      ],
+      "images": [],
+      "events": [
+        {
+          "time": "06:30",
+          "title": "Lever",
+          "category": "logistics",
+          "detail": "Impératif. Demander à la réception le takkyubin vers ibis Styles Nagoya avant de partir randonner."
+        },
+        {
+          "time": "07:00",
+          "title": "Randonnée : Lac Ashi + torii flottant + vue Mont Fuji + croisière + Owakudani",
+          "category": "hike",
+          "endTime": "10:30",
+          "detail": "Croisière ~30 min.",
+          "mapQuery": "Lake Ashi, Hakone"
+        },
+        {
+          "time": "11:00",
+          "title": "Check-out Hotel Green Plaza Hakone",
+          "category": "hotel"
+        },
+        {
+          "time": "11:40",
+          "title": "Bus Sengokuhara → Odawara",
+          "category": "transport",
+          "approx": true,
+          "detail": "~40 min.",
+          "mapQuery": "Odawara Station"
+        },
+        {
+          "time": "12:30",
+          "title": "Shinkansen Odawara → Nagoya",
+          "category": "transport",
+          "approx": true,
+          "detail": "Le dossier indique « Nozomi, ~1h20 » : voir « À vérifier » (le Nozomi ne s'arrête pas à Odawara)."
+        },
+        {
+          "time": "14:00",
+          "title": "Check-in ibis Styles Nagoya · Meieki",
+          "category": "hotel",
+          "endTime": "14:30",
+          "detail": "Bagages livrés dans l'après-midi (à confirmer).",
+          "mapQuery": "ibis Styles Nagoya Meieki"
+        },
+        {
+          "time": null,
+          "title": "Takkyubin : bagages → Mercure Kyoto Station",
+          "category": "logistics",
+          "slot": "evening",
+          "detail": "Livraison le 1er nov après-midi."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "weekday": "dimanche",
+      "label": "Dimanche 1er novembre",
+      "title": "Ghibli Park → Kyoto",
+      "city": "nagoya",
+      "overnightHotel": "kyoto",
+      "alerts": [
+        "Check-out ibis Nagoya à 11h mais Ghibli Park ouvre à 10h → déposer les bagages à la consigne de la gare de Nagoya dès le matin (bagages déjà envoyés en takkyubin à Kyoto la veille)."
+      ],
+      "images": [],
+      "events": [
+        {
+          "time": "09:00",
+          "title": "Consigne gare de Nagoya",
+          "category": "logistics",
+          "detail": "Simple formalité — valises déjà à Kyoto.",
+          "mapQuery": "Nagoya Station"
+        },
+        {
+          "time": "09:40",
+          "title": "Train Nagoya → Ghibli Park",
+          "category": "transport",
+          "approx": true,
+          "detail": "Linimo depuis Fujigaoka, « ~30 min total » selon le dossier : voir « À vérifier » (compter ~1h)."
+        },
+        {
+          "time": "10:00",
+          "title": "Visite Parc Ghibli (Nagakute)",
+          "category": "sightseeing",
+          "endTime": "14:00",
+          "detail": "~4h.",
+          "mapQuery": "Ghibli Park, Nagakute"
+        },
+        {
+          "time": "14:30",
+          "title": "Retour gare Nagoya · Shinkansen → Kyoto",
+          "category": "transport",
+          "detail": "Nozomi, ~35 min.",
+          "mapQuery": "Nagoya Station"
+        },
+        {
+          "time": "16:00",
+          "title": "Check-in Mercure Kyoto Station · Shimogyo-ku",
+          "category": "hotel",
+          "approx": true,
+          "detail": "Bagages déjà dans la chambre.",
+          "mapQuery": "Mercure Kyoto Station"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "weekday": "lundi",
+      "label": "Lundi 2 novembre",
+      "title": "Kurama + Sagano + Chemin des Philosophes",
+      "city": "kyoto",
+      "overnightHotel": "kyoto",
+      "alerts": [],
+      "images": [
+        "kurama.jpg"
+      ],
+      "events": [
+        {
+          "time": "08:30",
+          "title": "Eizan Densha Demachiyanagi → Kurama",
+          "category": "transport",
+          "approx": true,
+          "detail": "~50 min.",
+          "mapQuery": "Demachiyanagi Station"
+        },
+        {
+          "time": "09:30",
+          "title": "Mont Kurama — temple Kurama-dera + randonnée",
+          "category": "hike",
+          "endTime": "13:00",
+          "detail": "Descente côté Kibune (~3h).",
+          "mapQuery": "Kurama-dera, Kyoto"
+        },
+        {
+          "time": "13:30",
+          "title": "Déjeuner à Kibune",
+          "category": "food",
+          "detail": "Restaurants sur berge de rivière.",
+          "mapQuery": "Kibune, Kyoto"
+        },
+        {
+          "time": "15:00",
+          "title": "Chemin des Philosophes (Tetsugaku-no-michi)",
+          "category": "sightseeing",
+          "approx": true,
+          "detail": "Canal, érables d'automne · 2 km.",
+          "duration": "45 min",
+          "mapQuery": "Philosopher's Path, Kyoto"
+        },
+        {
+          "time": "16:00",
+          "title": "Adashino Nenbutsuji (Sagano)",
+          "category": "sightseeing",
+          "approx": true,
+          "detail": "1 200 statues de pierre + bambouseraie Arashiyama. Voir « À vérifier » (timing).",
+          "mapQuery": "Adashino Nenbutsuji, Kyoto"
+        },
+        {
+          "time": "18:00",
+          "title": "Retour Kyoto",
+          "category": "transport",
+          "approx": true
+        },
+        {
+          "time": null,
+          "title": "★ Takkyubin : Mercure Kyoto → Mercure Hiroshima",
+          "category": "logistics",
+          "slot": "evening",
+          "detail": "Le plus important. Livraison le 3 nov au matin — mains libres dès 7h30 pour Fushimi Inari."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "weekday": "mardi",
+      "label": "Mardi 3 novembre",
+      "title": "Kyoto → Hiroshima",
+      "city": "kyoto",
+      "overnightHotel": "hiroshima",
+      "alerts": [
+        "Journée dense mais gérée : bagages déjà envoyés à Hiroshima. Aucune valise à traîner."
+      ],
+      "images": [
+        "fushimi-inari.jpg",
+        "gion.jpg"
+      ],
+      "events": [
+        {
+          "time": "07:30",
+          "title": "Fushimi Inari Taisha",
+          "category": "sightseeing",
+          "detail": "Ouvert 24h/24, idéal tôt.",
+          "duration": "1h30–2h",
+          "mapQuery": "Fushimi Inari Taisha, Kyoto"
+        },
+        {
+          "time": "09:30",
+          "title": "Gion / Higashiyama",
+          "category": "sightseeing",
+          "detail": "Ruelle Hanamikoji.",
+          "mapQuery": "Hanamikoji Street, Gion, Kyoto"
+        },
+        {
+          "time": "10:00",
+          "title": "Nishiki Koji + Pontocho",
+          "category": "food",
+          "endTime": "11:00",
+          "detail": "Marché couvert (400 m) + ruelle à lanternes.",
+          "mapQuery": "Nishiki Market, Kyoto"
+        },
+        {
+          "time": "11:00",
+          "title": "Check-out Mercure Kyoto",
+          "category": "hotel",
+          "detail": "Rien à porter."
+        },
+        {
+          "time": "12:00",
+          "title": "Shinkansen Kyoto → Hiroshima",
+          "category": "transport",
+          "approx": true,
+          "detail": "Nozomi, ~1h40.",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "13:45",
+          "title": "Arrivée Hiroshima",
+          "category": "transport",
+          "approx": true,
+          "mapQuery": "Hiroshima Station"
+        },
+        {
+          "time": "14:00",
+          "title": "Check-in Mercure Tokyu Stay Hiroshima · Naka-ku",
+          "category": "hotel",
+          "detail": "Hôtel neuf (ouverture mai 2026).",
+          "mapQuery": "Mercure Tokyu Stay Hiroshima"
+        },
+        {
+          "time": null,
+          "title": "Takkyubin : Mercure Hiroshima → Mercure Osaka Namba",
+          "category": "logistics",
+          "slot": "evening",
+          "detail": "Livraison le 4 nov après-midi, déjà dans la chambre à l'arrivée."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "weekday": "mercredi",
+      "label": "Mercredi 4 novembre",
+      "title": "Hiroshima → Osaka",
+      "city": "hiroshima",
+      "overnightHotel": "osaka",
+      "alerts": [],
+      "images": [],
+      "events": [
+        {
+          "time": "08:30",
+          "title": "Musée Mémorial de la Paix + Parc + Dôme de la Bombe atomique",
+          "category": "sightseeing",
+          "endTime": "11:00",
+          "detail": "Ouvre à 8h30.",
+          "duration": "2h",
+          "mapQuery": "Hiroshima Peace Memorial Museum"
+        },
+        {
+          "time": null,
+          "title": "Île de Miyajima",
+          "category": "sightseeing",
+          "slot": "morning",
+          "optional": true,
+          "detail": "Torii dans la mer, ~45 min en ferry (inclus JR Pass) · 2h30 aller-retour.",
+          "mapQuery": "Itsukushima Shrine, Miyajima"
+        },
+        {
+          "time": "11:00",
+          "title": "Check-out Mercure Hiroshima",
+          "category": "hotel",
+          "detail": "Bagages déjà envoyés à Osaka."
+        },
+        {
+          "time": "12:00",
+          "title": "Shinkansen Hiroshima → Osaka Shin-Osaka",
+          "category": "transport",
+          "approx": true,
+          "detail": "Nozomi, ~1h20.",
+          "mapQuery": "Hiroshima Station"
+        },
+        {
+          "time": "13:30",
+          "title": "Arrivée Osaka",
+          "category": "transport",
+          "approx": true
+        },
+        {
+          "time": "14:00",
+          "title": "Check-in Mercure Tokyu Stay Osaka Namba",
+          "category": "hotel",
+          "detail": "Bagages déjà dans la chambre.",
+          "mapQuery": "Mercure Tokyu Stay Osaka Namba"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "weekday": "jeudi",
+      "label": "Jeudi 5 novembre",
+      "title": "Osaka",
+      "city": "osaka",
+      "overnightHotel": "osaka",
+      "alerts": [],
+      "images": [],
+      "events": [
+        {
+          "time": "09:00",
+          "title": "Hozenji Temple — quartier Dotonbori",
+          "category": "sightseeing",
+          "detail": "5 min à pied de l'hôtel.",
+          "mapQuery": "Hozenji Temple, Osaka"
+        },
+        {
+          "time": null,
+          "title": "Shinsaibashi",
+          "category": "shopping",
+          "slot": "morning",
+          "detail": "Galerie couverte.",
+          "mapQuery": "Shinsaibashi-suji, Osaka"
+        },
+        {
+          "time": null,
+          "title": "Nipponbashi / Den Den Town",
+          "category": "shopping",
+          "slot": "afternoon",
+          "detail": "Électronique + culture otaku (~15 min à pied).",
+          "mapQuery": "Den Den Town, Osaka"
+        },
+        {
+          "time": null,
+          "title": "Château d'Osaka + jardins",
+          "category": "sightseeing",
+          "slot": "afternoon",
+          "optional": true,
+          "detail": "~30 min en métro.",
+          "duration": "2h",
+          "mapQuery": "Osaka Castle"
+        },
+        {
+          "time": null,
+          "title": "Dotonbori",
+          "category": "food",
+          "slot": "evening",
+          "detail": "Glico Man, takoyaki, izakayas.",
+          "mapQuery": "Dotonbori Glico Man, Osaka"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "weekday": "vendredi",
+      "label": "Vendredi 6 novembre",
+      "title": "Osaka · Départ pour Haneda",
+      "city": "osaka",
+      "overnightHotel": null,
+      "alerts": [
+        "⚠ Vol retour depuis HANEDA (Tokyo), pas depuis Osaka. Quitter Osaka vers 16h30 pour arriver à Haneda vers 20h."
+      ],
+      "images": [],
+      "events": [
+        {
+          "time": "09:00",
+          "title": "Sumiyoshi Taisha Shrine",
+          "category": "sightseeing",
+          "detail": "~30 min au sud de Namba par Nankai.",
+          "mapQuery": "Sumiyoshi Taisha, Osaka"
+        },
+        {
+          "time": "10:30",
+          "title": "Shinsekai",
+          "category": "food",
+          "endTime": "12:00",
+          "detail": "Quartier rétro années 50, kushikatsu.",
+          "mapQuery": "Shinsekai, Osaka"
+        },
+        {
+          "time": "11:00",
+          "title": "Check-out Mercure Osaka Namba",
+          "category": "hotel",
+          "detail": "Laisser les bagages à la consigne."
+        },
+        {
+          "time": "16:30",
+          "title": "Départ Osaka → Haneda",
+          "category": "transport",
+          "approx": true,
+          "detail": "Shinkansen → Shinagawa (~2h20) + Keikyu → Haneda (~20 min).",
+          "mapQuery": "Shin-Osaka Station"
+        },
+        {
+          "time": "19:30",
+          "title": "Arrivée aéroport Haneda",
+          "category": "flight",
+          "approx": true,
+          "detail": "Dîner, enregistrement.",
+          "mapQuery": "Haneda Airport"
+        },
+        {
+          "time": "23:30",
+          "title": "✈ Vol AF0279 Haneda → Paris CDG",
+          "category": "flight",
+          "detail": "Décollage."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "weekday": "samedi",
+      "label": "Samedi 7 novembre",
+      "title": "Retour",
+      "city": null,
+      "overnightHotel": null,
+      "alerts": [],
+      "images": [],
+      "events": [
+        {
+          "time": "06:25",
+          "title": "Arrivée Paris CDG",
+          "category": "flight",
+          "mapQuery": "Paris Charles de Gaulle Airport"
+        },
+        {
+          "time": "08:50",
+          "title": "Vol AF1192 CDG → Bâle-Mulhouse",
+          "category": "flight",
+          "detail": "Arrivée 10h00 (HOP)."
+        }
+      ]
+    }
+  ],
+  "takkyubin": {
+    "info": "Le takkyubin (Yamato Transport / クロネコヤマト) permet d'expédier les valises d'un hôtel à l'autre la nuit. La réception s'en charge sur simple demande. Coût : ~1 500–2 000 ¥ par bagage. Livraison le lendemain matin/après-midi. Conserver un sac cabine pour la nuit et le lendemain matin.",
+    "shipments": [
+      {
+        "id": "tk1",
+        "when": {
+          "date": "2026-10-29",
+          "label": "29 oct soir"
+        },
+        "from": "ibis Styles Tokyo Ginza",
+        "to": "Hotel Green Plaza Hakone",
+        "delivery": {
+          "date": "2026-10-30",
+          "label": "30 oct après-midi"
+        },
+        "why": "Léger pour le cours + trajet Hakone"
+      },
+      {
+        "id": "tk2",
+        "when": {
+          "date": "2026-10-31",
+          "label": "31 oct matin (avant 11h)"
+        },
+        "from": "Hotel Green Plaza Hakone",
+        "to": "ibis Styles Nagoya",
+        "delivery": {
+          "date": "2026-10-31",
+          "label": "31 oct après-midi (à confirmer)"
+        },
+        "why": "Mains libres pour la randonnée",
+        "toVerify": true
+      },
+      {
+        "id": "tk3",
+        "when": {
+          "date": "2026-10-31",
+          "label": "31 oct soir"
+        },
+        "from": "ibis Styles Nagoya",
+        "to": "Mercure Kyoto Station",
+        "delivery": {
+          "date": "2026-11-01",
+          "label": "1er nov après-midi"
+        },
+        "why": "Sac à dos pour Ghibli Park"
+      },
+      {
+        "id": "tk4",
+        "when": {
+          "date": "2026-11-02",
+          "label": "2 nov soir"
+        },
+        "from": "Mercure Kyoto Station",
+        "to": "Mercure Tokyu Stay Hiroshima",
+        "delivery": {
+          "date": "2026-11-03",
+          "label": "3 nov matin"
+        },
+        "why": "Fushimi Inari 7h30 sans valises",
+        "key": true
+      },
+      {
+        "id": "tk5",
+        "when": {
+          "date": "2026-11-03",
+          "label": "3 nov soir"
+        },
+        "from": "Mercure Tokyu Stay Hiroshima",
+        "to": "Mercure Tokyu Stay Osaka Namba",
+        "delivery": {
+          "date": "2026-11-04",
+          "label": "4 nov après-midi"
+        },
+        "why": "Léger pour le trajet"
+      }
+    ],
+    "keyNote": "★ L'envoi du 2 novembre soir est le plus important : les bagages arrivent à Hiroshima le 3 novembre matin, avant le check-out. Grâce à lui, la journée chargée de Kyoto → Hiroshima devient très confortable."
+  },
+  "aikido": {
+    "dojo": {
+      "name": "Aikikai Hombu Dojo",
+      "address": "17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo 162-0056",
+      "phone": "03-3203-9236",
+      "email": "aikido@aikikai.or.jp",
+      "website": "https://aikikai.or.jp/eng/hombudojo/",
+      "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo",
+      "nearestStation": "Wakamatsu-Kawada (Toei Oedo), sortie Kawada, ~5 min à pied (source : aikikai.or.jp)"
+    },
+    "routeFromHotel": {
+      "from": "ibis Styles Tokyo Ginza",
+      "duration": "environ 30 minutes",
+      "steps": [
+        {
+          "from": "ibis Ginza",
+          "to": "Higashi-Ginza",
+          "line": "À pied",
+          "duration": "5 min"
+        },
+        {
+          "from": "Higashi-Ginza",
+          "to": "Daimon",
+          "line": "Toei Asakusa line (2 arrêts)",
+          "duration": "~5 min"
+        },
+        {
+          "from": "Daimon",
+          "to": "Wakamatsu-Kawada",
+          "line": "Toei Oedo line",
+          "duration": "voir « À vérifier »",
+          "docSays": "Wakamatsuakebonobashi · 6 arrêts · ~12 min"
+        },
+        {
+          "from": "Wakamatsu-Kawada",
+          "to": "Dojo",
+          "line": "À pied (sortie Kawada)",
+          "duration": "5 min"
+        }
+      ]
+    },
+    "classes": [
+      {
+        "date": "2026-10-27",
+        "time": "17:30–18:30",
+        "teacher": "Fujimaki",
+        "note": "Optionnel — jet lag à prévoir"
+      },
+      {
+        "date": "2026-10-28",
+        "time": "06:30–07:30",
+        "teacher": "★ DOSHU",
+        "note": "Classe du maître — départ hôtel 5h55 (5h00 dans le plan initial)",
+        "highlight": true
+      },
+      {
+        "date": "2026-10-28",
+        "time": "17:30–18:30",
+        "teacher": "Kuribayashi",
+        "note": "2ème cours de la journée"
+      },
+      {
+        "date": "2026-10-29",
+        "time": null,
+        "teacher": null,
+        "note": "Excursion Hiyodori Hills + Sawara"
+      },
+      {
+        "date": "2026-10-30",
+        "time": "08:00–09:00",
+        "teacher": "Katsurada",
+        "note": "Départ hôtel 7h25 · dernier cours"
+      }
+    ],
+    "warning": "Les enseignants indiqués correspondent au programme de juin 2026. Le planning d'octobre peut légèrement varier — vérifier sur aikikai.or.jp avant le départ. Vérifier également si une inscription préalable est requise pour les visiteurs étrangers."
+  },
+  "attention": [
+    {
+      "id": "att-hakone",
+      "level": "warning",
+      "date": "2026-10-31",
+      "title": "31 oct — Randonnée Hakone : lever 6h30 impératif",
+      "text": "Check-out à 11h · Randonnée 7h–10h30 · Bus Sengokuhara → Odawara ~40 min. Les bagages partent le matin via takkyubin vers Nagoya."
+    },
+    {
+      "id": "att-doshu",
+      "level": "warning",
+      "date": "2026-10-28",
+      "title": "28 oct — Cours Doshu à 6h30 : départ hôtel à 5h55",
+      "text": "Pour être à l'heure pour la classe de Doshu, quitter l'hôtel à 5h55. Trajet ~30 min. Prévoir d'aller se coucher tôt la veille (soirée du 27 oct légère conseillée)."
+    },
+    {
+      "id": "att-dojo",
+      "level": "info",
+      "date": null,
+      "title": "Vérification Hombu Dojo",
+      "text": "Consulter aikikai.or.jp avant le départ pour confirmer les horaires d'octobre et les conditions d'accès pour les visiteurs étrangers (parfois inscription préalable requise)."
+    }
+  ],
+  "toVerify": [
+    {
+      "id": "v-vol-retour",
+      "severity": "high",
+      "dates": [
+        "2026-11-06"
+      ],
+      "title": "Heure du vol retour AF0279",
+      "text": "Le tableau des vols et le plan du 6 nov indiquent 23h30 (arrivée CDG 06h25), mais l'encadré d'alerte du 6 nov parle d'un vol « à 01h00 le 7 nov ». Le projet retient 23h30 : à confirmer sur le billet."
+    },
+    {
+      "id": "v-nozomi-odawara",
+      "severity": "high",
+      "dates": [
+        "2026-10-31"
+      ],
+      "title": "Odawara → Nagoya : pas de Nozomi",
+      "text": "Le Nozomi ne s'arrête pas à Odawara. Il faut prendre un Hikari (~1h10 jusqu'à Nagoya, horaires moins fréquents) ou un Kodama (~2h). À réserver/vérifier avec les horaires réels ; l'horaire de 12h30 est à recaler."
+    },
+    {
+      "id": "v-takkyubin-nagoya",
+      "severity": "high",
+      "dates": [
+        "2026-10-31",
+        "2026-11-01"
+      ],
+      "title": "Takkyubin Hakone → Nagoya livré le jour même ?",
+      "text": "Le dossier prévoit une livraison à Nagoya le 31 oct après-midi pour un envoi du matin, alors que le même dossier indique une livraison « le lendemain ». Si les bagages n'arrivent que le 1er nov, la chaîne Nagoya → Kyoto du soir tombe. À demander à la réception de Green Plaza avant de s'engager ; sinon prévoir un sac pour Nagoya et envoyer directement vers Kyoto."
+    },
+    {
+      "id": "v-ghibli",
+      "severity": "high",
+      "dates": [
+        "2026-11-01"
+      ],
+      "title": "Ghibli Park : trajet ~1h et billets",
+      "text": "Nagoya → Fujigaoka (métro Higashiyama, ~30 min) puis Linimo (~25 min) : compter environ 1h, pas 30 min. Départ à 9h40 pour une arrivée à 10h est trop juste. Les billets du parc sont à acheter à l'avance (rien dans le dossier) : vérifier que c'est fait."
+    },
+    {
+      "id": "v-dojo-station",
+      "severity": "medium",
+      "dates": [
+        "2026-10-28",
+        "2026-10-30"
+      ],
+      "title": "Station du Hombu Dojo",
+      "text": "Le dossier cite « Wakamatsuakebonobashi (sortie n°1) ». Selon aikikai.or.jp, la station la plus proche est Wakamatsu-Kawada (ligne Oedo, sortie Kawada, ~5 min à pied). Le nombre d'arrêts et la durée Daimon → Dojo sont à recalculer dans Plans."
+    },
+    {
+      "id": "v-doshu-depart",
+      "severity": "medium",
+      "dates": [
+        "2026-10-28"
+      ],
+      "title": "Départ hôtel pour le cours Doshu : 5h00 ou 5h55 ?",
+      "text": "Le plan du jour et le planning des cours disent 5h00, l'encadré « points d'attention » dit 5h55. Le projet retient 5h55 (30 min de trajet + marge, comme le 30 oct : 7h25 pour 8h00)."
+    },
+    {
+      "id": "v-kyoto-2nov",
+      "severity": "medium",
+      "dates": [
+        "2026-11-02"
+      ],
+      "title": "Kyoto 2 nov : enchaînement Philosophes → Sagano",
+      "text": "Le Chemin des Philosophes (est de Kyoto, 15h) et Adashino Nenbutsuji (Sagano, ouest, 16h) sont à environ 1h de transport l'un de l'autre. Prévoir de rogner l'un des deux, ou de vérifier l'heure de dernière entrée à Adashino."
+    },
+    {
+      "id": "v-billets-shinkansen",
+      "severity": "info",
+      "dates": [
+        "2026-11-01",
+        "2026-11-03",
+        "2026-11-04"
+      ],
+      "title": "Titre de transport pour les Nozomi",
+      "text": "Le dossier mentionne un JR Pass (ferry de Miyajima) mais prévoit des Nozomi. Vérifier que ton titre de transport couvre les Nozomi prévus (Nagoya → Kyoto, Kyoto → Hiroshima, Hiroshima → Shin-Osaka)."
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-depart",
+      "date": "2026-10-26",
+      "time": "07:30",
+      "tz": "Europe/Paris",
+      "title": "Départ aujourd'hui",
+      "body": "KL1944 Bâle-Mulhouse → Amsterdam à 10h05, puis KL0861 vers Tokyo à 14h20."
+    },
+    {
+      "id": "n-doshu-veille",
+      "date": "2026-10-27",
+      "time": "21:00",
+      "tz": "Asia/Tokyo",
+      "title": "Soirée légère",
+      "body": "Cours Doshu demain à 6h30 — départ de l'hôtel à 5h55."
+    },
+    {
+      "id": "n-doshu",
+      "date": "2026-10-28",
+      "time": "05:30",
+      "tz": "Asia/Tokyo",
+      "title": "Cours Doshu",
+      "body": "Départ hôtel à 5h55 pour le Hombu Dojo (cours 6h30)."
+    },
+    {
+      "id": "n-tk1",
+      "date": "2026-10-29",
+      "time": "20:00",
+      "tz": "Asia/Tokyo",
+      "title": "Takkyubin ce soir",
+      "body": "Demander l'envoi des bagages vers Hotel Green Plaza Hakone (livraison demain après-midi)."
+    },
+    {
+      "id": "n-katsurada",
+      "date": "2026-10-30",
+      "time": "07:00",
+      "tz": "Asia/Tokyo",
+      "title": "Dernier cours d'aïkido",
+      "body": "Départ hôtel à 7h25 — classe de Katsurada à 8h00."
+    },
+    {
+      "id": "n-lever-hakone",
+      "date": "2026-10-31",
+      "time": "06:30",
+      "tz": "Asia/Tokyo",
+      "title": "Lever impératif",
+      "body": "Takkyubin vers Nagoya avant de partir randonner. Check-out 11h."
+    },
+    {
+      "id": "n-tk3",
+      "date": "2026-10-31",
+      "time": "19:00",
+      "tz": "Asia/Tokyo",
+      "title": "Takkyubin ce soir",
+      "body": "Nagoya → Mercure Kyoto Station (livraison demain après-midi)."
+    },
+    {
+      "id": "n-tk4",
+      "date": "2026-11-02",
+      "time": "19:00",
+      "tz": "Asia/Tokyo",
+      "title": "★ Takkyubin le plus important",
+      "body": "Kyoto → Hiroshima, livraison demain matin. Fushimi Inari à 7h30 sans valises."
+    },
+    {
+      "id": "n-tk5",
+      "date": "2026-11-03",
+      "time": "19:00",
+      "tz": "Asia/Tokyo",
+      "title": "Takkyubin ce soir",
+      "body": "Hiroshima → Mercure Tokyu Stay Osaka Namba (livraison demain après-midi)."
+    },
+    {
+      "id": "n-haneda",
+      "date": "2026-11-06",
+      "time": "15:30",
+      "tz": "Asia/Tokyo",
+      "title": "Départ pour Haneda",
+      "body": "Récupérer les bagages à la consigne — départ d'Osaka vers 16h30. Vol AF0279 à 23h30."
+    }
+  ]
+}
