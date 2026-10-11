@@ -613,7 +613,7 @@
           "title": "Bus Sengokuhara → Odawara",
           "category": "transport",
           "approx": true,
-          "detail": "~40 min : arrivée à Odawara vers 12h20. Horaire du bus à confirmer (voir « À vérifier »). Le Shinkansen de 12h35 laisse peu de marge : sinon prendre le suivant (13h05).",
+          "detail": "~40 min : arrivée à Odawara vers 12h20. Le Shinkansen de 12h35 laisse peu de marge : sinon prendre le suivant (13h05).",
           "mapQuery": "Odawara Station"
         },
         {
@@ -1205,15 +1205,6 @@
     }
   ],
   "toVerify": [
-    {
-      "id": "v-bus-odawara",
-      "severity": "medium",
-      "dates": [
-        "2026-10-31"
-      ],
-      "title": "Bus Sengokuhara → Odawara et correspondance de 12h35",
-      "text": "Le Shinkansen est recalé sur l'horaire JR (samedi) : Kodama 823 à 12h35 (arrivée Nagoya 14h37). Le bus de 11h40 arrive à Odawara vers 12h20, donc ~15 min de marge : vérifier l'horaire réel du bus. Repli : Kodama 13h05 (arrive 15h06) ou Hikari 14h07 (arrive 15h14)."
-    },
     {
       "id": "v-takkyubin-nagoya",
       "severity": "high",
