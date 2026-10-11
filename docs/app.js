@@ -118,6 +118,7 @@ function dayView(day, now, opts = {}) {
   if (day.images && day.images.length)
     h += `<div class="carousel">${day.images.map(i => `<img src="img/${esc(i)}" alt="" loading="lazy">`).join('')}</div>`;
   h += (day.alerts || []).map(a => `<div class="alert">⚠️ ${esc(a)}</div>`).join('');
+  h += weatherCard(day);
   if (ni !== null) {
     const e = day.events[ni];
     h += `<div class="card next"><div class="lbl">Prochaine étape</div>
@@ -134,6 +135,57 @@ function dayView(day, now, opts = {}) {
 function verifyBanner() {
   const n = T.toVerify.filter(v => !getFlag('res:' + v.id)).length;
   return n ? `<a class="banner" href="#/verify">⚠️ ${n} point${n > 1 ? 's' : ''} à vérifier</a>` : '';
+}
+
+
+// ---------- météo (Open-Meteo, sans clé ; dernière prévision gardée pour le hors ligne) ----------
+const WMO = [
+  [[0], '☀️', 'Ensoleillé'], [[1], '🌤', 'Plutôt dégagé'], [[2], '⛅', 'Éclaircies'], [[3], '☁️', 'Couvert'],
+  [[45, 48], '🌫', 'Brouillard'], [[51, 53, 55, 56, 57], '🌦', 'Bruine'], [[61, 63, 80, 81], '🌧', 'Pluie'],
+  [[65, 66, 67, 82], '🌧', 'Forte pluie'], [[71, 73, 75, 77, 85, 86], '❄️', 'Neige'], [[95, 96, 99], '⛈', 'Orage'],
+];
+const wmo = c => { const w = WMO.find(x => x[0].includes(c)); return w ? [w[1], w[2]] : ['🌡', 'Météo']; };
+let WX = (() => { try { return JSON.parse(localStorage.getItem('japantrip-wx') || '{}'); } catch (e) { return {}; } })();
+
+function wxFor(day) {
+  const city = cityOf(day.city);
+  return city && WX.cities && WX.cities[city.id] && WX.cities[city.id][day.date];
+}
+function weatherCard(day) {
+  if (!day.city) return '';
+  const w = wxFor(day);
+  if (!w) return `<div class="card wx" data-wx="${day.date}"><span class="muted">🌡 Météo ${esc(cityOf(day.city).name)} : prévisions disponibles ~15 jours avant.</span></div>`;
+  const [icon, label] = wmo(w.code);
+  const upd = WX.fetched ? new Date(WX.fetched).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', timeZone: TZ }) : '';
+  return `<div class="card wx" data-wx="${day.date}">
+    <div class="wxi" aria-hidden="true">${icon}</div>
+    <div><strong>${esc(label)}</strong> · ${Math.round(w.max)}° / ${Math.round(w.min)}°
+      <div class="muted">${esc(cityOf(day.city).name)}${w.rain != null ? ` · pluie ${w.rain} %` : ''}${upd ? ` · maj ${upd}` : ''}</div></div></div>`;
+}
+function refreshWeather() {
+  if (!navigator.onLine) return;
+  const out = { fetched: Date.now(), cities: {} };
+  const jobs = T.cities.filter(c => c.lat != null).map(c =>
+    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${c.lat}&longitude=${c.lon}` +
+      '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max' +
+      `&timezone=${encodeURIComponent(TZ)}&forecast_days=16`)
+      .then(r => r.json()).then(j => {
+        const m = {}, d = j.daily;
+        d.time.forEach((t, i) => {
+          if (d.weather_code[i] != null) m[t] = { code: d.weather_code[i], max: d.temperature_2m_max[i], min: d.temperature_2m_min[i], rain: d.precipitation_probability_max[i] };
+        });
+        out.cities[c.id] = m;
+      }).catch(() => { out.cities[c.id] = (WX.cities && WX.cities[c.id]) || {}; }));
+  Promise.all(jobs).then(() => {
+    // Conserve les jours déjà connus (une prévision passée reste affichable hors ligne).
+    for (const id in out.cities) out.cities[id] = Object.assign({}, WX.cities && WX.cities[id], out.cities[id]);
+    WX = out;
+    try { localStorage.setItem('japantrip-wx', JSON.stringify(WX)); } catch (e) {}
+    document.querySelectorAll('.wx[data-wx]').forEach(el => {
+      const day = T.days.find(d => d.date === el.dataset.wx);
+      if (day) el.outerHTML = weatherCard(day);
+    });
+  });
 }
 
 // ---------- écrans ----------
@@ -277,7 +329,7 @@ document.addEventListener('click', e => {
 window.addEventListener('hashchange', render);
 
 fetch('trip.json').then(r => r.json()).then(j => {
-  T = j; render();
+  T = j; render(); refreshWeather();
   // « Aujourd'hui » se recalcule quand l'app revient au premier plan.
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden && (location.hash === '' || location.hash === '#/today')) render();

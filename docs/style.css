@@ -88,3 +88,7 @@ tr.hl { background: var(--warn-bg); color: var(--warn-ink); font-weight: 600; }
 .count { font-size: 3rem; font-weight: 800; color: var(--accent); line-height: 1; }
 .toast { position: fixed; left: 50%; bottom: calc(90px + env(safe-area-inset-bottom)); transform: translateX(-50%); background: #222; color: #fff; padding: 8px 14px; border-radius: 999px; font-size: .9rem; z-index: 20; }
 footer { text-align: center; color: var(--muted); margin: 28px 0 8px; }
+
+/* météo */
+.wx { display: flex; align-items: center; gap: 12px; }
+.wxi { font-size: 2.2rem; line-height: 1; }

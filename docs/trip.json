@@ -141,6 +141,8 @@
     {
       "id": "hakone",
       "name": "Hotel Green Plaza Hakone",
+      "lat": 35.2324,
+      "lon": 139.1069,
       "area": "Sengokuhara",
       "city": "hakone",
       "checkIn": {
@@ -159,6 +161,8 @@
     {
       "id": "nagoya",
       "name": "ibis Styles Nagoya",
+      "lat": 35.1815,
+      "lon": 136.9066,
       "area": "Meieki",
       "city": "nagoya",
       "checkIn": {
@@ -175,6 +179,8 @@
     {
       "id": "kyoto",
       "name": "Mercure Kyoto Station",
+      "lat": 35.0116,
+      "lon": 135.7681,
       "area": "Shimogyo-ku",
       "city": "kyoto",
       "checkIn": {
@@ -191,6 +197,8 @@
     {
       "id": "hiroshima",
       "name": "Mercure Tokyu Stay Hiroshima",
+      "lat": 34.3853,
+      "lon": 132.4553,
       "area": "Naka-ku",
       "city": "hiroshima",
       "checkIn": {
@@ -208,6 +216,8 @@
     {
       "id": "osaka",
       "name": "Mercure Tokyu Stay Osaka Namba",
+      "lat": 34.6937,
+      "lon": 135.5023,
       "area": "Nishishinsaibashi",
       "city": "osaka",
       "checkIn": {
@@ -226,6 +236,8 @@
     {
       "id": "tokyo",
       "name": "Tokyo",
+      "lat": 35.6762,
+      "lon": 139.6503,
       "dates": "27–30 octobre",
       "image": "tokyo.jpg",
       "baseNote": "Base : ibis Styles Tokyo Ginza · 3 nuits · Quartier Ginza, Chuo-ku"
