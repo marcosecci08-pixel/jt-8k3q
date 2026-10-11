@@ -401,7 +401,7 @@
         },
         {
           "time": "06:30",
-          "title": "COURS DOSHU — Aikikai Hombu Dojo (classe spéciale)",
+          "title": "COURS DOSHU — Aikikai Hombu Dojo",
           "category": "aikido",
           "endTime": "07:30",
           "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
@@ -1194,7 +1194,7 @@
         "date": "2026-10-28",
         "time": "06:30–07:30",
         "teacher": "★ DOSHU",
-        "note": "Classe du maître — départ hôtel 5h10, arrivée au dojo à 6h00",
+        "note": "Cours régulier du planning officiel — départ hôtel 5h10, arrivée dojo 6h00",
         "highlight": true
       },
       {
@@ -1216,7 +1216,7 @@
         "note": "Départ hôtel 7h25 · dernier cours"
       }
     ],
-    "warning": "Les enseignants indiqués correspondent au programme de juin 2026. Le planning d'octobre peut légèrement varier — vérifier sur aikikai.or.jp avant le départ. Vérifier également si une inscription préalable est requise pour les visiteurs étrangers.",
+    "warning": "Planning vérifié le 11 oct 2026 sur le planning officiel du Hombu (aikikai.or.jp/eng/hombudojo/schedule/) : les enseignants des 27, 28 et 30 oct correspondent. Le planning peut encore changer (remplacements) : le revérifier quelques jours avant le départ.",
     "rules": {
       "title": "Règles et étiquette au Hombu Dojo",
       "intro": "Trois origines : « officiel » (aikikai.or.jp), « guide 2011 » (article de Guillaume Erard : étiquette et pratique du Hombu, tarifs et détails à reconfirmer car datés) et « usage » (étiquette courante en aïkido). Observe la majorité des pratiquants et calque ton attitude sur la leur.",
@@ -1238,7 +1238,7 @@
             "Guide 2011 : les visiteurs suivent les cours réguliers ou débutants, pas les cours spéciaux.",
             "Guide 2011 : les cours débutants du lundi 17h30 et du mercredi 19h00 sont réservés aux ceintures blanches.",
             "Guide 2011 : cours femmes du matin sur inscription spéciale ; ceux du soir accessibles avec l'inscription normale.",
-            "À confirmer : le cours de Doshu du 28 oct est qualifié de « classe spéciale » dans le dossier : vérifier qu'il est ouvert aux visiteurs (voir « À vérifier »)."
+            "Officiel (planning du 11 oct 2026) : le cours de Doshu du mercredi 28 oct à 6h30 figure dans le planning des cours réguliers."
           ]
         },
         {
@@ -1383,8 +1383,8 @@
         "2026-10-28",
         "2026-10-30"
       ],
-      "title": "Hombu Dojo : inscription, droit de visiteur et cours Doshu",
-      "text": "Pour pratiquer, il faut s'inscrire à la Fondation Aikikai (8 800 ¥) ou payer un droit de visiteur (montant non publié) avec sa carte Aikikai ou son Yudansha Book. Un guide de 2011 indique que les visiteurs n'ont pas accès aux cours spéciaux : le cours de Doshu du 28 oct étant qualifié de « classe spéciale », confirmer qu'il est ouvert. Écrire à aikido@aikikai.or.jp ou téléphoner au 03-3203-9236 pour confirmer l'accès, le tarif et la tenue (keikogi, hakama), avant le 27 oct."
+      "title": "Hombu Dojo : inscription et droit de visiteur",
+      "text": "Pour pratiquer, il faut s'inscrire à la Fondation Aikikai (8 800 ¥) ou payer un droit de visiteur (montant non publié) avec sa carte Aikikai ou son Yudansha Book. Écrire à aikido@aikikai.or.jp ou téléphoner au 03-3203-9236 pour confirmer l'accès, le tarif et la tenue (keikogi, hakama), avant le 27 oct."
     }
   ],
   "notifications": [
