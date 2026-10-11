@@ -692,29 +692,29 @@
           "time": "10:00",
           "title": "Visite Parc Ghibli (Nagakute)",
           "category": "sightseeing",
-          "endTime": "14:00",
-          "detail": "~4h. Billets déjà achetés (entrée à 10h00).",
+          "endTime": "16:00",
+          "detail": "~6h. Billets déjà achetés (entrée à 10h00). Le parc ferme vers 17h.",
           "mapQuery": "Ghibli Park, Nagakute"
         },
         {
-          "time": "14:00",
+          "time": "16:00",
           "title": "Retour vers la gare de Nagoya (Linimo + métro)",
           "category": "transport",
           "detail": "~50 min depuis le parc.",
           "approx": true,
-          "endTime": "14:50",
+          "endTime": "16:50",
           "mapQuery": "Nagoya Station"
         },
         {
-          "time": "15:00",
+          "time": "17:20",
           "title": "Shinkansen Nagoya → Kyoto",
           "category": "transport",
           "approx": true,
-          "detail": "Nozomi, ~35 min. Prendre le premier train disponible après 14h50.",
+          "detail": "Nozomi, ~35 min (arrivée ~17h55). Prendre le premier train disponible après 16h50.",
           "mapQuery": "Nagoya Station"
         },
         {
-          "time": "16:00",
+          "time": "18:00",
           "title": "Check-in Mercure Kyoto Station · Shimogyo-ku",
           "category": "hotel",
           "approx": true,
