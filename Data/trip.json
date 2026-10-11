@@ -1192,15 +1192,6 @@
   ],
   "toVerify": [
     {
-      "id": "v-vol-retour",
-      "severity": "high",
-      "dates": [
-        "2026-11-06"
-      ],
-      "title": "Heure du vol retour AF0279",
-      "text": "Le tableau des vols et le plan du 6 nov indiquent 23h30 (arrivée CDG 06h25), mais l'encadré d'alerte du 6 nov parle d'un vol « à 01h00 le 7 nov ». Le projet retient 23h30 : à confirmer sur le billet."
-    },
-    {
       "id": "v-nozomi-odawara",
       "severity": "high",
       "dates": [
