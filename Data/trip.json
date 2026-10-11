@@ -1275,12 +1275,14 @@
       "id": "v-billets-shinkansen",
       "severity": "info",
       "dates": [
+        "2026-10-31",
         "2026-11-01",
         "2026-11-03",
-        "2026-11-04"
+        "2026-11-04",
+        "2026-11-06"
       ],
-      "title": "Titre de transport pour les Nozomi",
-      "text": "Le dossier mentionne un JR Pass (ferry de Miyajima) mais prévoit des Nozomi. Vérifier que ton titre de transport couvre les Nozomi prévus (Nagoya → Kyoto, Kyoto → Hiroshima, Hiroshima → Shin-Osaka)."
+      "title": "Pas de JR Pass : acheter chaque Shinkansen à l'unité",
+      "text": "Le JR Pass n'est pas avantageux sur ce parcours (le Nozomi demande un supplément et le total dépasse les billets à l'unité). Réserver chaque Shinkansen (1re ou 2e classe) via smartEX/EX ou au guichet : Odawara → Nagoya (31 oct), Nagoya → Kyoto (1er nov), Kyoto → Hiroshima (3 nov), Hiroshima → Shin-Osaka (4 nov), Shin-Osaka → Shinagawa (6 nov). Les tarifs varient selon la date : vérifier au moment de réserver. Le ferry JR de Miyajima se paie sur place."
     }
   ],
   "notifications": [
