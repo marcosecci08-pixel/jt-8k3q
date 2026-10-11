@@ -21,7 +21,8 @@ trip = json.load(open(os.path.join(OUT, "trip.json"), encoding="utf-8"))
 
 # 2. photos
 src = os.path.join(ROOT, "Assets")
-for f in sorted(os.listdir(src)):
+# Sans Assets/ ou sans sips (hors Mac), on garde les photos déjà présentes dans docs/img.
+for f in (sorted(os.listdir(src)) if os.path.isdir(src) and shutil.which("sips") else []):
     if f.lower().endswith(".jpg"):
         dst = os.path.join(OUT, "img", f)
         subprocess.run(["sips", "-Z", "1200", "-s", "formatOptions", "70", os.path.join(src, f), "--out", dst],
