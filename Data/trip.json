@@ -66,7 +66,7 @@
       },
       "departure": {
         "date": "2026-10-26",
-        "time": "14:20"
+        "time": "14:15"
       },
       "arrival": {
         "date": "2026-10-27",
@@ -89,11 +89,11 @@
       },
       "departure": {
         "date": "2026-11-06",
-        "time": "23:30"
+        "time": "22:55"
       },
       "arrival": {
         "date": "2026-11-07",
-        "time": "06:25"
+        "time": "05:50"
       },
       "note": "Vol retour depuis HANEDA (Tokyo), pas depuis Osaka. Prévoir le trajet Osaka → Haneda le 6 novembre en soirée (~3h)."
     },
@@ -285,7 +285,7 @@
           "mapQuery": "EuroAirport Basel Mulhouse Freiburg"
         },
         {
-          "time": "14:20",
+          "time": "14:15",
           "title": "Vol KL0861 Amsterdam → Tokyo Narita (NRT)",
           "category": "flight",
           "detail": "Arrivée le 27 oct à 11h45."
@@ -981,7 +981,7 @@
           "mapQuery": "Haneda Airport"
         },
         {
-          "time": "23:30",
+          "time": "22:55",
           "title": "✈ Vol AF0279 Haneda → Paris CDG",
           "category": "flight",
           "detail": "Décollage."
@@ -999,7 +999,7 @@
       "images": [],
       "events": [
         {
-          "time": "06:25",
+          "time": "05:50",
           "title": "Arrivée Paris CDG",
           "category": "flight",
           "mapQuery": "Paris Charles de Gaulle Airport"
@@ -1266,7 +1266,7 @@
       "time": "07:30",
       "tz": "Europe/Paris",
       "title": "Départ aujourd'hui",
-      "body": "KL1944 Bâle-Mulhouse → Amsterdam à 10h05, puis KL0861 vers Tokyo à 14h20."
+      "body": "KL1944 Bâle-Mulhouse → Amsterdam à 10h05, puis KL0861 vers Tokyo à 14h15."
     },
     {
       "id": "n-doshu-veille",
@@ -1338,7 +1338,7 @@
       "time": "15:30",
       "tz": "Asia/Tokyo",
       "title": "Départ pour Haneda",
-      "body": "Récupérer les bagages à la consigne — départ d'Osaka vers 16h30. Vol AF0279 à 23h30."
+      "body": "Récupérer les bagages à la consigne — départ d'Osaka vers 16h30. Vol AF0279 à 22h55."
     }
   ]
 }
