@@ -650,37 +650,67 @@
       "city": "nagoya",
       "overnightHotel": "kyoto",
       "alerts": [
-        "Check-out ibis Nagoya à 11h mais Ghibli Park ouvre à 10h → déposer les bagages à la consigne de la gare de Nagoya dès le matin (bagages déjà envoyés en takkyubin à Kyoto la veille)."
+        "⏰ Billets Ghibli Park : entrée à 10h00. Quitter la gare de Nagoya à 8h35 au plus tard (métro + Linimo ≈ 50 min) pour être sur place vers 9h45. Faire le check-out de l'ibis avant."
       ],
       "images": [],
       "events": [
         {
-          "time": "09:00",
-          "title": "Consigne gare de Nagoya",
+          "time": "08:10",
+          "title": "Check-out ibis + consigne gare de Nagoya",
           "category": "logistics",
-          "detail": "Simple formalité — valises déjà à Kyoto.",
+          "approx": true,
+          "detail": "Valises déjà parties en takkyubin vers Kyoto : ne déposer à la consigne que le sac dont vous n'avez pas besoin au parc.",
           "mapQuery": "Nagoya Station"
         },
         {
-          "time": "09:40",
-          "title": "Train Nagoya → Ghibli Park",
+          "time": "08:35",
+          "title": "Métro Higashiyama Nagoya → Fujigaoka",
           "category": "transport",
           "approx": true,
-          "detail": "Linimo depuis Fujigaoka, « ~30 min total » selon le dossier : voir « À vérifier » (compter ~1h)."
+          "endTime": "09:05",
+          "detail": "Direction Fujigaoka (terminus), ~30 min. Carte IC acceptée.",
+          "mapQuery": "Nagoya Station"
+        },
+        {
+          "time": "09:15",
+          "title": "Linimo Fujigaoka → Ai-Chikyuhaku-kinen-koen",
+          "category": "transport",
+          "approx": true,
+          "endTime": "09:32",
+          "detail": "~17 min. Descendre à Ai-Chikyuhaku-kinen-koen (le parc est à côté de la gare). Si le métro a du retard, le Linimo suivant laisse encore de la marge.",
+          "mapQuery": "Ai-Chikyuhaku-kinen-koen Station"
+        },
+        {
+          "time": "09:45",
+          "title": "Arrivée au Parc Ghibli (entrée à 10h00)",
+          "category": "sightseeing",
+          "approx": true,
+          "detail": "Billets en main (créneau 10h00).",
+          "mapQuery": "Ghibli Park, Nagakute"
         },
         {
           "time": "10:00",
           "title": "Visite Parc Ghibli (Nagakute)",
           "category": "sightseeing",
           "endTime": "14:00",
-          "detail": "~4h.",
+          "detail": "~4h. Billets déjà achetés (entrée à 10h00).",
           "mapQuery": "Ghibli Park, Nagakute"
         },
         {
-          "time": "14:30",
-          "title": "Retour gare Nagoya · Shinkansen → Kyoto",
+          "time": "14:00",
+          "title": "Retour vers la gare de Nagoya (Linimo + métro)",
           "category": "transport",
-          "detail": "Nozomi, ~35 min.",
+          "detail": "~50 min depuis le parc.",
+          "approx": true,
+          "endTime": "14:50",
+          "mapQuery": "Nagoya Station"
+        },
+        {
+          "time": "15:00",
+          "title": "Shinkansen Nagoya → Kyoto",
+          "category": "transport",
+          "approx": true,
+          "detail": "Nozomi, ~35 min. Prendre le premier train disponible après 14h50.",
           "mapQuery": "Nagoya Station"
         },
         {
@@ -1214,15 +1244,6 @@
       ],
       "title": "Takkyubin Hakone → Nagoya livré le jour même ?",
       "text": "Le dossier prévoit une livraison à Nagoya le 31 oct après-midi pour un envoi du matin, alors que le même dossier indique une livraison « le lendemain ». Si les bagages n'arrivent que le 1er nov, la chaîne Nagoya → Kyoto du soir tombe. À demander à la réception de Green Plaza avant de s'engager ; sinon prévoir un sac pour Nagoya et envoyer directement vers Kyoto."
-    },
-    {
-      "id": "v-ghibli",
-      "severity": "high",
-      "dates": [
-        "2026-11-01"
-      ],
-      "title": "Ghibli Park : trajet ~1h et billets",
-      "text": "Nagoya → Fujigaoka (métro Higashiyama, ~30 min) puis Linimo (~25 min) : compter environ 1h, pas 30 min. Départ à 9h40 pour une arrivée à 10h est trop juste. Les billets du parc sont à acheter à l'avance (rien dans le dossier) : vérifier que c'est fait."
     },
     {
       "id": "v-dojo-station",
