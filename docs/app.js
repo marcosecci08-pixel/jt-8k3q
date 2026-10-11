@@ -336,4 +336,9 @@ fetch('trip.json').then(r => r.json()).then(j => {
   });
 }).catch(() => { $('#app').innerHTML = '<p>Impossible de charger les données du voyage.</p>'; });
 
-if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+if ('serviceWorker' in navigator) {
+  // Nouvelle version installée : recharger une fois pour l'afficher.
+  const had = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange', () => { if (had) location.reload(); });
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}
