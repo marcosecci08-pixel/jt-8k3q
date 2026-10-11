@@ -288,6 +288,12 @@ function viewAikido() {
     h += `<tr class="${c.highlight ? 'hl' : ''}"><td>${fdate(c.date)}</td><td>${esc(c.time)}</td><td>${esc(c.teacher)}${c.note ? `<br><span class="muted">${esc(c.note)}</span>` : ''}</td></tr>`;
   h += '</table></div>';
   if (a.warning) h += `<div class="alert">${esc(a.warning)}</div>`;
+  if (a.rules) {
+    h += `<h2>${esc(a.rules.title)}</h2><p class="muted">${esc(a.rules.intro)}</p>`;
+    for (const s of a.rules.sections)
+      h += `<details class="card rules"><summary>${esc(s.title)}</summary><ul>${s.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></details>`;
+    h += `<p class="muted"><a href="${esc(a.rules.source)}">Source : aikikai.or.jp</a></p>`;
+  }
   return h;
 }
 function viewVerify() {

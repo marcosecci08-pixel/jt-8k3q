@@ -1216,7 +1216,61 @@
         "note": "Départ hôtel 7h25 · dernier cours"
       }
     ],
-    "warning": "Les enseignants indiqués correspondent au programme de juin 2026. Le planning d'octobre peut légèrement varier — vérifier sur aikikai.or.jp avant le départ. Vérifier également si une inscription préalable est requise pour les visiteurs étrangers."
+    "warning": "Les enseignants indiqués correspondent au programme de juin 2026. Le planning d'octobre peut légèrement varier — vérifier sur aikikai.or.jp avant le départ. Vérifier également si une inscription préalable est requise pour les visiteurs étrangers.",
+    "rules": {
+      "title": "Règles et étiquette au Hombu Dojo",
+      "intro": "Les points « officiel » viennent de aikikai.or.jp. Les points « usage » sont l'étiquette courante en aïkido : le Hombu peut avoir ses propres habitudes, alors observe les autres et demande à l'accueil en cas de doute.",
+      "sections": [
+        {
+          "title": "Avant de pratiquer (officiel)",
+          "items": [
+            "Pour pratiquer au Hombu, il faut être inscrit à la Fondation Aikikai : formulaire + droit d'inscription de 8 800 ¥ (TTC) à l'accueil. Une carte de membre est ensuite établie.",
+            "Les membres d'un dojo affilié Aikikai peuvent payer un « droit de visiteur » à l'accueil (montant non publié) en présentant leur carte de la Fondation Aikikai ou leur Yudansha Book : les apporter.",
+            "Les membres du Hombu ne peuvent en principe pas utiliser le droit de visiteur.",
+            "Tarifs mensuels publiés (cours réguliers, semaine) : 12 100 ¥ ; barème révisé en avril 2025, à confirmer.",
+            "Bureau ouvert 6h30–20h00 (dimanche 8h30–12h00). Tél. 03-3203-9236 · aikido@aikikai.or.jp.",
+            "Regarder un cours est possible, mais une visite uniquement touristique peut être refusée : prévenir à l'avance."
+          ]
+        },
+        {
+          "title": "À l'accueil et au vestiaire (usage)",
+          "items": [
+            "Arriver tôt (30 min avant) pour s'inscrire, se changer et s'échauffer.",
+            "Remettre sa carte de membre à l'accueil avant chaque cours et la récupérer en sortant (officiel).",
+            "Enlever ses chaussures à l'entrée ; garder des tongs pour les toilettes uniquement.",
+            "Kimono (dogi) blanc propre ; hakama selon le grade : demander à l'accueil ce qui est attendu.",
+            "Ongles courts, pas de bijoux, montre ou piercings ; hygiène soignée ; cheveux longs attachés.",
+            "Téléphone éteint, rien sur le tatami."
+          ]
+        },
+        {
+          "title": "Sur le tatami (usage)",
+          "items": [
+            "Salut debout en entrant et en sortant du dojo, vers le kamiza (côté d'honneur, en général en face de l'entrée).",
+            "Saluer en montant sur le tatami et en le quittant. Ne pas quitter le tatami sans raison ; demander la permission au sensei si besoin.",
+            "Être en place avant le début ; s'asseoir en seiza (ou en tailleur si genou/cheville fragile), jamais les jambes tendues ni adossé au mur.",
+            "Le cours commence et finit par un salut collectif au kamiza, puis au sensei : « Onegaishimasu » au début, « Domo arigato gozaimashita » à la fin.",
+            "Pendant la démonstration : se mettre en seiza, regarder, ne pas parler. À la fin, saluer et trouver un partenaire.",
+            "Saluer son partenaire avant et après chaque technique (« Onegaishimasu » / « Arigato gozaimashita »).",
+            "Prévenir son partenaire d'une blessure ou d'une limite ; frapper le tatami ou le partenaire (tap) en cas de douleur.",
+            "Pratiquer avec contrôle, sans forcer ni résister inutilement ; suivre le rythme du cours, même en niveau débutant.",
+            "Si arrivé en retard : attendre au bord du tatami en seiza que le sensei fasse signe, puis saluer et entrer.",
+            "Ne pas donner de conseils à son partenaire, sauf si demandé."
+          ]
+        },
+        {
+          "title": "Mots utiles",
+          "items": [
+            "Onegaishimasu : « s'il vous plaît », salut de début de cours ou de technique.",
+            "Domo arigato gozaimashita : « merci beaucoup », salut de fin de cours.",
+            "Sensei : professeur · Dojo : salle · Kamiza : place d'honneur · Seiza : position à genoux.",
+            "Rei : salut · Hai : « oui, j'ai compris » · Sumimasen : « excusez-moi ».",
+            "Hajime : commencez · Yame : arrêtez."
+          ]
+        }
+      ],
+      "source": "https://aikikai.or.jp/eng/hombudojo/join/"
+    }
   },
   "attention": [
     {
@@ -1283,6 +1337,17 @@
       ],
       "title": "Pas de JR Pass : acheter chaque Shinkansen à l'unité",
       "text": "Le JR Pass n'est pas avantageux sur ce parcours (le Nozomi demande un supplément et le total dépasse les billets à l'unité). Réserver chaque Shinkansen (1re ou 2e classe) via smartEX/EX ou au guichet : Odawara → Nagoya (31 oct), Nagoya → Kyoto (1er nov), Kyoto → Hiroshima (3 nov), Hiroshima → Shin-Osaka (4 nov), Shin-Osaka → Shinagawa (6 nov). Les tarifs varient selon la date : vérifier au moment de réserver. Le ferry JR de Miyajima se paie sur place."
+    },
+    {
+      "id": "v-hombu-inscription",
+      "severity": "medium",
+      "dates": [
+        "2026-10-27",
+        "2026-10-28",
+        "2026-10-30"
+      ],
+      "title": "Hombu Dojo : inscription ou droit de visiteur",
+      "text": "Pour pratiquer, il faut s'inscrire à la Fondation Aikikai (8 800 ¥) ou payer un droit de visiteur (montant non publié) avec sa carte Aikikai ou son Yudansha Book. Écrire à aikido@aikikai.or.jp ou téléphoner au 03-3203-9236 pour confirmer les conditions, le tarif et la tenue (dogi, hakama), avant le 27 oct."
     }
   ],
   "notifications": [

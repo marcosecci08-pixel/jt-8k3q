@@ -92,3 +92,8 @@ footer { text-align: center; color: var(--muted); margin: 28px 0 8px; }
 /* météo */
 .wx { display: flex; align-items: center; gap: 12px; }
 .wxi { font-size: 2.2rem; line-height: 1; }
+
+/* règles du dojo */
+.rules summary { font-weight: 600; min-height: 44px; display: flex; align-items: center; cursor: pointer; }
+.rules ul { margin: 4px 0 0; padding-left: 20px; }
+.rules li { margin: 6px 0; }
