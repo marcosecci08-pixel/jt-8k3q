@@ -1,48 +1,45 @@
-# JapanTrip — contexte pour Claude Code
+# JapanTrip — contexte projet
 
-Application iOS **personnelle** (Marco et Nadia) qui guide un voyage au Japon, jour par jour,
-du 26 octobre au 7 novembre 2026. Usage privé, pas de publication App Store.
+Guide **personnel** (Marco et Nadia) du voyage au Japon, 26 octobre – 7 novembre 2026. Réponses en **français**.
+Ce n'est **pas** une app iOS native (Xcode impossible sur le Mac de Marco) : c'est une **web app installable (PWA)**
+hors ligne, publiée sur GitHub Pages.
 
-**À lire d'abord** : `SPEC.md` (cahier des charges), puis `Data/trip.json` (toutes les données du voyage).
+- Site : https://marcosecci08-pixel.github.io/jt-8k3q/ (dépôt public `marcosecci08-pixel/jt-8k3q`, dossier `/docs`)
+- Données : **`Data/trip.json` est la source de vérité** (vols, hôtels, jours, takkyubin, aïkido + règles du Hombu,
+  `attention`, `toVerify`, `notifications`, villes avec lat/lon). Aucun horaire en dur dans le code.
+- `events[]` de chaque jour est déjà dans l'ordre d'affichage (ne pas retrier). Jour courant = fuseau `Asia/Tokyo`.
+  Pour tester une date : `?now=2026-10-28T09:00:00+09:00` (attendu : prochaine étape « Meiji Jingu 10h00 »).
 
-## Règles du projet
+## Fichiers
+| fichier | rôle |
+|---|---|
+| `Data/trip.json` | données du voyage (à modifier pour tout changement de contenu) |
+| `make_web.py` | copie trip.json → `docs/`, redimensionne les photos (si `Assets/` + `sips`), génère `rappels.ics`, la liste de précache et la version du service worker, injecte la version dans `app.js` |
+| `docs/` | site publié : `index.html`, `app.js`, `style.css`, `sw.js`, `manifest.webmanifest`, `trip.json`, `rappels.ics`, `img/`, `icons/` |
+| `Source/` (non versionné) | Word d'origine, ne pas modifier. `Itineraire_Japon_2026_MAJ.docx` = copie mise à jour à la main |
+| `Assets/` (non versionné) | photos d'origine |
 
-- **SwiftUI**, iOS 17 minimum, iPhone uniquement. **Aucune dépendance tierce.**
-- **Hors ligne d'abord** : tout est embarqué (JSON + photos). Aucun appel réseau.
-- `Data/trip.json` est la **source de vérité**. Pas d'horaire, d'hôtel ou d'activité codés en dur dans les vues.
-  Pour changer le contenu du voyage, on modifie le JSON, pas le code. Garder `Resources/trip.json` du projet synchronisé avec `Data/trip.json`.
-- `events[]` de chaque jour est **déjà dans l'ordre d'affichage** : ne pas retrier par heure.
-- Le « jour courant » se calcule dans le fuseau **`Asia/Tokyo`**. Toute logique dépendant de la date prend `now: Date` en paramètre (testable).
-- Interface en **français**. Identifiants de code en anglais. Commentaires courts, en français ou en anglais.
-- Respecter Dynamic Type, le mode sombre, VoiceOver. Cibles tactiles ≥ 44 pt.
-- Ne pas modifier `Source/` (le Word d'origine) ni les photos d'origine de `Assets/` ; travailler sur des copies redimensionnées (≤ 1600 px de large) dans le catalogue d'assets.
+## Mettre à jour le voyage
+1. Modifier `Data/trip.json` (JSON valide : `python3 -m json.tool Data/trip.json`).
+2. `python3 make_web.py` puis (optionnel) tester en local : `cd docs && python3 -m http.server 8765`.
+3. `git add -A Data docs && git commit -m "…" && git push` — le site se met à jour en 1–2 min.
+4. Quand une question de `toVerify[]` est tranchée : corriger la donnée et retirer l'entrée.
 
-## Méthode de travail
+Hors ligne : le service worker (`docs/sw.js`) est « réseau d'abord » (3 s) avec cache en secours. L'app se recharge
+seule après une mise à jour ; onglet Infos : bouton « Forcer la mise à jour ». Les rappels se prennent en important
+`rappels.ics` dans Calendrier (à réimporter après chaque changement d'horaire).
+Météo : Open-Meteo (prévisions ~16 jours), dernière valeur gardée en local.
 
-1. Avancer par petites étapes ; **compiler après chaque étape** et corriger les erreurs avant de continuer.
-2. Lancer les tests (`JapanTripTests`) à chaque étape où de la logique change.
-3. Trouver un simulateur iPhone disponible avec `xcrun simctl list devices available`, ne pas supposer un nom de modèle.
-4. Vérifier visuellement dans le simulateur (captures d'écran) pour les écrans principaux : Aujourd'hui, Programme, Détail d'un jour, Bagages, Aïkido.
-5. Petits commits (`git`), messages en français, un sujet par commit.
-6. Avant toute action sensible (installation d'outil, modification de réglages Xcode/signature, suppression de fichiers), demander à Marco.
+## État des décisions (11 oct 2026)
+- Vols : KL1944 BSL→AMS 26/10 10h05–11h40 ; KL0861 AMS→NRT 26/10 14h15 → 27/10 11h45 ;
+  AF0279 HND→CDG 6/11 22h55 → 7/11 05h50 ; AF1192 CDG→BSL 7/11 08h50–10h00. Dossier XRYOXU.
+- 31/10 : Kodama 823 Odawara 12h35 → Nagoya 14h37. 1/11 : Ghibli (entrée 10h, départ Nagoya 8h35, retour Kyoto ~18h).
+- 28/10 : cours Doshu 6h30 (hôtel 5h10, dojo 6h00). Enseignants vérifiés sur le planning officiel Hombu.
+- Pas de JR Pass (non rentable, Nozomi avec supplément) : Shinkansen achetés à l'unité (smartEX/EX).
+- Points encore ouverts : voir `toVerify` (takkyubin Hakone→Nagoya, station du dojo, Kyoto 2/11, billets Shinkansen,
+  inscription/droit de visiteur au Hombu).
 
-## Points d'attention connus
-
-Le dossier d'origine contient des incohérences, déjà consignées dans `trip.json › toVerify` et résumées dans `SPEC.md §6`.
-**Ne pas les « corriger » silencieusement dans le code** : les afficher dans l'app (écran « À vérifier ») jusqu'à ce que Marco tranche, puis mettre à jour le JSON.
-
-## Commandes utiles
-
-```bash
-# Simulateurs disponibles
-xcrun simctl list devices available
-
-# Compiler (adapter le schéma et la destination)
-xcodebuild -scheme JapanTrip -destination 'platform=iOS Simulator,name=<un iPhone disponible>' build
-
-# Tests
-xcodebuild -scheme JapanTrip -destination 'platform=iOS Simulator,name=<un iPhone disponible>' test
-
-# Valider le JSON
-python3 -m json.tool Data/trip.json > /dev/null && echo "JSON valide"
-```
+## Règles
+- Aucune dépendance tierce, tout embarqué (sauf la météo). Interface en français, identifiants de code en anglais.
+- Ne pas « corriger » silencieusement une incohérence : la consigner dans `toVerify`.
+- Ne jamais committer `Source/`, `Assets/`, ni de secrets (le dépôt est public).
