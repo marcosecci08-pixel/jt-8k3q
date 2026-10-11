@@ -292,7 +292,7 @@ function viewAikido() {
     h += `<h2>${esc(a.rules.title)}</h2><p class="muted">${esc(a.rules.intro)}</p>`;
     for (const s of a.rules.sections)
       h += `<details class="card rules"><summary>${esc(s.title)}</summary><ul>${s.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></details>`;
-    h += `<p class="muted"><a href="${esc(a.rules.source)}">Source : aikikai.or.jp</a></p>`;
+    h += `<p class="muted">Sources : ${a.rules.sources.map(s => `<a href="${esc(s[1])}">${esc(s[0])}</a>`).join(' · ')}</p>`;
   }
   return h;
 }

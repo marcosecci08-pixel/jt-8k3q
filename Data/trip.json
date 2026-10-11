@@ -1219,57 +1219,94 @@
     "warning": "Les enseignants indiqués correspondent au programme de juin 2026. Le planning d'octobre peut légèrement varier — vérifier sur aikikai.or.jp avant le départ. Vérifier également si une inscription préalable est requise pour les visiteurs étrangers.",
     "rules": {
       "title": "Règles et étiquette au Hombu Dojo",
-      "intro": "Les points « officiel » viennent de aikikai.or.jp. Les points « usage » sont l'étiquette courante en aïkido : le Hombu peut avoir ses propres habitudes, alors observe les autres et demande à l'accueil en cas de doute.",
+      "intro": "Trois origines : « officiel » (aikikai.or.jp), « guide 2011 » (article de Guillaume Erard : étiquette et pratique du Hombu, tarifs et détails à reconfirmer car datés) et « usage » (étiquette courante en aïkido). Observe la majorité des pratiquants et calque ton attitude sur la leur.",
       "sections": [
         {
-          "title": "Avant de pratiquer (officiel)",
+          "title": "Inscription et tarifs",
           "items": [
-            "Pour pratiquer au Hombu, il faut être inscrit à la Fondation Aikikai : formulaire + droit d'inscription de 8 800 ¥ (TTC) à l'accueil. Une carte de membre est ensuite établie.",
-            "Les membres d'un dojo affilié Aikikai peuvent payer un « droit de visiteur » à l'accueil (montant non publié) en présentant leur carte de la Fondation Aikikai ou leur Yudansha Book : les apporter.",
-            "Les membres du Hombu ne peuvent en principe pas utiliser le droit de visiteur.",
-            "Tarifs mensuels publiés (cours réguliers, semaine) : 12 100 ¥ ; barème révisé en avril 2025, à confirmer.",
-            "Bureau ouvert 6h30–20h00 (dimanche 8h30–12h00). Tél. 03-3203-9236 · aikido@aikikai.or.jp.",
-            "Regarder un cours est possible, mais une visite uniquement touristique peut être refusée : prévenir à l'avance."
+            "Officiel : pour pratiquer au Hombu, il faut être membre de la Fondation Aikikai. Formulaire + droit d'inscription de 8 800 ¥ (TTC) à l'accueil, puis carte de membre.",
+            "Officiel : les membres d'un dojo affilié peuvent payer un droit de visiteur à l'accueil (montant non publié) en présentant leur carte de la Fondation Aikikai ou leur Yudansha Book. Les membres du Hombu ne peuvent en principe pas l'utiliser.",
+            "Guide 2011 : les shodan et plus sont enregistrés d'office ; les autres le sont via leur dojo. En 2011, la journée coûtait 1 620 ¥ (entraînement illimité ce jour-là), le mois 10 800 ¥ (lun.–sam.) : montants probablement plus élevés aujourd'hui.",
+            "Officiel : tarifs mensuels publiés 12 100 ¥ (semaine) ; barème révisé en avril 2025, à confirmer.",
+            "Officiel : bureau ouvert 6h30–20h00 (dimanche 8h30–12h00). Tél. 03-3203-9236 · aikido@aikikai.or.jp.",
+            "Officiel : regarder un cours est possible, mais une visite uniquement touristique peut être refusée : prévenir à l'avance."
           ]
         },
         {
-          "title": "À l'accueil et au vestiaire (usage)",
+          "title": "Quels cours ?",
           "items": [
-            "Arriver tôt (30 min avant) pour s'inscrire, se changer et s'échauffer.",
-            "Remettre sa carte de membre à l'accueil avant chaque cours et la récupérer en sortant (officiel).",
-            "Enlever ses chaussures à l'entrée ; garder des tongs pour les toilettes uniquement.",
-            "Kimono (dogi) blanc propre ; hakama selon le grade : demander à l'accueil ce qui est attendu.",
-            "Ongles courts, pas de bijoux, montre ou piercings ; hygiène soignée ; cheveux longs attachés.",
-            "Téléphone éteint, rien sur le tatami."
+            "Guide 2011 : les visiteurs suivent les cours réguliers ou débutants, pas les cours spéciaux.",
+            "Guide 2011 : les cours débutants du lundi 17h30 et du mercredi 19h00 sont réservés aux ceintures blanches.",
+            "Guide 2011 : cours femmes du matin sur inscription spéciale ; ceux du soir accessibles avec l'inscription normale.",
+            "À confirmer : le cours de Doshu du 28 oct est qualifié de « classe spéciale » dans le dossier : vérifier qu'il est ouvert aux visiteurs (voir « À vérifier »)."
           ]
         },
         {
-          "title": "Sur le tatami (usage)",
+          "title": "Tenue",
           "items": [
-            "Salut debout en entrant et en sortant du dojo, vers le kamiza (côté d'honneur, en général en face de l'entrée).",
-            "Saluer en montant sur le tatami et en le quittant. Ne pas quitter le tatami sans raison ; demander la permission au sensei si besoin.",
-            "Être en place avant le début ; s'asseoir en seiza (ou en tailleur si genou/cheville fragile), jamais les jambes tendues ni adossé au mur.",
-            "Le cours commence et finit par un salut collectif au kamiza, puis au sensei : « Onegaishimasu » au début, « Domo arigato gozaimashita » à la fin.",
-            "Pendant la démonstration : se mettre en seiza, regarder, ne pas parler. À la fin, saluer et trouver un partenaire.",
-            "Saluer son partenaire avant et après chaque technique (« Onegaishimasu » / « Arigato gozaimashita »).",
-            "Prévenir son partenaire d'une blessure ou d'une limite ; frapper le tatami ou le partenaire (tap) en cas de douleur.",
-            "Pratiquer avec contrôle, sans forcer ni résister inutilement ; suivre le rythme du cours, même en niveau débutant.",
-            "Si arrivé en retard : attendre au bord du tatami en seiza que le sensei fasse signe, puis saluer et entrer.",
-            "Ne pas donner de conseils à son partenaire, sauf si demandé."
+            "Guide 2011 : keikogi obligatoire, même pour les débutants ; pas de jogging ni de T-shirt. Keikogi de type « lourd » (judo), pas karaté.",
+            "Guide 2011 : hakama pour les hommes à partir du shodan et les femmes à partir du 3e kyu (cela signifie qu'on accepte de chuter).",
+            "Guide 2011 : on marche pieds nus (pas de zori) ; le nom peut être brodé en katakana (facultatif).",
+            "Guide 2011 : un keikogi peut s'acheter à l'accueil.",
+            "Usage : ongles courts, pas de bijoux, montre ou piercings ; hygiène soignée ; cheveux longs attachés."
+          ]
+        },
+        {
+          "title": "Arrivée et vestiaires",
+          "items": [
+            "Guide 2011 : se changer sur place ; ne pas venir en keikogi ni repartir avec.",
+            "Guide 2011 : à l'accueil, dire « konnichiwa » (« ohayo gozaimasu » le matin, « konbanwa » le soir) et déposer sa carte avant chaque cours ; la récupérer en sortant (officiel).",
+            "Guide 2011 : chaussures dans les casiers à gauche ; casier à pièce de 100 ¥ dans les vestiaires. Ne rien laisser dans les casiers entre les cours ni la nuit.",
+            "Guide 2011 : vestiaires femmes au 1er étage, hommes au 2e. Une salle au 3e étage permet de faire sécher le keikogi (pas un vestiaire).",
+            "Guide 2011 : saluer les portraits en bronze d'O Sensei et de Kisshomaru Ueshiba dans l'escalier.",
+            "Guide 2011 : des laveries automatiques ouvertes 24h/24 se trouvent à proximité.",
+            "Usage : arriver 30 min avant, téléphone éteint."
+          ]
+        },
+        {
+          "title": "Sur le tatami",
+          "items": [
+            "Guide 2011 : à l'entrée, se mettre en seiza et saluer le kamiza, puis le centre du dojo.",
+            "Guide 2011 : s'aligner en seiza 5 minutes avant le cours. Pas d'ordre de grade ; éviter de s'asseoir près de la porte du fond.",
+            "Guide 2011 : salut face au shomen, puis vers le sensei : « onegaishimasu » au début, « arigato gozaimashita » à la fin.",
+            "Guide 2011 : on ne parle pas sur le tatami (seuls ces deux saluts sont d'usage).",
+            "Guide 2011 : ne jamais se placer entre le shomen et le professeur, ni s'asseoir devant le shomen.",
+            "Guide 2011 : si le professeur démontre avec un autre binôme, s'asseoir en seiza.",
+            "Guide 2011 : garder le même partenaire tant que le sensei ne dit pas « aite o kaete ».",
+            "Guide 2011 : si on te fait une remarque, la reconnaître et remercier, sans te justifier.",
+            "Guide 2011 : en fin de cours, aider au nettoyage si possible ; plier son hakama face au shomen, loin des portes.",
+            "Usage : saluer son partenaire avant et après chaque technique ; prévenir d'une blessure ; taper (tap) en cas de douleur ; pratiquer avec contrôle.",
+            "Usage : en cas de retard, attendre au bord du tatami en seiza le signe du sensei, puis saluer et entrer."
+          ]
+        },
+        {
+          "title": "Si tu observes un cours",
+          "items": [
+            "Guide 2011 : téléphone et affaires au vestiaire ; pas de photo ni de vidéo.",
+            "Guide 2011 : pas d'interaction avec les pratiquants, ne pas s'appuyer au mur, rester jusqu'à la fin du cours."
           ]
         },
         {
           "title": "Mots utiles",
           "items": [
             "Onegaishimasu : « s'il vous plaît », salut de début de cours ou de technique.",
-            "Domo arigato gozaimashita : « merci beaucoup », salut de fin de cours.",
-            "Sensei : professeur · Dojo : salle · Kamiza : place d'honneur · Seiza : position à genoux.",
-            "Rei : salut · Hai : « oui, j'ai compris » · Sumimasen : « excusez-moi ».",
-            "Hajime : commencez · Yame : arrêtez."
+            "Arigato gozaimashita / Domo arigato gozaimashita : « merci (beaucoup) », salut de fin.",
+            "Sensei : professeur · Dojo : salle · Kamiza : place d'honneur · Shomen : mur d'honneur face au dojo · Seiza : position à genoux.",
+            "Aite o kaete : « changez de partenaire » · Hajime : commencez · Yame : arrêtez.",
+            "Rei : salut · Hai : « oui, j'ai compris » · Sumimasen : « excusez-moi »."
           ]
         }
       ],
-      "source": "https://aikikai.or.jp/eng/hombudojo/join/"
+      "sources": [
+        [
+          "aikikai.or.jp (officiel)",
+          "https://aikikai.or.jp/eng/hombudojo/join/"
+        ],
+        [
+          "Guide de Guillaume Erard (2011)",
+          "https://www.guillaumeerard.fr/aikido/articles/guide-du-pratiquant-daikido-en-visite-au-hombu-dojo-de-laikikai"
+        ]
+      ]
     }
   },
   "attention": [
@@ -1346,8 +1383,8 @@
         "2026-10-28",
         "2026-10-30"
       ],
-      "title": "Hombu Dojo : inscription ou droit de visiteur",
-      "text": "Pour pratiquer, il faut s'inscrire à la Fondation Aikikai (8 800 ¥) ou payer un droit de visiteur (montant non publié) avec sa carte Aikikai ou son Yudansha Book. Écrire à aikido@aikikai.or.jp ou téléphoner au 03-3203-9236 pour confirmer les conditions, le tarif et la tenue (dogi, hakama), avant le 27 oct."
+      "title": "Hombu Dojo : inscription, droit de visiteur et cours Doshu",
+      "text": "Pour pratiquer, il faut s'inscrire à la Fondation Aikikai (8 800 ¥) ou payer un droit de visiteur (montant non publié) avec sa carte Aikikai ou son Yudansha Book. Un guide de 2011 indique que les visiteurs n'ont pas accès aux cours spéciaux : le cours de Doshu du 28 oct étant qualifié de « classe spéciale », confirmer qu'il est ouvert. Écrire à aikido@aikikai.or.jp ou téléphoner au 03-3203-9236 pour confirmer l'accès, le tarif et la tenue (keikogi, hakama), avant le 27 oct."
     }
   ],
   "notifications": [
