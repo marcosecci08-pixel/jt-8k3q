@@ -86,4 +86,9 @@ sw = open(os.path.join(OUT, "sw.js"), encoding="utf-8").read()
 sw = re.sub(r"const VERSION = '[^']*';", f"const VERSION = '{h.hexdigest()[:10]}';", sw)
 sw = re.sub(r"const FILES = \[.*?\];", "const FILES = " + json.dumps(files) + ";", sw, flags=re.S)
 open(os.path.join(OUT, "sw.js"), "w", encoding="utf-8").write(sw)
+# version affichée dans l'app (Infos) : hash + date de build
+from datetime import datetime as _dt
+app = open(os.path.join(OUT, "app.js"), encoding="utf-8").read()
+app = re.sub(r"const BUILD = '[^']*';", f"const BUILD = '{h.hexdigest()[:7]} · {_dt.now().strftime('%d/%m %H:%M')}';", app)
+open(os.path.join(OUT, "app.js"), "w", encoding="utf-8").write(app)
 print("OK :", len(files), "fichiers précachés")

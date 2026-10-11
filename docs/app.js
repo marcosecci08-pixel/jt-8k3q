@@ -2,6 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
+const BUILD = '5643514 · 11/10 19:34'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
@@ -249,6 +250,8 @@ function viewInfo() {
     h += '<h2>Points d\'attention</h2>';
     for (const a of T.attention) h += `<div class="alert"><strong>${esc(a.title)}</strong><br>${esc(a.text)}</div>`;
   }
+  h += `<h2>Version de l'app</h2><div class="card"><p class="muted">Version ${esc(BUILD)}. Si une mise à jour n'apparaît pas, force le rechargement (nécessite du réseau).</p>
+    <div class="row"><button class="btn" id="force-update">🔄 Forcer la mise à jour</button></div></div>`;
   h += `<h2>Rappels</h2><div class="card"><p class="muted">Ajoute les ${T.notifications.length} rappels (aux heures du Japon) à l'app Calendrier de l'iPhone : ils sonnent même hors ligne.</p>
     <div class="row"><a class="btn primary" href="rappels.ics">📅 Ajouter les rappels</a></div></div>`;
   return h;
@@ -329,6 +332,14 @@ document.addEventListener('change', e => {
   if (row && k.startsWith('done:')) row.classList.toggle('done', e.target.checked);
 });
 document.addEventListener('click', e => {
+  if (e.target.closest('#force-update')) {
+    const go = () => location.reload();
+    (navigator.serviceWorker ? navigator.serviceWorker.getRegistrations() : Promise.resolve([]))
+      .then(rs => Promise.all(rs.map(r => r.unregister())))
+      .then(() => window.caches ? caches.keys().then(ks => Promise.all(ks.map(k => caches.delete(k)))) : null)
+      .then(go, go);
+    return;
+  }
   const b = e.target.closest('[data-copy]');
   if (b) copyText(b.dataset.copy);
 });
