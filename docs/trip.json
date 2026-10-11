@@ -386,10 +386,17 @@
       ],
       "events": [
         {
-          "time": "05:55",
+          "time": "05:10",
           "title": "Départ hôtel vers Hombu Dojo",
           "category": "aikido",
-          "detail": "Trajet ~30 min. Le plan initial indiquait 5h00 : voir « À vérifier ».",
+          "detail": "Trajet 40–45 min (marche + Toei Asakusa + Toei Oedo, station Wakamatsu-Kawada). Premiers métros vers 5h. À tester la veille dans Plans.",
+          "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
+        },
+        {
+          "time": "06:00",
+          "title": "Arrivée au Hombu Dojo",
+          "category": "aikido",
+          "detail": "Se changer avant le cours de 6h30.",
           "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
         },
         {
@@ -1187,14 +1194,14 @@
         "date": "2026-10-28",
         "time": "06:30–07:30",
         "teacher": "★ DOSHU",
-        "note": "Classe du maître — départ hôtel 5h55 (5h00 dans le plan initial)",
+        "note": "Classe du maître — départ hôtel 5h10, arrivée au dojo à 6h00",
         "highlight": true
       },
       {
         "date": "2026-10-28",
         "time": "17:30–18:30",
         "teacher": "Kuribayashi",
-        "note": "2ème cours de la journée"
+        "note": "Classe du maître — départ hôtel 5h10, arrivée au dojo à 6h00"
       },
       {
         "date": "2026-10-29",
@@ -1223,8 +1230,8 @@
       "id": "att-doshu",
       "level": "warning",
       "date": "2026-10-28",
-      "title": "28 oct — Cours Doshu à 6h30 : départ hôtel à 5h55",
-      "text": "Pour être à l'heure pour la classe de Doshu, quitter l'hôtel à 5h55. Trajet ~30 min. Prévoir d'aller se coucher tôt la veille (soirée du 27 oct légère conseillée)."
+      "title": "28 oct — Cours Doshu à 6h30 : départ hôtel à 5h10",
+      "text": "Pour être au dojo à 6h00, quitter l'hôtel à 5h10 (trajet 40–45 min). Prévoir d'aller se coucher tôt la veille (soirée du 27 oct légère conseillée)."
     },
     {
       "id": "att-dojo",
@@ -1254,15 +1261,6 @@
       ],
       "title": "Station du Hombu Dojo",
       "text": "Le dossier cite « Wakamatsuakebonobashi (sortie n°1) ». Selon aikikai.or.jp, la station la plus proche est Wakamatsu-Kawada (ligne Oedo, sortie Kawada, ~5 min à pied). Le nombre d'arrêts et la durée Daimon → Dojo sont à recalculer dans Plans."
-    },
-    {
-      "id": "v-doshu-depart",
-      "severity": "medium",
-      "dates": [
-        "2026-10-28"
-      ],
-      "title": "Départ hôtel pour le cours Doshu : 5h00 ou 5h55 ?",
-      "text": "Le plan du jour et le planning des cours disent 5h00, l'encadré « points d'attention » dit 5h55. Le projet retient 5h55 (30 min de trajet + marge, comme le 30 oct : 7h25 pour 8h00)."
     },
     {
       "id": "v-kyoto-2nov",
@@ -1300,15 +1298,15 @@
       "time": "21:00",
       "tz": "Asia/Tokyo",
       "title": "Soirée légère",
-      "body": "Cours Doshu demain à 6h30 — départ de l'hôtel à 5h55."
+      "body": "Cours Doshu demain à 6h30 — départ de l'hôtel à 5h10, arrivée au dojo à 6h00."
     },
     {
       "id": "n-doshu",
       "date": "2026-10-28",
-      "time": "05:30",
+      "time": "04:45",
       "tz": "Asia/Tokyo",
       "title": "Cours Doshu",
-      "body": "Départ hôtel à 5h55 pour le Hombu Dojo (cours 6h30)."
+      "body": "Départ hôtel à 5h10 pour être au Hombu Dojo à 6h00 (cours 6h30)."
     },
     {
       "id": "n-tk1",
