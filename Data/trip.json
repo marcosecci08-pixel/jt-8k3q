@@ -613,22 +613,24 @@
           "title": "Bus Sengokuhara → Odawara",
           "category": "transport",
           "approx": true,
-          "detail": "~40 min.",
+          "detail": "~40 min : arrivée à Odawara vers 12h20. Horaire du bus à confirmer (voir « À vérifier »). Le Shinkansen de 12h35 laisse peu de marge : sinon prendre le suivant (13h05).",
           "mapQuery": "Odawara Station"
         },
         {
-          "time": "12:30",
-          "title": "Shinkansen Odawara → Nagoya",
+          "time": "12:35",
+          "title": "Shinkansen Kodama 823 Odawara → Nagoya",
           "category": "transport",
-          "approx": true,
-          "detail": "Le dossier indique « Nozomi, ~1h20 » : voir « À vérifier » (le Nozomi ne s'arrête pas à Odawara)."
+          "endTime": "14:37",
+          "detail": "2h, sans réservation (voitures non réservées). Repli : Kodama 825 à 13h05 (arrivée 15h06) ou Hikari 645 à 14h07 (arrivée 15h14, ~1h07). Hikari 641 à 12h07 : trop tôt. Pas de Nozomi à Odawara.",
+          "mapQuery": "Odawara Station"
         },
         {
-          "time": "14:00",
+          "time": "15:00",
           "title": "Check-in ibis Styles Nagoya · Meieki",
           "category": "hotel",
-          "endTime": "14:30",
-          "detail": "Bagages livrés dans l'après-midi (à confirmer).",
+          "approx": true,
+          "endTime": "15:30",
+          "detail": "~10 min à pied depuis la gare de Nagoya (arrivée 14h37). Bagages livrés dans l'après-midi (à confirmer).",
           "mapQuery": "ibis Styles Nagoya Meieki"
         },
         {
@@ -1204,13 +1206,13 @@
   ],
   "toVerify": [
     {
-      "id": "v-nozomi-odawara",
-      "severity": "high",
+      "id": "v-bus-odawara",
+      "severity": "medium",
       "dates": [
         "2026-10-31"
       ],
-      "title": "Odawara → Nagoya : pas de Nozomi",
-      "text": "Le Nozomi ne s'arrête pas à Odawara. Il faut prendre un Hikari (~1h10 jusqu'à Nagoya, horaires moins fréquents) ou un Kodama (~2h). À réserver/vérifier avec les horaires réels ; l'horaire de 12h30 est à recaler."
+      "title": "Bus Sengokuhara → Odawara et correspondance de 12h35",
+      "text": "Le Shinkansen est recalé sur l'horaire JR (samedi) : Kodama 823 à 12h35 (arrivée Nagoya 14h37). Le bus de 11h40 arrive à Odawara vers 12h20, donc ~15 min de marge : vérifier l'horaire réel du bus. Repli : Kodama 13h05 (arrive 15h06) ou Hikari 14h07 (arrive 15h14)."
     },
     {
       "id": "v-takkyubin-nagoya",
