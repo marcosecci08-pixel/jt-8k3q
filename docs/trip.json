@@ -429,8 +429,10 @@
         },
         {
           "time": "13:00",
-          "title": "Déjeuner Shibuya",
-          "category": "food"
+          "title": "Déjeuner : ramen Kyushu Jangara (Harajuku)",
+          "category": "food",
+          "detail": "Tonkotsu. Succursale de Harajuku, à 1 min de la gare. Horaires à confirmer sur place (ouverture 10h45 en semaine). File fréquente.",
+          "mapQuery": "Kyushu Jangara Harajuku, Jingumae, Shibuya"
         },
         {
           "time": "14:00",
