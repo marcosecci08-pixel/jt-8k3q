@@ -2,7 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
-const BUILD = '1d4ad70 · 17/10 11:15'; // remplacé par make_web.py
+const BUILD = '0ce86d5 · 23/10 12:55'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
@@ -103,6 +103,7 @@ function eventRow(day, e, i, isNext) {
       <div class="ttl"><span aria-hidden="true">${icon}</span> ${esc(e.title)}
         ${e.optional ? '<span class="pill">Optionnel</span>' : ''}</div>
       ${e.detail ? `<p class="muted">${esc(e.detail)}</p>` : ''}
+      ${(e.rules || []).map(s => `<details class="rules"><summary>${esc(s.title)}</summary><ul>${s.items.map(i => `<li>${esc(i)}</li>`).join('')}</ul></details>`).join('')}
       ${meta ? `<div class="meta">${meta}</div>` : ''}
       ${e.mapQuery ? `<div class="row">${mapBtn(e.mapQuery)}</div>` : ''}
     </div>
