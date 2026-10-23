@@ -1441,6 +1441,14 @@
       "body": "KL1944 Bâle-Mulhouse → Amsterdam à 10h05, puis KL0861 vers Tokyo à 14h15."
     },
     {
+      "id": "n-makoto-ito",
+      "date": "2026-10-27",
+      "time": "15:15",
+      "tz": "Asia/Tokyo",
+      "title": "Partir pour le rendez-vous",
+      "body": "Rendez-vous avec Makoto Ito à 16h00, station Wakamatsu-Kawada (ligne Oedo). Métro depuis Tsukiji : ~35 min (Higashi-Ginza → Daimon, puis ligne Oedo)."
+    },
+    {
       "id": "n-doshu-veille",
       "date": "2026-10-27",
       "time": "21:00",

@@ -2,7 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
-const BUILD = '501d7d6 · 23/10 17:04'; // remplacé par make_web.py
+const BUILD = '983d118 · 23/10 17:09'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
