@@ -339,24 +339,30 @@
           "time": "14:30",
           "title": "Tsukiji Outer Market",
           "category": "food",
-          "detail": "Marché extérieur, snacks de rue (10 min à pied).",
+          "detail": "Marché extérieur, snacks de rue (10 min à pied). Partir vers 15h20 pour le rendez-vous de 16h.",
           "mapQuery": "Tsukiji Outer Market, Tokyo"
         },
         {
+          "time": "15:20",
+          "title": "Métro Tsukiji → Wakamatsu-Kawada",
+          "category": "transport",
+          "approx": true,
+          "detail": "~35 min : Higashi-Ginza → Daimon (ligne Asakusa), puis ligne Oedo jusqu'à Wakamatsu-Kawada. Durée à vérifier dans Plans.",
+          "mapQuery": "Wakamatsu-kawada Station"
+        },
+        {
           "time": "16:00",
-          "title": "Hamarikyu Gardens",
-          "category": "sightseeing",
-          "detail": "Jardin classé, étang tidal, vue sur la ville (15 min à pied).",
-          "cost": "¥300",
-          "mapQuery": "Hamarikyu Gardens, Tokyo"
+          "title": "Rendez-vous avec Makoto Ito",
+          "category": "aikido",
+          "detail": "Station Wakamatsu-Kawada (ligne Toei Oedo), avant le cours. Sortie à préciser avec lui (la sortie Kawada est côté dojo).",
+          "mapQuery": "Wakamatsu-kawada Station"
         },
         {
           "time": "17:30",
           "title": "Cours d'aïkido — Hombu Dojo (Fujimaki)",
           "category": "aikido",
           "endTime": "18:30",
-          "optional": true,
-          "detail": "Optionnel — jet lag à prévoir. Source : planning des cours.",
+          "detail": "Jet lag à prévoir. Source : planning des cours.",
           "mapQuery": "Aikikai Hombu Dojo, 17-18 Wakamatsu-cho, Shinjuku-ku, Tokyo"
         },
         {
@@ -556,6 +562,16 @@
           "category": "hotel",
           "detail": "Bagages déjà expédiés, juste un sac de nuit.",
           "mapQuery": "ibis Styles Tokyo Ginza"
+        },
+        {
+          "time": "09:45",
+          "endTime": "10:40",
+          "title": "Hamarikyu Gardens",
+          "category": "sightseeing",
+          "optional": true,
+          "detail": "Déplacé du 27 oct (rendez-vous avec Makoto Ito). Jardin classé, étang tidal, vue sur la ville (15 min à pied de l'hôtel). Ouvre à 9h. Revenir pour le check-out de 11h.",
+          "cost": "¥300",
+          "mapQuery": "Hamarikyu Gardens, Tokyo"
         },
         {
           "time": "11:00",
@@ -1221,7 +1237,7 @@
         "date": "2026-10-27",
         "time": "17:30–18:30",
         "teacher": "Fujimaki",
-        "note": "Optionnel — jet lag à prévoir"
+        "note": "Jet lag à prévoir. Rendez-vous avec Makoto Ito à 16h à Wakamatsu-Kawada."
       },
       {
         "date": "2026-10-28",
@@ -1374,6 +1390,7 @@
       "id": "v-dojo-station",
       "severity": "medium",
       "dates": [
+        "2026-10-27",
         "2026-10-28",
         "2026-10-30"
       ],
