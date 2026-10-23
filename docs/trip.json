@@ -582,7 +582,38 @@
           "time": null,
           "title": "Onsen en extérieur + dîner à l'hôtel",
           "category": "onsen",
-          "slot": "evening"
+          "slot": "evening",
+          "detail": "Bains séparés hommes / femmes (vue sur le Fuji annoncée côté femmes). Horaires, tatouages et serviettes à demander à la réception.",
+          "rules": [
+            {
+              "title": "Avant d'entrer",
+              "items": [
+                "Se déshabiller entièrement au vestiaire et tout laisser dans le casier.",
+                "Se laver entièrement à la douche, assis sur le tabouret, avant d'entrer dans le bain : c'est la règle la plus importante.",
+                "Attacher les cheveux longs ; ils ne doivent pas toucher l'eau.",
+                "Pas de maillot de bain : on se baigne nu.",
+                "Pas de téléphone ni d'appareil photo dans la zone des bains."
+              ]
+            },
+            {
+              "title": "Dans le bain",
+              "items": [
+                "Entrer doucement, sans éclabousser ; ne pas nager ni plonger.",
+                "La petite serviette ne va jamais dans l'eau : la poser sur la tête ou sur le bord.",
+                "Rester calme, parler à voix basse.",
+                "10 à 15 min par bain, boire de l'eau ; sortir en cas de vertige.",
+                "S'essuyer avec la petite serviette avant de revenir au vestiaire (il fait frais le soir à Sengokuhara)."
+              ]
+            },
+            {
+              "title": "À demander à la réception",
+              "items": [
+                "Horaires du bain extérieur le soir (et fermeture éventuelle pour entretien).",
+                "Règle sur les tatouages (certains hôtels de Hakone acceptent un tatouage couvert par un pansement).",
+                "Serviettes fournies ou non."
+              ]
+            }
+          ]
         }
       ]
     },
