@@ -946,7 +946,7 @@
           "category": "sightseeing",
           "slot": "morning",
           "optional": true,
-          "detail": "Torii dans la mer, ~45 min en ferry (inclus JR Pass) · 2h30 aller-retour.",
+          "detail": "Torii dans la mer, ~45 min en ferry (ferry JR, à payer sur place) · 2h30 aller-retour.",
           "mapQuery": "Itsukushima Shrine, Miyajima"
         },
         {
@@ -1039,7 +1039,7 @@
       "city": "osaka",
       "overnightHotel": null,
       "alerts": [
-        "⚠ Vol retour depuis HANEDA (Tokyo), pas depuis Osaka. Quitter Osaka vers 16h30 pour arriver à Haneda vers 20h."
+        "⚠ Vol retour depuis HANEDA (Tokyo), pas depuis Osaka. Quitter Osaka vers 16h30 pour arriver à Haneda vers 19h30."
       ],
       "images": [],
       "events": [
@@ -1203,7 +1203,7 @@
     },
     "routeFromHotel": {
       "from": "ibis Styles Tokyo Ginza",
-      "duration": "environ 30 minutes",
+      "duration": "40 à 45 minutes (à vérifier dans Plans)",
       "steps": [
         {
           "from": "ibis Ginza",
@@ -1250,7 +1250,7 @@
         "date": "2026-10-28",
         "time": "17:30–18:30",
         "teacher": "Kuribayashi",
-        "note": "Classe du maître — départ hôtel 5h10, arrivée au dojo à 6h00"
+        "note": "2ème cours de la journée"
       },
       {
         "date": "2026-10-30",
