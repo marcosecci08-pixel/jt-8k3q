@@ -1031,11 +1031,20 @@
       "title": "Kurama + Sagano + Chemin des Philosophes",
       "city": "kyoto",
       "overnightHotel": "kyoto",
-      "alerts": [],
+      "alerts": [
+        "★ Ce matin avant 7h45 : takkyubin des valises vers Mercure Osaka Namba (dépôt avant midi). Ce soir, il n'y a plus rien à envoyer."
+      ],
       "images": [
         "kurama.jpg"
       ],
       "events": [
+        {
+          "time": "07:45",
+          "title": "★ Takkyubin : valises → Mercure Osaka Namba",
+          "category": "logistics",
+          "detail": "À déposer à la réception AVANT de partir (dépôt avant midi = livraison demain). Garder un sac de nuit pour ce soir et Hiroshima. Confirmer que l'hôtel d'Osaka garde les valises jusqu'au 4 nov.",
+          "mapQuery": "Mercure Kyoto Station"
+        },
         {
           "time": "08:30",
           "title": "Eizan Densha Demachiyanagi → Kurama",
@@ -1081,13 +1090,6 @@
           "title": "Retour Kyoto",
           "category": "transport",
           "approx": true
-        },
-        {
-          "time": null,
-          "title": "★ Takkyubin : Mercure Kyoto → Mercure Hiroshima",
-          "category": "logistics",
-          "slot": "evening",
-          "detail": "Le plus important. Livraison le 3 nov au matin — mains libres dès 7h30 pour Fushimi Inari."
         }
       ]
     },
@@ -1099,7 +1101,7 @@
       "city": "kyoto",
       "overnightHotel": "hiroshima",
       "alerts": [
-        "Journée dense mais gérée : bagages déjà envoyés à Hiroshima. Aucune valise à traîner.",
+        "Valises déjà parties vers Osaka : seulement le sac de nuit (consigne possible à la gare de Nagoya pendant le château).",
         "3 nov = jour férié au Japon (Jour de la culture) : affluence probable au château et dans les trains. Réserver les places Shinkansen à l'avance."
       ],
       "images": [
@@ -1134,7 +1136,7 @@
           "time": "11:00",
           "title": "Check-out Mercure Kyoto",
           "category": "hotel",
-          "detail": "Rien à porter (valises parties en takkyubin vers Hiroshima)."
+          "detail": "Seulement le sac de nuit (valises parties hier vers Osaka)."
         },
         {
           "time": "11:30",
@@ -1193,15 +1195,8 @@
           "title": "Check-in Mercure Tokyu Stay Hiroshima · Naka-ku",
           "category": "hotel",
           "approx": true,
-          "detail": "Hôtel neuf (ouverture mai 2026). Valises déjà arrivées.",
+          "detail": "Hôtel neuf (ouverture mai 2026). Sac de nuit seulement : les valises attendent à Osaka.",
           "mapQuery": "Mercure Tokyu Stay Hiroshima"
-        },
-        {
-          "time": null,
-          "title": "Takkyubin : Mercure Hiroshima → Mercure Osaka Namba",
-          "category": "logistics",
-          "slot": "evening",
-          "detail": "Livraison le 4 nov après-midi, déjà dans la chambre à l'arrivée."
         }
       ]
     },
@@ -1237,7 +1232,7 @@
           "time": "11:00",
           "title": "Check-out Mercure Hiroshima",
           "category": "hotel",
-          "detail": "Bagages déjà envoyés à Osaka."
+          "detail": "Seulement le sac de nuit (valises déjà à Osaka)."
         },
         {
           "time": "12:00",
@@ -1257,7 +1252,7 @@
           "time": "14:00",
           "title": "Check-in Mercure Tokyu Stay Osaka Namba",
           "category": "hotel",
-          "detail": "Bagages déjà dans la chambre.",
+          "detail": "Valises gardées par l'hôtel depuis le 3 nov (takkyubin depuis Kyoto).",
           "mapQuery": "Mercure Tokyu Stay Osaka Namba"
         }
       ]
@@ -1398,7 +1393,7 @@
     }
   ],
   "takkyubin": {
-    "info": "Le takkyubin (Yamato Transport / クロネコヤマト) permet d'expédier les valises d'un hôtel à l'autre la nuit. La réception s'en charge sur simple demande. Coût : ~1 500–2 000 ¥ par bagage. Livraison le lendemain matin/après-midi. Conserver un sac cabine pour la nuit et le lendemain matin.",
+    "info": "Le takkyubin (Yamato Transport / クロネコヤマト) permet d'expédier les valises d'un hôtel à l'autre. La réception s'en charge sur simple demande. Coût : ~1 500–2 000 ¥ par bagage. Livraison le lendemain seulement si les valises sont déposées la veille AVANT MIDI ; après midi, compter un jour de plus. Conserver un sac pour la nuit et le lendemain.",
     "shipments": [
       {
         "id": "tk1",
@@ -1418,7 +1413,7 @@
         "id": "tk2",
         "when": {
           "date": "2026-10-31",
-          "label": "31 oct matin (avant 11h)"
+          "label": "31 oct matin (8h15, avant midi)"
         },
         "from": "Hotel Green Plaza Hakone",
         "to": "Mercure Kyoto Station",
@@ -1432,33 +1427,20 @@
         "id": "tk4",
         "when": {
           "date": "2026-11-02",
-          "label": "2 nov soir"
+          "label": "2 nov matin (avant 7h45, avant midi)"
         },
         "from": "Mercure Kyoto Station",
-        "to": "Mercure Tokyu Stay Hiroshima",
-        "delivery": {
-          "date": "2026-11-03",
-          "label": "3 nov matin"
-        },
-        "why": "Fushimi Inari 7h30 sans valises",
-        "key": true
-      },
-      {
-        "id": "tk5",
-        "when": {
-          "date": "2026-11-03",
-          "label": "3 nov soir"
-        },
-        "from": "Mercure Tokyu Stay Hiroshima",
         "to": "Mercure Tokyu Stay Osaka Namba",
         "delivery": {
-          "date": "2026-11-04",
-          "label": "4 nov après-midi"
+          "date": "2026-11-03",
+          "label": "3 nov · gardées par l'hôtel jusqu'à l'arrivée le 4 nov (à confirmer)"
         },
-        "why": "Léger pour le trajet"
+        "why": "Kyoto → Nagoya → Hiroshima → Osaka avec un seul sac de nuit",
+        "key": true,
+        "toVerify": true
       }
     ],
-    "keyNote": "★ L'envoi du 2 novembre soir est le plus important : les bagages arrivent à Hiroshima le 3 novembre matin, avant le check-out. Grâce à lui, la journée chargée de Kyoto → Hiroshima devient très confortable."
+    "keyNote": "★ L'envoi du 2 novembre matin est le plus important : déposé avant midi à Kyoto, il part directement à Osaka (livraison le 3 nov), où l'hôtel garde les valises jusqu'au 4. Un dépôt le soir n'arriverait pas à temps, et un envoi Hiroshima → Osaka est impossible (arrivée à Hiroshima à 18h10). Garder un sac de nuit pour les nuits du 2 (Kyoto) et du 3 (Hiroshima)."
   },
   "aikido": {
     "dojo": {
@@ -1646,6 +1628,17 @@
   ],
   "toVerify": [
     {
+      "id": "v-osaka-bagages",
+      "severity": "high",
+      "dates": [
+        "2026-11-02",
+        "2026-11-03",
+        "2026-11-04"
+      ],
+      "title": "Mercure Osaka Namba : garder les valises livrées le 3 nov ?",
+      "text": "Les valises partent de Kyoto le 2 nov au matin et arrivent à Osaka le 3, la veille de votre arrivée (4 nov). Demander à l'hôtel d'Osaka (ou à la réception du Mercure Kyoto) s'il accepte de les garder. Sinon : envoyer de Kyoto vers Hiroshima le 2 nov au matin (livraison le 3), puis garder les valises avec vous jusqu'à Osaka le 4 (Hiroshima → Osaka n'est pas faisable : dépôt avant midi impossible le 3)."
+    },
+    {
       "id": "v-dojo-station",
       "severity": "medium",
       "dates": [
@@ -1758,10 +1751,10 @@
     {
       "id": "n-tk4",
       "date": "2026-11-02",
-      "time": "19:00",
+      "time": "07:15",
       "tz": "Asia/Tokyo",
-      "title": "★ Takkyubin le plus important",
-      "body": "Kyoto → Hiroshima, livraison demain matin. Fushimi Inari à 7h30 sans valises."
+      "title": "★ Takkyubin avant de partir",
+      "body": "Valises → Mercure Tokyu Stay Osaka Namba, à déposer à la réception avant 7h45 (dépôt avant midi = livraison demain). Garder un sac de nuit."
     },
     {
       "id": "n-nagoya-castle",
@@ -1770,14 +1763,6 @@
       "tz": "Asia/Tokyo",
       "title": "Quitter le château de Nagoya",
       "body": "Retour à la gare de Nagoya (~20–25 min) pour le Shinkansen vers Hiroshima vers 15h40."
-    },
-    {
-      "id": "n-tk5",
-      "date": "2026-11-03",
-      "time": "19:00",
-      "tz": "Asia/Tokyo",
-      "title": "Takkyubin ce soir",
-      "body": "Hiroshima → Mercure Tokyu Stay Osaka Namba (livraison demain après-midi)."
     },
     {
       "id": "n-haneda",
