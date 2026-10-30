@@ -97,3 +97,15 @@ footer { text-align: center; color: var(--muted); margin: 28px 0 8px; }
 .rules summary { font-weight: 600; min-height: 44px; display: flex; align-items: center; cursor: pointer; }
 .rules ul { margin: 4px 0 0; padding-left: 20px; }
 .rules li { margin: 6px 0; }
+
+/* carte schématique (randonnée) */
+.routemap { width: 100%; height: auto; display: block; }
+.maplbl { font-size: 11px; font-weight: 600; fill: var(--text); paint-order: stroke; stroke: var(--card); stroke-width: 3px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; font-size: .9rem; }
+.lg { display: inline-flex; align-items: center; gap: 6px; }
+.lg::before { content: ""; width: 22px; border-top: 3px solid var(--ok); }
+.lg-ropeway::before { border-top: 3px dashed var(--accent); }
+.lg-boat::before { border-top: 3px dotted var(--info); }
+.pack { display: flex; align-items: center; gap: 10px; min-height: 44px; border-bottom: 1px solid var(--line); }
+.pack:last-child { border-bottom: 0; }
+.pack input { width: 20px; height: 20px; }
