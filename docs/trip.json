@@ -637,64 +637,158 @@
       "date": "2026-10-31",
       "weekday": "samedi",
       "label": "Samedi 31 octobre",
-      "title": "Randonnée · Hakone → Nagoya",
+      "title": "Owakudani + lac Ashi · Hakone → Nagoya",
       "city": "hakone",
       "overnightHotel": "nagoya",
       "alerts": [
-        "⏰ Lever impératif à 6h30 — check-out à 11h. Ce matin : demander à la réception le takkyubin vers ibis Styles Nagoya avant de partir randonner."
+        "⏰ Lever à 6h30. Avant 8h45 : takkyubin des valises vers Mercure Kyoto Station (livraison le 1er nov), check-out et sac de nuit laissé à la réception. Téléphérique dès 9h00.",
+        "Hakone Freepass conseillé (téléphérique, bateau et bus inclus) : vérifier s'il a été acheté à Shinjuku, sinon en version numérique (EMot)."
       ],
       "images": [],
       "events": [
         {
           "time": "06:30",
-          "title": "Lever",
+          "title": "Lever + petit-déjeuner",
           "category": "logistics",
-          "detail": "Impératif. Demander à la réception le takkyubin vers ibis Styles Nagoya avant de partir randonner."
+          "detail": "Prévoir une couche chaude et un coupe-vent : Owakudani (plus de 1 000 m) est nettement plus froid que le bord du lac."
         },
         {
-          "time": "07:00",
-          "title": "Randonnée : Lac Ashi + torii flottant + vue Mont Fuji + croisière + Owakudani",
-          "category": "hike",
+          "time": "08:15",
+          "title": "Takkyubin : valises → Mercure Kyoto Station",
+          "category": "logistics",
+          "detail": "Envoi direct vers Kyoto (livraison le 1er nov), pas via Nagoya. Garder un sac pour la nuit à Nagoya et la journée Ghibli. Confirmer le délai à la réception.",
+          "mapQuery": "Hotel Green Plaza Hakone Sengokuhara"
+        },
+        {
+          "time": "08:45",
+          "title": "Check-out Hotel Green Plaza + sac de nuit à la réception",
+          "category": "hotel",
+          "detail": "Check-out anticipé (limite 11h). Sac récupéré au retour vers 15h20 : demander l'accord la veille.",
+          "mapQuery": "Hotel Green Plaza Hakone Sengokuhara"
+        },
+        {
+          "time": "08:50",
+          "title": "À pied → station Ubako",
+          "category": "transport",
+          "detail": "3–5 min à pied.",
+          "mapQuery": "Ubako Station, Hakone Ropeway"
+        },
+        {
+          "time": "09:00",
+          "endTime": "09:10",
+          "title": "Téléphérique Ubako → Owakudani",
+          "category": "transport",
+          "detail": "Premier départ 9h00, une cabine par minute. 2 000 ¥ par trajet (tarif depuis oct. 2025), ou Freepass. Fermé en cas de vent fort (bus de remplacement).",
+          "cost": "¥2 000",
+          "mapQuery": "Owakudani Station, Hakone Ropeway"
+        },
+        {
+          "time": "09:10",
+          "endTime": "10:00",
+          "title": "Owakudani",
+          "category": "sightseeing",
+          "detail": "Fumerolles, œufs noirs (kuro-tamago), vue sur le Fuji, meilleure le matin. Gaz volcaniques : déconseillé en cas d'asthme.",
+          "duration": "50 min",
+          "mapQuery": "Owakudani, Hakone"
+        },
+        {
+          "time": "10:00",
           "endTime": "10:30",
-          "detail": "Croisière ~30 min.",
-          "mapQuery": "Lake Ashi, Hakone"
+          "title": "Téléphérique Owakudani → Togendai",
+          "category": "transport",
+          "approx": true,
+          "detail": "~20–25 min, changement de cabine à Ubako. Vue sur le lac Ashi.",
+          "cost": "¥2 000",
+          "mapQuery": "Togendai Station, Hakone Ropeway"
         },
         {
-          "time": "11:00",
-          "title": "Check-out Hotel Green Plaza Hakone",
-          "category": "hotel"
+          "time": "10:30",
+          "endTime": "11:45",
+          "title": "Marche Togendai → Kuzuryu no Mori → Hakone-en",
+          "category": "hike",
+          "detail": "Rive est du lac, ~3,5–4 km, plat et goudronné ; tronçon Kojiri → Hakone-en interdit aux voitures (« Therapy Road »).",
+          "duration": "1h15",
+          "mapQuery": "Hakone-en, Lake Ashi"
         },
         {
-          "time": "11:40",
+          "time": "11:45",
+          "endTime": "12:30",
+          "title": "Déjeuner à Hakone-en",
+          "category": "food",
+          "mapQuery": "Hakone-en, Lake Ashi"
+        },
+        {
+          "time": "12:30",
+          "endTime": "13:10",
+          "title": "Marche Hakone-en → Hakone Shrine",
+          "category": "hike",
+          "detail": "~2,4 km au bord du lac. Marche totale de la journée : 6,5 à 8,5 km selon les sources.",
+          "duration": "40 min",
+          "mapQuery": "Hakone Shrine"
+        },
+        {
+          "time": "13:10",
+          "endTime": "13:50",
+          "title": "Hakone Shrine + torii dans le lac",
+          "category": "sightseeing",
+          "detail": "Entrée gratuite. File d'attente fréquente pour la photo au torii de la Paix.",
+          "mapQuery": "Hakone Shrine"
+        },
+        {
+          "time": "13:50",
+          "title": "À pied → port de Moto-Hakone",
+          "category": "transport",
+          "detail": "10–15 min.",
+          "mapQuery": "Motohakone Port, Hakone Sightseeing Cruise"
+        },
+        {
+          "time": "14:10",
+          "title": "Bateau Moto-Hakone → Togendai",
+          "category": "transport",
+          "approx": true,
+          "detail": "~25–40 min. Départs toutes les 30–40 min environ, dernier vers 16h30 (horaire à vérifier au port). 1 700 ¥, ou Freepass.",
+          "cost": "¥1 700",
+          "mapQuery": "Motohakone Port, Hakone Sightseeing Cruise"
+        },
+        {
+          "time": "14:50",
+          "title": "Téléphérique Togendai → Ubako",
+          "category": "transport",
+          "approx": true,
+          "detail": "~15 min. Dernier départ vers 16h45.",
+          "cost": "¥2 000",
+          "mapQuery": "Ubako Station, Hakone Ropeway"
+        },
+        {
+          "time": "15:20",
+          "title": "Retour Hotel Green Plaza : récupérer le sac",
+          "category": "hotel",
+          "approx": true,
+          "mapQuery": "Hotel Green Plaza Hakone Sengokuhara"
+        },
+        {
+          "time": "15:45",
           "title": "Bus Sengokuhara → Odawara",
           "category": "transport",
           "approx": true,
-          "detail": "~40 min : arrivée à Odawara vers 12h20. Le Shinkansen de 12h35 laisse peu de marge : sinon prendre le suivant (13h05).",
+          "detail": "~40–50 min. Inclus dans le Freepass.",
           "mapQuery": "Odawara Station"
         },
         {
-          "time": "12:35",
-          "title": "Shinkansen Kodama 823 Odawara → Nagoya",
+          "time": "17:00",
+          "title": "Shinkansen Odawara → Nagoya",
           "category": "transport",
-          "endTime": "14:37",
-          "detail": "2h, sans réservation (voitures non réservées). Repli : Kodama 825 à 13h05 (arrivée 15h06) ou Hikari 645 à 14h07 (arrivée 15h14, ~1h07). Hikari 641 à 12h07 : trop tôt. Pas de Nozomi à Odawara.",
+          "approx": true,
+          "detail": "Voitures non réservées : premier Hikari (~1h10) ou Kodama (~2h) après l'arrivée à Odawara. Pas de Nozomi à Odawara.",
           "mapQuery": "Odawara Station"
         },
         {
-          "time": "15:00",
+          "time": "18:45",
           "title": "Check-in ibis Styles Nagoya · Meieki",
           "category": "hotel",
           "approx": true,
-          "endTime": "15:30",
-          "detail": "~10 min à pied depuis la gare de Nagoya (arrivée 14h37). Bagages livrés dans l'après-midi (à confirmer).",
+          "detail": "~10 min à pied depuis la gare de Nagoya. Valises déjà en route vers Kyoto : rien à envoyer ce soir.",
           "mapQuery": "ibis Styles Nagoya Meieki"
-        },
-        {
-          "time": null,
-          "title": "Takkyubin : bagages → Mercure Kyoto Station",
-          "category": "logistics",
-          "slot": "evening",
-          "detail": "Livraison le 1er nov après-midi."
         }
       ]
     },
@@ -715,7 +809,7 @@
           "title": "Check-out ibis + consigne gare de Nagoya",
           "category": "logistics",
           "approx": true,
-          "detail": "Valises déjà parties en takkyubin vers Kyoto : ne déposer à la consigne que le sac dont vous n'avez pas besoin au parc.",
+          "detail": "Valises déjà parties de Hakone en takkyubin vers Kyoto : ne déposer à la consigne que le sac dont vous n'avez pas besoin au parc.",
           "mapQuery": "Nagoya Station"
         },
         {
@@ -1137,27 +1231,12 @@
           "label": "31 oct matin (avant 11h)"
         },
         "from": "Hotel Green Plaza Hakone",
-        "to": "ibis Styles Nagoya",
-        "delivery": {
-          "date": "2026-10-31",
-          "label": "31 oct après-midi (à confirmer)"
-        },
-        "why": "Mains libres pour la randonnée",
-        "toVerify": true
-      },
-      {
-        "id": "tk3",
-        "when": {
-          "date": "2026-10-31",
-          "label": "31 oct soir"
-        },
-        "from": "ibis Styles Nagoya",
         "to": "Mercure Kyoto Station",
         "delivery": {
           "date": "2026-11-01",
-          "label": "1er nov après-midi"
+          "label": "1er nov après-midi (à confirmer à la réception)"
         },
-        "why": "Sac à dos pour Ghibli Park"
+        "why": "Mains libres pour Owakudani et le lac ; un seul sac pour la nuit à Nagoya et Ghibli Park"
       },
       {
         "id": "tk4",
@@ -1357,8 +1436,8 @@
       "id": "att-hakone",
       "level": "warning",
       "date": "2026-10-31",
-      "title": "31 oct — Randonnée Hakone : lever 6h30 impératif",
-      "text": "Check-out à 11h · Randonnée 7h–10h30 · Bus Sengokuhara → Odawara ~40 min. Les bagages partent le matin via takkyubin vers Nagoya."
+      "title": "31 oct — Owakudani + lac Ashi : lever 6h30",
+      "text": "Takkyubin vers Kyoto et check-out avant 8h45 · Téléphérique dès 9h00 · Retour à l'hôtel ~15h20 · Bus vers Odawara ~15h45 · Shinkansen vers Nagoya ~17h00."
     },
     {
       "id": "att-doshu",
@@ -1376,16 +1455,6 @@
     }
   ],
   "toVerify": [
-    {
-      "id": "v-takkyubin-nagoya",
-      "severity": "high",
-      "dates": [
-        "2026-10-31",
-        "2026-11-01"
-      ],
-      "title": "Takkyubin Hakone → Nagoya livré le jour même ?",
-      "text": "Le dossier prévoit une livraison à Nagoya le 31 oct après-midi pour un envoi du matin, alors que le même dossier indique une livraison « le lendemain ». Si les bagages n'arrivent que le 1er nov, la chaîne Nagoya → Kyoto du soir tombe. À demander à la réception de Green Plaza avant de s'engager ; sinon prévoir un sac pour Nagoya et envoyer directement vers Kyoto."
-    },
     {
       "id": "v-dojo-station",
       "severity": "medium",
@@ -1485,16 +1554,16 @@
       "date": "2026-10-31",
       "time": "06:30",
       "tz": "Asia/Tokyo",
-      "title": "Lever impératif",
-      "body": "Takkyubin vers Nagoya avant de partir randonner. Check-out 11h."
+      "title": "Lever : Owakudani + lac Ashi",
+      "body": "Takkyubin des valises vers Mercure Kyoto Station, check-out et sac à la réception avant 8h45. Téléphérique Ubako à 9h00."
     },
     {
-      "id": "n-tk3",
+      "id": "n-retour-hakone",
       "date": "2026-10-31",
-      "time": "19:00",
+      "time": "13:45",
       "tz": "Asia/Tokyo",
-      "title": "Takkyubin ce soir",
-      "body": "Nagoya → Mercure Kyoto Station (livraison demain après-midi)."
+      "title": "Bateau vers Togendai",
+      "body": "Rejoindre le port de Moto-Hakone (10–15 min) : bateau vers 14h10, puis téléphérique vers Ubako. Bus pour Odawara vers 15h45."
     },
     {
       "id": "n-tk4",
