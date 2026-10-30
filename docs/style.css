@@ -106,3 +106,6 @@ footer { text-align: center; color: var(--muted); margin: 28px 0 8px; }
 .lg::before { content: ""; width: 22px; border-top: 3px solid var(--ok); }
 .lg-ropeway::before { border-top: 3px dashed var(--accent); }
 .lg-boat::before { border-top: 3px dotted var(--info); }
+.pack { display: flex; align-items: center; gap: 10px; min-height: 44px; border-bottom: 1px solid var(--line); }
+.pack:last-child { border-bottom: 0; }
+.pack input { width: 20px; height: 20px; }

@@ -141,8 +141,8 @@
     {
       "id": "hakone",
       "name": "Hotel Green Plaza Hakone",
-      "lat": 35.2324,
-      "lon": 139.1069,
+      "lat": 35.2447,
+      "lon": 139.0063,
       "area": "Sengokuhara",
       "city": "hakone",
       "checkIn": {
@@ -245,6 +245,8 @@
     {
       "id": "hakone",
       "name": "Hakone",
+      "lat": 35.2447,
+      "lon": 139.0063,
       "dates": "30–31 octobre",
       "image": "hakone.jpg",
       "baseNote": "Base : Hotel Green Plaza Hakone · Sengokuhara · 1 nuit"
@@ -1738,5 +1740,146 @@
       "title": "Départ pour Haneda",
       "body": "Récupérer les bagages à la consigne — départ d'Osaka vers 16h30. Vol AF0279 à 22h55."
     }
-  ]
+  ],
+  "hike": {
+    "date": "2026-10-31",
+    "title": "Randonnée Hakone · Owakudani → lac Ashi",
+    "summary": "Boucle en téléphérique, à pied et en bateau depuis l'hôtel : Owakudani, rive est du lac Ashi jusqu'à Hakone Shrine, retour en bateau puis en téléphérique.",
+    "facts": [
+      [
+        "Départ",
+        "Hôtel 8h50 · téléphérique Ubako à 9h00"
+      ],
+      [
+        "Retour",
+        "Hôtel vers 15h20, bus pour Odawara vers 15h45"
+      ],
+      [
+        "Marche",
+        "6,5 à 8,5 km au total, environ 2h sans les pauses"
+      ],
+      [
+        "Terrain",
+        "Plat et goudronné le long du lac ; Togendai → Hakone-en sans voitures"
+      ],
+      [
+        "Point haut",
+        "Owakudani, plus de 1 000 m"
+      ]
+    ],
+    "segments": [
+      {
+        "mode": "🚡",
+        "what": "Téléphérique Ubako → Owakudani",
+        "time": "~10 min",
+        "price": "2 000 ¥"
+      },
+      {
+        "mode": "🚡",
+        "what": "Téléphérique Owakudani → Togendai (via Ubako)",
+        "time": "20–25 min",
+        "price": "2 000 ¥"
+      },
+      {
+        "mode": "🥾",
+        "what": "Togendai → Kuzuryu no Mori → Hakone-en",
+        "time": "~1h15 · 3,5–4 km",
+        "price": "—"
+      },
+      {
+        "mode": "🥾",
+        "what": "Hakone-en → Hakone Shrine → port de Moto-Hakone",
+        "time": "~55 min · ~2,5 km",
+        "price": "Sanctuaire gratuit"
+      },
+      {
+        "mode": "⛴",
+        "what": "Bateau Moto-Hakone → Togendai",
+        "time": "25–40 min",
+        "price": "1 700 ¥"
+      },
+      {
+        "mode": "🚡",
+        "what": "Téléphérique Togendai → Ubako",
+        "time": "~15 min",
+        "price": "2 000 ¥"
+      },
+      {
+        "mode": "🚌",
+        "what": "Bus Sengokuhara → Odawara",
+        "time": "40–50 min",
+        "price": "non vérifié"
+      }
+    ],
+    "tickets": "Billets à l'unité : au moins 7 700 ¥ par personne sans le bus (téléphérique 2 000 ¥ par trajet depuis oct. 2025). Hakone Freepass (2 jours depuis Odawara) : 6 000 ¥, téléphérique, bateau et bus inclus. Vérifier si un Freepass a été acheté à Shinjuku, sinon le prendre en version numérique (EMot).",
+    "keyTimes": [
+      [
+        "9h00",
+        "Premier téléphérique (Ubako)"
+      ],
+      [
+        "~15h45",
+        "Bus pour Odawara (prévu au programme)"
+      ],
+      [
+        "~16h30",
+        "Dernier bateau Moto-Hakone → Togendai (à vérifier au port)"
+      ],
+      [
+        "~16h45",
+        "Dernier téléphérique"
+      ]
+    ],
+    "weather": "Prévisions variables : bord du lac ~15–20 °C l'après-midi, 10–13 °C le matin ; Owakudani environ 5 °C de moins et souvent du vent. Averses possibles.",
+    "packing": [
+      "Coupe-vent et couche chaude (Owakudani)",
+      "Chaussures de marche",
+      "Eau et en-cas",
+      "Yens en espèces",
+      "Hakone Freepass ou carte IC",
+      "Batterie externe",
+      "Lunettes de soleil / casquette",
+      "Sac de nuit laissé à la réception de l'hôtel"
+    ],
+    "fallbacks": [
+      {
+        "title": "Vent fort : téléphérique arrêté",
+        "text": "Des bus de remplacement relient les stations : demander au guichet."
+      },
+      {
+        "title": "Owakudani fermé (gaz volcaniques)",
+        "text": "Rester dans le téléphérique Ubako → Togendai et commencer directement la marche."
+      },
+      {
+        "title": "Pluie forte",
+        "text": "Prendre le bateau Togendai → Moto-Hakone à l'aller au lieu de marcher, visiter Hakone Shrine, puis revenir comme prévu."
+      },
+      {
+        "title": "En retard / dernier bateau manqué",
+        "text": "Taxi depuis Moto-Hakone vers l'hôtel (environ 20–25 min, estimation) : demander au port ou au sanctuaire."
+      },
+      {
+        "title": "Train",
+        "text": "Voitures non réservées : n'importe quel Hikari ou Kodama à Odawara convient. Pas de Nozomi à Odawara."
+      }
+    ],
+    "sources": [
+      [
+        "Hakone Ropeway (tarifs 2026)",
+        "https://japanactivity.com/hakone-ropeway-guide"
+      ],
+      [
+        "Bateau (EMot)",
+        "https://www.emot.jp/service/detail/hakone_ship.html"
+      ],
+      [
+        "Hakone Freepass",
+        "https://www.hakonenavi.jp/international/en/discount_passes/free_pass"
+      ],
+      [
+        "Rive est du lac Ashi",
+        "https://www.hakonenavi.jp/feature/19367"
+      ]
+    ]
+  }
 }

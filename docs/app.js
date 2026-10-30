@@ -2,7 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
-const BUILD = '5387695 · 30/10 05:39'; // remplacé par make_web.py
+const BUILD = '8fe0d06 · 30/10 05:42'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
@@ -162,6 +162,8 @@ function dayView(day, now, opts = {}) {
       ${e.detail ? `<p class="muted">${esc(e.detail)}</p>` : ''}
       ${e.mapQuery ? `<div class="row">${mapBtn(e.mapQuery)}</div>` : ''}</div>`;
   }
+  if (T.hike && T.hike.date === day.date)
+    h += `<div class="row"><a class="btn primary" href="#/hike">🥾 Fiche randonnée</a></div>`;
   h += `<h2>Chronologie</h2><div class="card">${day.events.map((e, i) => eventRow(day, e, i, i === ni)).join('') || '<p class="muted">Rien de prévu.</p>'}</div>`;
   if (day.map) h += routeMap(day.map);
   h += `<div class="nav2">
@@ -282,6 +284,9 @@ function viewInfo() {
     h += `<div class="card"><h3>${esc(x.name)}</h3><p class="muted">${esc(x.area)} · ${x.nights} nuit${x.nights > 1 ? 's' : ''}<br>
       Arrivée ${fdate(x.checkIn.date)} ${esc(x.checkIn.time)} · Départ ${fdate(x.checkOut.date)} ${esc(x.checkOut.time)}</p>
       <div class="row">${mapBtn(x.mapQuery, 'Plans')}<button class="btn" data-copy="${esc(x.name)}">📋 Copier le nom</button></div></div>`;
+  if (T.hike)
+    h += `<h2>Randonnée</h2><div class="card"><h3>${esc(T.hike.title)}</h3><p class="muted">${fdate(T.hike.date)}</p>
+      <div class="row"><a class="btn primary" href="#/hike">🥾 Ouvrir la fiche</a></div></div>`;
   if (T.attention.length) {
     h += '<h2>Points d\'attention</h2>';
     for (const a of T.attention) h += `<div class="alert"><strong>${esc(a.title)}</strong><br>${esc(a.text)}</div>`;
@@ -306,6 +311,27 @@ function viewLuggage() {
         <p class="muted">Livraison : ${esc(s.delivery.label)}<br>${esc(s.why)}</p></div>
         <label class="chk" style="width:auto;gap:6px"><input type="checkbox" data-flag="${key}" ${on ? 'checked' : ''}> Envoyé</label></div></div>`;
   }
+  return h;
+}
+function viewHike() {
+  const k = T.hike;
+  if (!k) return viewToday();
+  const day = T.days.find(d => d.date === k.date);
+  let h = `<h1>${esc(k.title)}</h1><p class="muted">${fdate(k.date)} · ${esc(k.summary)}</p>`;
+  if (day) h += weatherCard(day) + `<div class="row"><a class="btn" href="#/day/${day.date}">📅 Programme heure par heure</a></div>`;
+  h += `<div class="card"><table>${k.facts.map(([a, b]) => `<tr><th>${esc(a)}</th><td>${esc(b)}</td></tr>`).join('')}</table></div>`;
+  if (day && day.map) h += routeMap(day.map);
+  h += `<h2>Tronçons et billets</h2><div class="card"><table><tr><th></th><th>Trajet</th><th>Durée</th><th>Prix</th></tr>
+    ${k.segments.map(s => `<tr><td aria-hidden="true">${esc(s.mode)}</td><td>${esc(s.what)}</td><td>${esc(s.time)}</td><td>${esc(s.price)}</td></tr>`).join('')}</table></div>`;
+  h += `<div class="alert">🎫 ${esc(k.tickets)}</div>`;
+  h += `<h2>Horaires clés</h2><div class="card"><table>${k.keyTimes.map(([a, b]) => `<tr><th>${esc(a)}</th><td>${esc(b)}</td></tr>`).join('')}</table></div>`;
+  h += `<h2>Météo et tenue</h2><div class="card"><p>${esc(k.weather)}</p></div>`;
+  h += `<h2>À emporter</h2><div class="card">${k.packing.map((t, i) => {
+    const key = `pack:${k.date}:${i}`;
+    return `<label class="pack"><input type="checkbox" data-flag="${key}" ${getFlag(key) ? 'checked' : ''}> ${esc(t)}</label>`;
+  }).join('')}</div>`;
+  h += `<h2>Plans de secours</h2>${k.fallbacks.map(f => `<details class="card rules"><summary>${esc(f.title)}</summary><p>${esc(f.text)}</p></details>`).join('')}`;
+  if (k.sources) h += `<p class="muted">Sources : ${k.sources.map(([t, u]) => `<a href="${esc(u)}">${esc(t)}</a>`).join(' · ')}</p>`;
   return h;
 }
 function viewAikido() {
@@ -352,10 +378,10 @@ function viewVerify() {
 function render() {
   const hash = location.hash.replace(/^#\/?/, '') || 'today';
   const [route, arg] = hash.split('/');
-  const views = { today: viewToday, program: viewProgram, info: viewInfo, luggage: viewLuggage, aikido: viewAikido, verify: viewVerify };
+  const views = { today: viewToday, program: viewProgram, info: viewInfo, luggage: viewLuggage, aikido: viewAikido, verify: viewVerify, hike: viewHike };
   const html = route === 'day' ? viewDay(arg) : (views[route] || viewToday)();
   $('#app').innerHTML = html;
-  const tab = { day: 'program', verify: 'today' }[route] || route;
+  const tab = { day: 'program', verify: 'today', hike: 'program' }[route] || route;
   document.querySelectorAll('#tabs a').forEach(a => a.classList.toggle('on', a.dataset.tab === tab));
   window.scrollTo(0, 0);
 }
