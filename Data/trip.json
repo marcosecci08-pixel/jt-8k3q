@@ -790,7 +790,156 @@
           "detail": "~10 min à pied depuis la gare de Nagoya. Valises déjà en route vers Kyoto : rien à envoyer ce soir.",
           "mapQuery": "ibis Styles Nagoya Meieki"
         }
-      ]
+      ],
+      "map": {
+        "title": "Carte de la randonnée",
+        "note": "Schéma hors ligne, orienté nord en haut. Positions d'Ubako, Owakudani, Togendai, Kuzuryu et Hakone Shrine d'après Wikipédia ; Hakone-en, le port de Moto-Hakone et le contour du lac sont approximatifs. L'hôtel est à 3–5 min à pied d'Ubako.",
+        "points": [
+          {
+            "id": "ubako",
+            "name": "Ubako · hôtel",
+            "lat": 35.244528,
+            "lon": 139.006028,
+            "label": "l"
+          },
+          {
+            "id": "owakudani",
+            "name": "Owakudani",
+            "lat": 35.244306,
+            "lon": 139.019944,
+            "label": "t"
+          },
+          {
+            "id": "togendai",
+            "name": "Togendai",
+            "lat": 35.237861,
+            "lon": 138.994583,
+            "label": "l"
+          },
+          {
+            "id": "kuzuryu",
+            "name": "Kuzuryu no Mori",
+            "lat": 35.223861,
+            "lon": 138.999528
+          },
+          {
+            "id": "hakoneen",
+            "name": "Hakone-en (déjeuner)",
+            "lat": 35.2165,
+            "lon": 139.0095
+          },
+          {
+            "id": "shrine",
+            "name": "Hakone Shrine",
+            "lat": 35.20389,
+            "lon": 139.02556,
+            "label": "l"
+          },
+          {
+            "id": "motohakone",
+            "name": "Port Moto-Hakone",
+            "lat": 35.2015,
+            "lon": 139.0235,
+            "label": "l"
+          },
+          {
+            "id": "lakemid",
+            "lat": 35.20972,
+            "lon": 139.00444
+          },
+          {
+            "id": "lakenorth",
+            "lat": 35.2265,
+            "lon": 138.994
+          }
+        ],
+        "legs": [
+          {
+            "path": [
+              "ubako",
+              "owakudani"
+            ],
+            "mode": "ropeway"
+          },
+          {
+            "path": [
+              "owakudani",
+              "ubako",
+              "togendai"
+            ],
+            "mode": "ropeway"
+          },
+          {
+            "path": [
+              "togendai",
+              "kuzuryu",
+              "hakoneen",
+              "shrine",
+              "motohakone"
+            ],
+            "mode": "walk"
+          },
+          {
+            "path": [
+              "motohakone",
+              "lakemid",
+              "lakenorth",
+              "togendai"
+            ],
+            "mode": "boat"
+          }
+        ],
+        "lake": [
+          [
+            35.2372,
+            138.994
+          ],
+          [
+            35.224,
+            138.9982
+          ],
+          [
+            35.2163,
+            139.0083
+          ],
+          [
+            35.204,
+            139.0243
+          ],
+          [
+            35.1965,
+            139.0262
+          ],
+          [
+            35.191,
+            139.0225
+          ],
+          [
+            35.1965,
+            139.009
+          ],
+          [
+            35.2065,
+            138.9985
+          ],
+          [
+            35.2175,
+            138.9915
+          ],
+          [
+            35.23,
+            138.9895
+          ]
+        ],
+        "directions": [
+          {
+            "label": "Itinéraire à pied Togendai → Hakone Shrine (Plans)",
+            "from": "Togendai Port, Hakone",
+            "to": "Hakone Shrine, Hakone",
+            "mode": "w"
+          }
+        ]
+      }
     },
     {
       "date": "2026-11-01",

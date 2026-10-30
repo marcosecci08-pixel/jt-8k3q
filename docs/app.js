@@ -2,7 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
-const BUILD = '1b7a18d · 30/10 05:29'; // remplacé par make_web.py
+const BUILD = '5387695 · 30/10 05:39'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
@@ -110,6 +110,40 @@ function eventRow(day, e, i, isNext) {
     <label class="chk"><input type="checkbox" data-flag="${key}" ${done ? 'checked' : ''} aria-label="Fait : ${esc(e.title)}"></label>
   </div>`;
 }
+// Carte schématique hors ligne : points lat/lon projetés en SVG (pas de tuiles, pas de dépendance).
+function routeMap(m) {
+  const pts = Object.fromEntries(m.points.map(p => [p.id, p]));
+  const all = m.points.concat((m.lake || []).map(([lat, lon]) => ({ lat, lon })));
+  const lat0 = all.reduce((s, p) => s + p.lat, 0) / all.length;
+  const kx = Math.cos(lat0 * Math.PI / 180);
+  const minX = Math.min(...all.map(p => p.lon * kx)), maxX = Math.max(...all.map(p => p.lon * kx));
+  const minY = Math.min(...all.map(p => -p.lat)), maxY = Math.max(...all.map(p => -p.lat));
+  const W = 340, pad = 22, s = (W - 2 * pad) / (maxX - minX), H = Math.round((maxY - minY) * s + 2 * pad);
+  const xy = p => [((p.lon * kx - minX) * s + pad).toFixed(1), ((-p.lat - minY) * s + pad).toFixed(1)];
+  const STYLE = {
+    walk: 'stroke="var(--ok)" stroke-width="3.5"',
+    ropeway: 'stroke="var(--accent)" stroke-width="2.5" stroke-dasharray="6 4"',
+    boat: 'stroke="var(--info)" stroke-width="2.5" stroke-dasharray="2 5" stroke-linecap="round"'
+  };
+  let svg = '';
+  if (m.lake) svg += `<polygon points="${m.lake.map(([lat, lon]) => xy({ lat, lon }).join(',')).join(' ')}" fill="var(--info)" fill-opacity=".14" stroke="var(--info)" stroke-opacity=".35"/>`;
+  for (const l of m.legs)
+    svg += `<polyline points="${l.path.map(id => xy(pts[id]).join(',')).join(' ')}" fill="none" stroke-linejoin="round" ${STYLE[l.mode] || ''}/>`;
+  for (const p of m.points.filter(p => p.name)) {
+    const [x, y] = xy(p);
+    const [dx, dy, anchor] = { l: [-9, 4, 'end'], t: [0, -10, 'middle'] }[p.label] || [9, 4, 'start'];
+    svg += `<circle cx="${x}" cy="${y}" r="5" fill="var(--card)" stroke="var(--text)" stroke-width="2"/>` +
+      `<text x="${+x + dx}" y="${+y + dy}" text-anchor="${anchor}" class="maplbl">${esc(p.name)}</text>`;
+  }
+  const legend = [['walk', '🥾 À pied'], ['ropeway', '🚡 Téléphérique'], ['boat', '⛴ Bateau']]
+    .filter(([k]) => m.legs.some(l => l.mode === k)).map(([k, t]) => `<span class="lg lg-${k}">${t}</span>`).join('');
+  return `<h2>${esc(m.title)}</h2><div class="card">
+    <svg class="routemap" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(m.title)}">${svg}</svg>
+    <div class="legend">${legend}</div>
+    ${m.note ? `<p class="muted">${esc(m.note)}</p>` : ''}
+    ${(m.directions || []).map(d => `<div class="row"><a class="btn" href="${esc('https://maps.apple.com/?saddr=' + encodeURIComponent(d.from) + '&daddr=' + encodeURIComponent(d.to) + '&dirflg=' + (d.mode || 'w'))}">🗺 ${esc(d.label)}</a></div>`).join('')}
+  </div>`;
+}
 function dayView(day, now, opts = {}) {
   const idx = T.days.indexOf(day);
   const prev = T.days[idx - 1], next = T.days[idx + 1];
@@ -129,6 +163,7 @@ function dayView(day, now, opts = {}) {
       ${e.mapQuery ? `<div class="row">${mapBtn(e.mapQuery)}</div>` : ''}</div>`;
   }
   h += `<h2>Chronologie</h2><div class="card">${day.events.map((e, i) => eventRow(day, e, i, i === ni)).join('') || '<p class="muted">Rien de prévu.</p>'}</div>`;
+  if (day.map) h += routeMap(day.map);
   h += `<div class="nav2">
     ${prev ? `<a class="btn" href="#/day/${prev.date}">← Jour précédent</a>` : '<span></span>'}
     ${next ? `<a class="btn" href="#/day/${next.date}">Jour suivant →</a>` : ''}</div>`;
