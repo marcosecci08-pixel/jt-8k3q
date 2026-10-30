@@ -2,7 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
-const BUILD = 'e5702c0 · 30/10 11:48'; // remplacé par make_web.py
+const BUILD = 'cb02cb1 · 30/10 11:55'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
@@ -200,26 +200,33 @@ function weatherCard(day) {
     return `<div class="card wx" data-wx="${day.date}"><span class="muted">🌡 Météo ${esc(cityOf(day.city).name)} : ${why}.</span></div>`;
   }
   const [icon, label] = wmo(w.code);
-  const upd = WX.fetched ? new Date(WX.fetched).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', timeZone: TZ }) : '';
+  const upd = (WX.ok || WX.fetched) ? new Date(WX.ok || WX.fetched).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', timeZone: TZ }) : '';
   return `<div class="card wx" data-wx="${day.date}">
     <div class="wxi" aria-hidden="true">${icon}</div>
     <div><strong>${esc(label)}</strong> · ${Math.round(w.max)}° / ${Math.round(w.min)}°
       <div class="muted">${esc(cityOf(day.city).name)}${w.rain != null ? ` · pluie ${w.rain} %` : ''}${upd ? ` · maj ${upd}` : ''}</div></div></div>`;
 }
-function refreshWeather() {
-  if (!navigator.onLine) return;
-  const out = { fetched: Date.now(), cities: {} };
+let wxBusy = false;
+// Recharge la météo : au lancement, au retour du réseau et quand l'app revient au premier plan
+// (une PWA iOS reprend souvent sans se recharger). Au plus une fois toutes les 30 min sauf `force`.
+function refreshWeather(force) {
+  if (!navigator.onLine || wxBusy) return;
+  if (!force && WX.ok && Date.now() - WX.ok < 30 * 60e3) return;
+  wxBusy = true;
+  const out = { fetched: Date.now(), ok: WX.ok || 0, cities: {}, errors: {} };
   const jobs = T.cities.filter(c => c.lat != null).map(c =>
     fetch(`https://api.open-meteo.com/v1/forecast?latitude=${c.lat}&longitude=${c.lon}` +
       '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max' +
       `&timezone=${encodeURIComponent(TZ)}&forecast_days=16`)
-      .then(r => r.json()).then(j => {
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(j => {
         const m = {}, d = j.daily;
+        if (!d || !d.time) throw new Error(j.reason || 'réponse inattendue');
         d.time.forEach((t, i) => {
           if (d.weather_code[i] != null) m[t] = { code: d.weather_code[i], max: d.temperature_2m_max[i], min: d.temperature_2m_min[i], rain: d.precipitation_probability_max[i] };
         });
-        out.cities[c.id] = m;
-      }).catch(() => { out.cities[c.id] = (WX.cities && WX.cities[c.id]) || {}; }));
+        out.cities[c.id] = m; out.ok = Date.now();
+      }).catch(err => { out.errors[c.id] = String(err && err.message || err); out.cities[c.id] = (WX.cities && WX.cities[c.id]) || {}; }));
   Promise.all(jobs).then(() => {
     // Conserve les jours déjà connus (une prévision passée reste affichable hors ligne).
     for (const id in out.cities) out.cities[id] = Object.assign({}, WX.cities && WX.cities[id], out.cities[id]);
@@ -229,7 +236,14 @@ function refreshWeather() {
       const day = T.days.find(d => d.date === el.dataset.wx);
       if (day) el.outerHTML = weatherCard(day);
     });
-  });
+    const st = document.getElementById('wx-status');
+    if (st) st.outerHTML = wxStatus();
+  }).finally(() => { wxBusy = false; });
+}
+function wxStatus() {
+  const f = t => t ? new Date(t).toLocaleString('fr-FR', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', timeZone: TZ }) : 'jamais';
+  const errs = Object.entries(WX.errors || {}).map(([id, m]) => `${esc((cityOf(id) || { name: id }).name)} : ${esc(m)}`);
+  return `<p class="muted" id="wx-status">Dernière mise à jour réussie : ${f(WX.ok)} (heure du Japon).${errs.length ? `<br>Erreurs : ${errs.join(' · ')}` : ''}${navigator.onLine ? '' : '<br>Hors ligne.'}</p>`;
 }
 
 // ---------- écrans ----------
@@ -298,6 +312,8 @@ function viewInfo() {
   }
   h += `<h2>Version de l'app</h2><div class="card"><p class="muted">Version ${esc(BUILD)}. Si une mise à jour n'apparaît pas, force le rechargement (nécessite du réseau).</p>
     <div class="row"><button class="btn" id="force-update">🔄 Forcer la mise à jour</button></div></div>`;
+  h += `<h2>Météo</h2><div class="card">${wxStatus()}
+    <div class="row"><button class="btn" id="wx-refresh">🌡 Recharger la météo</button></div></div>`;
   h += `<h2>Rappels</h2><div class="card"><p class="muted">Ajoute les ${T.notifications.length} rappels (aux heures du Japon) à l'app Calendrier de l'iPhone : ils sonnent même hors ligne.</p>
     <div class="row"><a class="btn primary" href="rappels.ics">📅 Ajouter les rappels</a></div></div>`;
   return h;
@@ -407,6 +423,7 @@ document.addEventListener('click', e => {
       .then(go, go);
     return;
   }
+  if (e.target.closest('#wx-refresh')) { refreshWeather(true); toast('Météo en cours de chargement…'); return; }
   const b = e.target.closest('[data-copy]');
   if (b) copyText(b.dataset.copy);
 });
@@ -417,7 +434,9 @@ fetch('trip.json').then(r => r.json()).then(j => {
   // « Aujourd'hui » se recalcule quand l'app revient au premier plan.
   document.addEventListener('visibilitychange', () => {
     if (!document.hidden && (location.hash === '' || location.hash === '#/today')) render();
+    if (!document.hidden) refreshWeather();
   });
+  window.addEventListener('online', () => refreshWeather(true));
 }).catch(() => { $('#app').innerHTML = '<p>Impossible de charger les données du voyage.</p>'; });
 
 if ('serviceWorker' in navigator) {
