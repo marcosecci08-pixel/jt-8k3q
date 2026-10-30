@@ -1095,11 +1095,12 @@
       "date": "2026-11-03",
       "weekday": "mardi",
       "label": "Mardi 3 novembre",
-      "title": "Kyoto → Hiroshima",
+      "title": "Kyoto → Château de Nagoya → Hiroshima",
       "city": "kyoto",
       "overnightHotel": "hiroshima",
       "alerts": [
-        "Journée dense mais gérée : bagages déjà envoyés à Hiroshima. Aucune valise à traîner."
+        "Journée dense mais gérée : bagages déjà envoyés à Hiroshima. Aucune valise à traîner.",
+        "3 nov = jour férié au Japon (Jour de la culture) : affluence probable au château et dans les trains. Réserver les places Shinkansen à l'avance."
       ],
       "images": [
         "fushimi-inari.jpg",
@@ -1133,28 +1134,66 @@
           "time": "11:00",
           "title": "Check-out Mercure Kyoto",
           "category": "hotel",
-          "detail": "Rien à porter."
+          "detail": "Rien à porter (valises parties en takkyubin vers Hiroshima)."
         },
         {
-          "time": "12:00",
-          "title": "Shinkansen Kyoto → Hiroshima",
+          "time": "11:30",
+          "title": "Shinkansen Kyoto → Nagoya",
           "category": "transport",
           "approx": true,
-          "detail": "Nozomi, ~1h40.",
+          "endTime": "12:05",
+          "detail": "Nozomi ~35 min. Place réservée ~5 910 ¥.",
           "mapQuery": "Kyoto Station"
         },
         {
-          "time": "13:45",
-          "title": "Arrivée Hiroshima",
+          "time": "12:10",
+          "title": "Gare de Nagoya → château de Nagoya",
           "category": "transport",
           "approx": true,
-          "mapQuery": "Hiroshima Station"
+          "detail": "~20 min : métro (ligne Higashiyama jusqu'à Sakae, puis ligne Meijo jusqu'à Nagoyajo) ou bus touristique Me-guru. Itinéraire à vérifier dans Plans.",
+          "mapQuery": "Nagoya Castle"
         },
         {
-          "time": "14:00",
+          "time": "12:30",
+          "endTime": "13:15",
+          "title": "Déjeuner à Kinshachi Yokocho",
+          "category": "food",
+          "detail": "Ruelle de restaurants au pied du château : spécialités de Nagoya (hitsumabushi, miso-katsu, kishimen).",
+          "mapQuery": "Kinshachi Yokocho, Nagoya"
+        },
+        {
+          "time": "13:15",
+          "endTime": "15:00",
+          "title": "Château de Nagoya + palais Hommaru",
+          "category": "sightseeing",
+          "detail": "Donjon fermé (travaux, pas de date de réouverture) ; palais Hommaru et jardins visitables. Ouvert 9h–16h30 (entrée au palais jusqu'à 16h). Entrée 1 000 ¥ (tarif depuis le 1er oct. 2026, à confirmer sur place).",
+          "cost": "¥1 000",
+          "duration": "1h45",
+          "mapQuery": "Nagoya Castle"
+        },
+        {
+          "time": "15:00",
+          "title": "Retour à la gare de Nagoya",
+          "category": "transport",
+          "approx": true,
+          "detail": "~20–25 min.",
+          "mapQuery": "Nagoya Station"
+        },
+        {
+          "time": "15:40",
+          "title": "Shinkansen Nagoya → Hiroshima",
+          "category": "transport",
+          "approx": true,
+          "endTime": "17:50",
+          "detail": "Nozomi ~2h10. Place réservée ~15 010 ¥.",
+          "mapQuery": "Nagoya Station"
+        },
+        {
+          "time": "18:10",
           "title": "Check-in Mercure Tokyu Stay Hiroshima · Naka-ku",
           "category": "hotel",
-          "detail": "Hôtel neuf (ouverture mai 2026).",
+          "approx": true,
+          "detail": "Hôtel neuf (ouverture mai 2026). Valises déjà arrivées.",
           "mapQuery": "Mercure Tokyu Stay Hiroshima"
         },
         {
@@ -1637,7 +1676,7 @@
         "2026-11-06"
       ],
       "title": "Pas de JR Pass : acheter chaque Shinkansen à l'unité",
-      "text": "Le JR Pass n'est pas avantageux sur ce parcours (le Nozomi demande un supplément et le total dépasse les billets à l'unité). Réserver chaque Shinkansen (1re ou 2e classe) via smartEX/EX ou au guichet : Odawara → Nagoya (31 oct), Nagoya → Kyoto (1er nov), Kyoto → Hiroshima (3 nov), Hiroshima → Shin-Osaka (4 nov), Shin-Osaka → Shinagawa (6 nov). Les tarifs varient selon la date : vérifier au moment de réserver. Le ferry JR de Miyajima se paie sur place."
+      "text": "Le JR Pass n'est pas avantageux sur ce parcours (le Nozomi demande un supplément et le total dépasse les billets à l'unité). Réserver chaque Shinkansen (1re ou 2e classe) via smartEX/EX ou au guichet : Odawara → Nagoya (31 oct), Nagoya → Kyoto (1er nov), Kyoto → Nagoya et Nagoya → Hiroshima (3 nov, détour par le château de Nagoya ; ~5 910 ¥ + ~15 010 ¥ en place réservée, plus cher qu'un Kyoto → Hiroshima direct), Hiroshima → Shin-Osaka (4 nov), Shin-Osaka → Shinagawa (6 nov). Les tarifs varient selon la date : vérifier au moment de réserver. Le ferry JR de Miyajima se paie sur place."
     },
     {
       "id": "v-hombu-inscription",
@@ -1723,6 +1762,14 @@
       "tz": "Asia/Tokyo",
       "title": "★ Takkyubin le plus important",
       "body": "Kyoto → Hiroshima, livraison demain matin. Fushimi Inari à 7h30 sans valises."
+    },
+    {
+      "id": "n-nagoya-castle",
+      "date": "2026-11-03",
+      "time": "14:50",
+      "tz": "Asia/Tokyo",
+      "title": "Quitter le château de Nagoya",
+      "body": "Retour à la gare de Nagoya (~20–25 min) pour le Shinkansen vers Hiroshima vers 15h40."
     },
     {
       "id": "n-tk5",
