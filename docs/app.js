@@ -2,7 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
-const BUILD = 'b93295a · 30/10 11:35'; // remplacé par make_web.py
+const BUILD = 'e5702c0 · 30/10 11:48'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
@@ -193,7 +193,12 @@ function wxFor(day) {
 function weatherCard(day) {
   if (!day.city) return '';
   const w = wxFor(day);
-  if (!w) return `<div class="card wx" data-wx="${day.date}"><span class="muted">🌡 Météo ${esc(cityOf(day.city).name)} : prévisions disponibles ~15 jours avant.</span></div>`;
+  if (!w) {
+    // Open-Meteo ne prévoit que ~16 jours : au-delà, prévision pas encore publiée ; sinon, pas encore chargée.
+    const far = (Date.parse(day.date + 'T00:00:00+09:00') - nowDate().getTime()) / 864e5 > 15;
+    const why = far ? 'prévisions disponibles ~15 jours avant' : 'pas encore chargée (connexion nécessaire)';
+    return `<div class="card wx" data-wx="${day.date}"><span class="muted">🌡 Météo ${esc(cityOf(day.city).name)} : ${why}.</span></div>`;
+  }
   const [icon, label] = wmo(w.code);
   const upd = WX.fetched ? new Date(WX.fetched).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short', timeZone: TZ }) : '';
   return `<div class="card wx" data-wx="${day.date}">
