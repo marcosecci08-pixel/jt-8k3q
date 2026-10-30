@@ -34,6 +34,7 @@ Météo : Open-Meteo (prévisions ~16 jours), dernière valeur gardée en local.
 - Vols : KL1944 BSL→AMS 26/10 10h05–11h40 ; KL0861 AMS→NRT 26/10 14h15 → 27/10 11h45 ;
   AF0279 HND→CDG 6/11 22h55 → 7/11 05h50 ; AF1192 CDG→BSL 7/11 08h50–10h00. Dossier XRYOXU.
 - 31/10 : Owakudani → marche Togendai → Hakone Shrine → bateau → téléphérique (9h–15h20), Shinkansen Odawara → Nagoya ~17h (non réservé). Valises Hakone → Kyoto directement (plus d'envoi Nagoya → Kyoto). 1/11 : Ghibli (entrée 10h, départ Nagoya 8h35, retour Kyoto ~18h).
+- 3/11 : Kyoto → Nagoya (château, palais Hommaru 13h15–15h) → Hiroshima ~17h50, check-in ~18h10.
 - 28/10 : cours Doshu 6h30 (hôtel 5h10, dojo 6h00). Enseignants vérifiés sur le planning officiel Hombu.
 - Pas de JR Pass (non rentable, Nozomi avec supplément) : Shinkansen achetés à l'unité (smartEX/EX).
 - Points encore ouverts : voir `toVerify` (station du dojo, Kyoto 2/11, billets Shinkansen,
