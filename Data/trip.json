@@ -1373,59 +1373,96 @@
       "date": "2026-11-05",
       "weekday": "jeudi",
       "label": "Jeudi 5 novembre",
-      "title": "Osaka",
+      "title": "Osaka : Kuromon, château, Dotonbori",
       "city": "osaka",
       "overnightHotel": "osaka",
-      "alerts": [],
+      "alerts": [
+        "Journée pour profiter d'Osaka : matin sans hâte, château l'après-midi, soirée à Dotonbori. Tout est à pied ou à quelques stations de métro de l'hôtel."
+      ],
       "images": [],
       "events": [
         {
-          "time": "07:30",
-          "endTime": "08:30",
+          "time": "08:00",
+          "endTime": "09:00",
           "title": "Petit-déjeuner · Mercure Tokyu Stay Osaka Namba",
           "category": "food",
-          "detail": "Buffet 6h30–10h, ~2 750 ¥ si non inclus."
+          "detail": "Sans se presser. Buffet 6h30–10h, ~2 750 ¥ si non inclus."
         },
         {
-          "time": "09:00",
+          "time": "09:15",
+          "endTime": "09:45",
           "title": "Hozenji Temple — quartier Dotonbori",
           "category": "sightseeing",
-          "detail": "5 min à pied de l'hôtel.",
+          "detail": "5 min à pied de l'hôtel. Statue couverte de mousse, ruelle Hozenji Yokocho, calme le matin.",
           "mapQuery": "Hozenji Temple, Osaka"
         },
         {
-          "time": null,
-          "title": "Shinsaibashi",
-          "category": "shopping",
-          "slot": "morning",
-          "detail": "Galerie couverte.",
-          "mapQuery": "Shinsaibashi-suji, Osaka"
+          "time": "10:00",
+          "endTime": "11:15",
+          "title": "Marché de Kuromon (Kuromon Ichiba)",
+          "category": "food",
+          "detail": "« La cuisine d'Osaka » : dégustations sur le pouce (fruits de mer grillés, wagyu, fruits). ~10 min à pied. Étals ~9h–17h, certains ferment tôt.",
+          "mapQuery": "Kuromon Ichiba Market, Osaka"
         },
         {
-          "time": null,
+          "time": "11:15",
+          "endTime": "12:00",
           "title": "Nipponbashi / Den Den Town",
           "category": "shopping",
-          "slot": "afternoon",
-          "detail": "Électronique + culture otaku (~15 min à pied).",
+          "detail": "Juste à côté de Kuromon : électronique, jeux, culture otaku.",
           "mapQuery": "Den Den Town, Osaka"
         },
         {
-          "time": null,
-          "title": "Château d'Osaka + jardins",
-          "category": "sightseeing",
-          "slot": "afternoon",
-          "optional": true,
-          "detail": "~30 min en métro.",
-          "duration": "2h",
+          "time": "12:00",
+          "title": "Métro → château d'Osaka",
+          "category": "transport",
+          "approx": true,
+          "detail": "~20 min (stations Tanimachi 4-chome ou Osakajokoen). Itinéraire à vérifier dans Plans.",
           "mapQuery": "Osaka Castle"
         },
         {
-          "time": null,
-          "title": "Dotonbori",
+          "time": "12:30",
+          "endTime": "15:00",
+          "title": "Château d'Osaka + parc",
+          "category": "sightseeing",
+          "detail": "Douves, remparts et donjon-musée (9h–18h, dernière entrée 17h30, 1 200 ¥), vue du dernier étage. Déjeuner léger sur place (Jo-Terrace, à l'entrée du parc).",
+          "cost": "¥1 200",
+          "duration": "2h30",
+          "mapQuery": "Osaka Castle"
+        },
+        {
+          "time": "15:30",
+          "endTime": "17:00",
+          "title": "Shinsaibashi-suji + Amerikamura",
+          "category": "shopping",
+          "detail": "Galerie couverte puis le quartier jeune d'Amemura (cafés, friperies). Passage à l'hôtel pour se reposer si besoin.",
+          "mapQuery": "Shinsaibashi-suji, Osaka"
+        },
+        {
+          "time": "17:30",
+          "endTime": "18:30",
+          "title": "Umeda Sky Building — vue de nuit",
+          "category": "sightseeing",
+          "optional": true,
+          "detail": "Observatoire « Floating Garden » à 173 m, ouvert 9h30–22h30, ~1 500–2 000 ¥. Métro Midosuji Namba → Umeda ~10 min. Coucher du soleil vers 16h55.",
+          "mapQuery": "Umeda Sky Building"
+        },
+        {
+          "time": "19:00",
+          "title": "Dîner à Dotonbori",
           "category": "food",
-          "slot": "evening",
-          "detail": "Glico Man, takoyaki, izakayas.",
+          "detail": "Takoyaki, kushikatsu, izakayas ; enseigne Glico Man.",
           "mapQuery": "Dotonbori Glico Man, Osaka"
+        },
+        {
+          "time": "20:30",
+          "endTime": "20:50",
+          "title": "Croisière Tombori sur le canal de Dotonbori",
+          "category": "sightseeing",
+          "optional": true,
+          "detail": "20 min, départs toutes les 30 min de 11h à 21h, 2 000 ¥. Billets à l'embarcadère.",
+          "cost": "¥2 000",
+          "mapQuery": "Tombori River Cruise, Osaka"
         }
       ]
     },
