@@ -1278,63 +1278,94 @@
       "date": "2026-11-04",
       "weekday": "mercredi",
       "label": "Mercredi 4 novembre",
-      "title": "Hiroshima → Osaka",
+      "title": "Hiroshima au calme → Osaka",
       "city": "hiroshima",
       "overnightHotel": "osaka",
-      "alerts": [],
+      "alerts": [
+        "Journée tranquille après des jours chargés : pas de réveil, Shinkansen vers Osaka vers 16h. Valises livrées à Osaka dans la journée."
+      ],
       "images": [],
       "events": [
         {
-          "time": "07:00",
-          "endTime": "07:50",
-          "title": "Petit-déjeuner · Mercure Tokyu Stay Hiroshima",
+          "time": "08:00",
+          "endTime": "09:00",
+          "title": "Petit-déjeuner tranquille · Mercure Tokyu Stay Hiroshima",
           "category": "food",
-          "detail": "Horaire non confirmé (peut-être 7h–10h30) : le demander à la réception le 3 au soir (082-221-0109). Musée de la Paix à 8h30."
+          "detail": "Pas de réveil. Horaire du buffet à confirmer à la réception le 3 au soir (082-221-0109)."
         },
         {
-          "time": "08:30",
+          "time": "09:30",
+          "title": "Check-out Mercure Hiroshima + sac de nuit à la réception",
+          "category": "hotel",
+          "detail": "Sac récupéré vers 15h15 avant la gare.",
+          "mapQuery": "Mercure Tokyu Stay Hiroshima"
+        },
+        {
+          "time": "09:45",
+          "endTime": "12:00",
           "title": "Musée Mémorial de la Paix + Parc + Dôme de la Bombe atomique",
           "category": "sightseeing",
-          "endTime": "11:00",
-          "detail": "Ouvre à 8h30.",
-          "duration": "2h",
+          "detail": "À son rythme. Musée ouvert dès 7h30, 200 ¥.",
+          "cost": "¥200",
+          "duration": "2h15",
           "mapQuery": "Hiroshima Peace Memorial Museum"
         },
         {
+          "time": "12:15",
+          "endTime": "13:30",
+          "title": "Déjeuner : okonomiyaki à Okonomimura",
+          "category": "food",
+          "detail": "Bâtiment de 4 étages près de Hatchobori, une vingtaine de comptoirs d'okonomiyaki à la mode de Hiroshima. Horaires des comptoirs à vérifier sur place.",
+          "mapQuery": "Okonomimura, Hiroshima"
+        },
+        {
+          "time": "13:45",
+          "endTime": "15:00",
+          "title": "Jardin Shukkei-en ou temps libre",
+          "category": "sightseeing",
+          "optional": true,
+          "detail": "Jardin paysager près de la gare, 9h–18h, 260 ¥. Ou café, flânerie, repos.",
+          "cost": "¥260",
+          "mapQuery": "Shukkeien Garden, Hiroshima"
+        },
+        {
           "time": null,
+          "slot": "afternoon",
           "title": "Île de Miyajima",
           "category": "sightseeing",
-          "slot": "morning",
           "optional": true,
-          "detail": "Torii dans la mer, ~45 min en ferry (ferry JR, à payer sur place) · 2h30 aller-retour.",
-          "mapQuery": "Itsukushima Shrine, Miyajima"
+          "detail": "Alternative plus chargée au Shukkei-en : torii dans la mer, ~45 min + ferry JR (à payer sur place), compter ~3h ; prendre alors un Shinkansen plus tard."
         },
         {
-          "time": "11:00",
-          "title": "Check-out Mercure Hiroshima",
-          "category": "hotel",
-          "detail": "Seulement le sac de nuit (valises livrées aujourd'hui à Osaka)."
-        },
-        {
-          "time": "12:00",
-          "title": "Shinkansen Hiroshima → Osaka Shin-Osaka",
+          "time": "15:15",
+          "title": "Récupérer le sac → gare de Hiroshima",
           "category": "transport",
           "approx": true,
-          "detail": "Nozomi, ~1h20.",
           "mapQuery": "Hiroshima Station"
         },
         {
-          "time": "13:30",
-          "title": "Arrivée Osaka",
+          "time": "16:00",
+          "endTime": "17:20",
+          "title": "Shinkansen Hiroshima → Shin-Osaka",
           "category": "transport",
-          "approx": true
+          "approx": true,
+          "detail": "Nozomi ~1h20, puis métro Midosuji jusqu'à Namba (~15 min).",
+          "mapQuery": "Hiroshima Station"
         },
         {
-          "time": "14:00",
+          "time": "17:50",
           "title": "Check-in Mercure Tokyu Stay Osaka Namba",
           "category": "hotel",
-          "detail": "Valises livrées aujourd'hui (takkyubin depuis Kyoto) : elles peuvent arriver après 14h.",
+          "approx": true,
+          "detail": "Valises livrées aujourd'hui (takkyubin depuis Kyoto).",
           "mapQuery": "Mercure Tokyu Stay Osaka Namba"
+        },
+        {
+          "time": null,
+          "slot": "evening",
+          "title": "Soirée libre à Namba",
+          "category": "food",
+          "detail": "Repos ; Dotonbori est prévu demain soir."
         }
       ]
     },
