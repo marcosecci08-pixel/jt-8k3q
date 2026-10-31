@@ -964,6 +964,13 @@
       "images": [],
       "events": [
         {
+          "time": "07:00",
+          "endTime": "07:50",
+          "title": "Petit-déjeuner · ibis Styles Nagoya",
+          "category": "food",
+          "detail": "Buffet 7h–10h au restaurant MARKET ST. (1er étage), ~2 500 ¥ si non inclus. Check-out à 8h10."
+        },
+        {
           "time": "08:10",
           "title": "Check-out ibis + consigne gare de Nagoya",
           "category": "logistics",
@@ -1046,6 +1053,13 @@
         "kurama.jpg"
       ],
       "events": [
+        {
+          "time": "06:30",
+          "endTime": "07:05",
+          "title": "Petit-déjeuner · Mercure Kyoto Station",
+          "category": "food",
+          "detail": "Buffet 6h30–9h30, ~3 850 ¥ si non inclus. Être au buffet dès l'ouverture : départ à 7h15. Sinon, en-cas au konbini."
+        },
         {
           "time": "07:15",
           "title": "Hôtel → Keage (métro)",
@@ -1156,6 +1170,13 @@
       ],
       "events": [
         {
+          "time": "06:30",
+          "endTime": "07:00",
+          "title": "Petit-déjeuner · Mercure Kyoto Station",
+          "category": "food",
+          "detail": "Buffet 6h30–9h30. Dès l'ouverture : départ vers 7h05 pour Fushimi Inari (JR ligne Nara, ~5 min jusqu'à Inari)."
+        },
+        {
           "time": "07:30",
           "title": "Fushimi Inari Taisha",
           "category": "sightseeing",
@@ -1264,6 +1285,13 @@
       "images": [],
       "events": [
         {
+          "time": "07:00",
+          "endTime": "07:50",
+          "title": "Petit-déjeuner · Mercure Tokyu Stay Hiroshima",
+          "category": "food",
+          "detail": "Horaire non confirmé (peut-être 7h–10h30) : le demander à la réception le 3 au soir (082-221-0109). Musée de la Paix à 8h30."
+        },
+        {
           "time": "08:30",
           "title": "Musée Mémorial de la Paix + Parc + Dôme de la Bombe atomique",
           "category": "sightseeing",
@@ -1321,6 +1349,13 @@
       "images": [],
       "events": [
         {
+          "time": "07:30",
+          "endTime": "08:30",
+          "title": "Petit-déjeuner · Mercure Tokyu Stay Osaka Namba",
+          "category": "food",
+          "detail": "Buffet 6h30–10h, ~2 750 ¥ si non inclus."
+        },
+        {
           "time": "09:00",
           "title": "Hozenji Temple — quartier Dotonbori",
           "category": "sightseeing",
@@ -1375,6 +1410,13 @@
       ],
       "images": [],
       "events": [
+        {
+          "time": "07:30",
+          "endTime": "08:30",
+          "title": "Petit-déjeuner · Mercure Tokyu Stay Osaka Namba",
+          "category": "food",
+          "detail": "Buffet 6h30–10h, ~2 750 ¥ si non inclus. Check-out à 11h."
+        },
         {
           "time": "09:00",
           "title": "Sumiyoshi Taisha Shrine",
