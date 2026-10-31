@@ -1823,6 +1823,14 @@
       "body": "Rejoindre le port de Moto-Hakone (10–15 min) : bateau vers 14h10, puis téléphérique vers Ubako. Bus pour Odawara vers 15h45."
     },
     {
+      "id": "n-pdj-2nov",
+      "date": "2026-11-02",
+      "time": "06:15",
+      "tz": "Asia/Tokyo",
+      "title": "Petit-déjeuner à 6h30",
+      "body": "Buffet du Mercure Kyoto dès l'ouverture (6h30) : départ pour le Chemin des Philosophes à 7h15."
+    },
+    {
       "id": "n-kyoto-matin",
       "date": "2026-11-02",
       "time": "06:45",
@@ -1837,6 +1845,14 @@
       "tz": "Asia/Tokyo",
       "title": "Quitter Kibune",
       "body": "Bus vers Kibune-guchi puis Eizan Densha : Adashino Nenbutsuji, dernière entrée vers 16h."
+    },
+    {
+      "id": "n-pdj-3nov",
+      "date": "2026-11-03",
+      "time": "06:15",
+      "tz": "Asia/Tokyo",
+      "title": "Petit-déjeuner à 6h30",
+      "body": "Buffet du Mercure Kyoto dès l'ouverture (6h30) : départ vers 7h05 pour Fushimi Inari (JR ligne Nara)."
     },
     {
       "id": "n-tk4",
