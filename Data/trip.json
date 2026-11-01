@@ -1063,20 +1063,11 @@
         },
         {
           "time": "07:15",
-          "endTime": "07:50",
-          "title": "Hôtel → Demachiyanagi",
-          "category": "transport",
-          "approx": true,
-          "detail": "~30–35 min : JR ligne Nara jusqu'à Tofukuji, puis Keihan jusqu'à Demachiyanagi. À vérifier dans Plans.",
-          "mapQuery": "Demachiyanagi Station"
-        },
-        {
-          "time": "08:00",
           "endTime": "08:30",
-          "title": "Eizan Densha Demachiyanagi → Kurama",
+          "title": "Hôtel → Kurama (~1h15)",
           "category": "transport",
           "approx": true,
-          "detail": "~30 min, ~470 ¥.",
+          "detail": "Avec la Suica : JR ligne Nara jusqu'à Tofukuji, Keihan jusqu'à Demachiyanagi, puis Eizan Densha jusqu'à Kurama (~470 ¥). Correspondance à Demachiyanagi : viser le train de ~8h00. Sur l'Eizan, valider la carte au lecteur en montant et en descendant (portique seulement à Demachiyanagi).",
           "mapQuery": "Kurama Station, Kyoto"
         },
         {
@@ -2113,7 +2104,7 @@
       "time": "06:45",
       "tz": "Asia/Tokyo",
       "title": "Départ 7h15 : Kurama",
-      "body": "JR vers Tofukuji puis Keihan jusqu'à Demachiyanagi, Eizan Densha ~8h00, funiculaire du Kurama-dera dès 8h40."
+      "body": "Hôtel → Kurama (~1h15) avec la Suica : JR jusqu'à Tofukuji, Keihan jusqu'à Demachiyanagi, Eizan Densha ~8h00. Funiculaire du Kurama-dera dès 8h40."
     },
     {
       "id": "n-kibune",
