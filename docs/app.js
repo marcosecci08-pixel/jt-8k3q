@@ -2,7 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
-const BUILD = 'c26d1bd · 31/10 10:02'; // remplacé par make_web.py
+const BUILD = '7f2ba55 · 01/11 10:20'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
@@ -118,12 +118,13 @@ function routeMap(m) {
   const kx = Math.cos(lat0 * Math.PI / 180);
   const minX = Math.min(...all.map(p => p.lon * kx)), maxX = Math.max(...all.map(p => p.lon * kx));
   const minY = Math.min(...all.map(p => -p.lat)), maxY = Math.max(...all.map(p => -p.lat));
-  const W = 340, pad = 22, s = (W - 2 * pad) / (maxX - minX), H = Math.round((maxY - minY) * s + 2 * pad);
-  const xy = p => [((p.lon * kx - minX) * s + pad).toFixed(1), ((-p.lat - minY) * s + pad).toFixed(1)];
+  const W = 340, pad = 22, padX = m.padX || pad, s = (W - 2 * padX) / (maxX - minX), H = Math.round((maxY - minY) * s + 2 * pad);
+  const xy = p => [((p.lon * kx - minX) * s + padX).toFixed(1), ((-p.lat - minY) * s + pad).toFixed(1)];
   const STYLE = {
     walk: 'stroke="var(--ok)" stroke-width="3.5"',
     ropeway: 'stroke="var(--accent)" stroke-width="2.5" stroke-dasharray="6 4"',
-    boat: 'stroke="var(--info)" stroke-width="2.5" stroke-dasharray="2 5" stroke-linecap="round"'
+    boat: 'stroke="var(--info)" stroke-width="2.5" stroke-dasharray="2 5" stroke-linecap="round"',
+    train: 'stroke="var(--muted)" stroke-width="2.5" stroke-dasharray="10 3 2 3"'
   };
   let svg = '';
   if (m.lake) svg += `<polygon points="${m.lake.map(([lat, lon]) => xy({ lat, lon }).join(',')).join(' ')}" fill="var(--info)" fill-opacity=".14" stroke="var(--info)" stroke-opacity=".35"/>`;
@@ -135,7 +136,7 @@ function routeMap(m) {
     svg += `<circle cx="${x}" cy="${y}" r="5" fill="var(--card)" stroke="var(--text)" stroke-width="2"/>` +
       `<text x="${+x + dx}" y="${+y + dy}" text-anchor="${anchor}" class="maplbl">${esc(p.name)}</text>`;
   }
-  const legend = [['walk', '🥾 À pied'], ['ropeway', '🚡 Téléphérique'], ['boat', '⛴ Bateau']]
+  const legend = [['walk', '🥾 À pied'], ['ropeway', m.ropewayLabel || '🚡 Téléphérique'], ['boat', '⛴ Bateau'], ['train', '🚆 Train / métro / bus']]
     .filter(([k]) => m.legs.some(l => l.mode === k)).map(([k, t]) => `<span class="lg lg-${k}">${t}</span>`).join('');
   return `<h2>${esc(m.title)}</h2><div class="card">
     <svg class="routemap" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(m.title)}">${svg}</svg>

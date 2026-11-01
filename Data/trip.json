@@ -1043,11 +1043,12 @@
       "date": "2026-11-02",
       "weekday": "lundi",
       "label": "Lundi 2 novembre",
-      "title": "Chemin des Philosophes + Kurama + Sagano",
+      "title": "Kurama + Kibune (matin pluvieux) · Chemin des Philosophes · Sagano",
       "city": "kyoto",
       "overnightHotel": "kyoto",
       "alerts": [
-        "Départ 7h15 : l'ordre est → nord → ouest évite les allers-retours à travers Kyoto. Adashino Nenbutsuji : dernière entrée vers 16h (fermeture 16h30)."
+        "Pluie annoncée le matin : Kurama et Kibune d'abord (temples couverts, funiculaire), Chemin des Philosophes l'après-midi au sec, Sagano en fin de journée. Vérifier la météo dans l'app ce soir.",
+        "Lundi : le musée de Saga-Toriimoto est fermé (la rue reste ouverte, boutiques jusqu'à ~17h). Adashino : dernière entrée ~16h."
       ],
       "images": [
         "kurama.jpg"
@@ -1058,100 +1059,308 @@
           "endTime": "07:05",
           "title": "Petit-déjeuner · Mercure Kyoto Station",
           "category": "food",
-          "detail": "Buffet 6h30–9h30, ~3 850 ¥ si non inclus. Être au buffet dès l'ouverture : départ à 7h15. Sinon, en-cas au konbini."
+          "detail": "Buffet 6h30–9h30, ~3 850 ¥ si non inclus. Dès l'ouverture : départ à 7h15. Prendre parapluie et chaussures qui accrochent."
         },
         {
           "time": "07:15",
-          "title": "Hôtel → Keage (métro)",
+          "endTime": "07:50",
+          "title": "Hôtel → Demachiyanagi",
           "category": "transport",
           "approx": true,
-          "detail": "Ligne Karasuma puis ligne Tozai jusqu'à Keage, ~20–25 min. Itinéraire à vérifier dans Plans.",
-          "mapQuery": "Keage Station, Kyoto"
-        },
-        {
-          "time": "07:45",
-          "endTime": "08:30",
-          "title": "Chemin des Philosophes (Tetsugaku-no-michi)",
-          "category": "sightseeing",
-          "detail": "Du sud (Nanzen-ji / Eikan-do) vers le nord (Ginkaku-ji), ~2 km le long du canal, érables d'automne. Presque désert tôt le matin.",
-          "duration": "45 min",
-          "mapQuery": "Philosopher's Path, Kyoto"
-        },
-        {
-          "time": "08:30",
-          "title": "Ginkaku-ji → gare de Demachiyanagi",
-          "category": "transport",
-          "approx": true,
-          "detail": "~25 min à pied, ou taxi ~10 min.",
+          "detail": "~30–35 min : JR ligne Nara jusqu'à Tofukuji, puis Keihan jusqu'à Demachiyanagi. À vérifier dans Plans.",
           "mapQuery": "Demachiyanagi Station"
         },
         {
-          "time": "09:00",
-          "endTime": "09:30",
+          "time": "08:00",
+          "endTime": "08:30",
           "title": "Eizan Densha Demachiyanagi → Kurama",
           "category": "transport",
           "approx": true,
           "detail": "~30 min, ~470 ¥.",
-          "mapQuery": "Demachiyanagi Station"
+          "mapQuery": "Kurama Station, Kyoto"
         },
         {
-          "time": "09:30",
-          "endTime": "13:00",
-          "title": "Mont Kurama — temple Kurama-dera + randonnée",
-          "category": "hike",
-          "detail": "Descente côté Kibune (~3h).",
+          "time": "08:40",
+          "title": "Funiculaire du Kurama-dera (Sanmon → Tahoto)",
+          "category": "transport",
+          "detail": "2 min, 200 ¥ (offrande), départs toutes les 20 min de 8h40 à ~16h20. Entrée du temple (aizan-hi) 500 ¥ au portail. Évite la longue montée en marches, glissante sous la pluie.",
+          "cost": "¥200",
+          "mapQuery": "Kurama-dera Cable Car"
+        },
+        {
+          "time": "09:00",
+          "endTime": "09:30",
+          "title": "Kurama-dera — pavillon principal (Honden Kondo)",
+          "category": "sightseeing",
+          "detail": "10 min à pied depuis Tahoto. Le musée Reihoden est fermé le lundi.",
+          "cost": "¥500",
           "mapQuery": "Kurama-dera, Kyoto"
         },
         {
-          "time": "13:00",
-          "endTime": "13:40",
+          "time": "09:30",
+          "endTime": "10:30",
+          "title": "Traversée du mont Kurama vers Kibune",
+          "category": "hike",
+          "detail": "Par Okunoin-Mao-den, ~1h, racines et marches. S'il pleut fort : redescendre en funiculaire, Eizan Kurama → Kibune-guchi (1 station) puis bus jusqu'à Kibune.",
+          "mapQuery": "Kibune Shrine, Kyoto"
+        },
+        {
+          "time": "10:30",
+          "endTime": "11:00",
+          "title": "Sanctuaire Kibune (Kibune-jinja)",
+          "category": "sightseeing",
+          "detail": "Escalier aux lanternes rouges, très beau sous la pluie. Entrée gratuite.",
+          "mapQuery": "Kibune Shrine, Kyoto"
+        },
+        {
+          "time": "11:00",
+          "endTime": "11:45",
           "title": "Déjeuner à Kibune (court)",
           "category": "food",
-          "detail": "Raccourci à 40 min pour arriver à Adashino avant la dernière entrée.",
+          "detail": "Restaurants le long de la rivière. 45 min pour garder la marge de l'après-midi.",
           "mapQuery": "Kibune, Kyoto"
         },
         {
-          "time": "13:40",
+          "time": "11:50",
           "title": "Kibune → Kibune-guchi → Demachiyanagi",
           "category": "transport",
           "approx": true,
-          "detail": "Bus Kibune → gare de Kibune-guchi (~5 min, ou 20–30 min à pied), puis Eizan Densha (~28 min) : arrivée ~14h30.",
+          "detail": "Bus jusqu'à la gare de Kibune-guchi (~5 min), puis Eizan Densha (~28 min) : arrivée ~12h35.",
           "mapQuery": "Kibuneguchi Station"
         },
         {
-          "time": "14:30",
-          "title": "Demachiyanagi → Sagano (Arashiyama)",
+          "time": "12:40",
+          "title": "Demachiyanagi → Ginkaku-ji",
           "category": "transport",
           "approx": true,
-          "detail": "~1h en transports (Keihan → métro Tozai → Randen jusqu'à Arashiyama), ou taxi ~35 min si le temps presse. À vérifier dans Plans.",
+          "detail": "Taxi ~10 min ou bus ~15 min.",
+          "mapQuery": "Ginkaku-ji, Kyoto"
+        },
+        {
+          "time": "13:00",
+          "endTime": "13:45",
+          "title": "Chemin des Philosophes (Tetsugaku-no-michi)",
+          "category": "sightseeing",
+          "detail": "Du nord (Ginkaku-ji) vers le sud (Nanzen-ji / Keage), ~2 km le long du canal, érables d'automne. Normalement au sec l'après-midi.",
+          "duration": "45 min",
+          "mapQuery": "Philosopher's Path, Kyoto"
+        },
+        {
+          "time": "13:50",
+          "title": "Keage → Arashiyama",
+          "category": "transport",
+          "approx": true,
+          "detail": "~50 min : métro Tozai jusqu'à Uzumasa-Tenjingawa, puis tram Randen jusqu'à Arashiyama. Ou taxi ~35 min. À vérifier dans Plans.",
           "mapQuery": "Arashiyama Station, Kyoto"
         },
         {
-          "time": "15:30",
+          "time": "14:45",
+          "endTime": "15:15",
+          "title": "Bambouseraie d'Arashiyama",
+          "category": "sightseeing",
+          "detail": "Puis montée à pied vers Saga-Toriimoto (~20 min).",
+          "mapQuery": "Arashiyama Bamboo Grove"
+        },
+        {
+          "time": "15:35",
           "endTime": "16:15",
           "title": "Adashino Nenbutsuji (Sagano)",
           "category": "sightseeing",
-          "detail": "8 000 statues de pierre, petite bambouseraie. Ouvert 9h–16h30, dernière entrée vers 16h. 500 ¥.",
+          "detail": "8 000 statues de pierre, petite bambouseraie. Ouvert 9h–16h30, dernière entrée ~16h. 500 ¥.",
           "cost": "¥500",
           "mapQuery": "Adashino Nenbutsuji, Kyoto"
         },
         {
           "time": "16:15",
-          "endTime": "17:00",
-          "title": "Rue de Saga-Toriimoto + bambouseraie d'Arashiyama",
+          "endTime": "16:50",
+          "title": "Rue de Saga-Toriimoto",
           "category": "sightseeing",
-          "detail": "Descente à pied vers la bambouseraie au coucher du soleil (~16h50).",
-          "mapQuery": "Arashiyama Bamboo Grove"
+          "detail": "Maisons au toit de chaume jusqu'au torii d'Atago (Hiranoya). Rue ouverte en permanence, boutiques jusqu'à ~17h. Musée fermé le lundi.",
+          "mapQuery": "Saga-Toriimoto, Kyoto"
         },
         {
           "time": "17:15",
           "title": "Retour Kyoto (JR Saga-Arashiyama → Kyoto)",
           "category": "transport",
           "approx": true,
-          "detail": "Ligne JR Sagano, ~15 min jusqu'à la gare de Kyoto. Hôtel à côté.",
+          "detail": "~20 min à pied jusqu'à la gare de Saga-Arashiyama (ou bus), puis ligne JR Sagano, ~15 min. Hôtel à côté de la gare.",
           "mapQuery": "Saga-Arashiyama Station"
         }
-      ]
+      ],
+      "map": {
+        "title": "Plan de la journée",
+        "ropewayLabel": "🚡 Funiculaire",
+        "note": "Schéma hors ligne, nord en haut, ~15 km du nord au sud. Positions approximatives (sauf la gare de Saga-Arashiyama) : pour s'orienter, pas pour naviguer. Les trajets en train, métro et bus sont tracés en ligne droite.",
+        "points": [
+          {
+            "id": "kyoto",
+            "name": "Gare de Kyoto · hôtel",
+            "lat": 34.9858,
+            "lon": 135.7588,
+            "label": "l"
+          },
+          {
+            "id": "demachi",
+            "name": "Demachiyanagi",
+            "lat": 35.0303,
+            "lon": 135.7731,
+            "label": "l"
+          },
+          {
+            "id": "kurama",
+            "lat": 35.1177,
+            "lon": 135.7712
+          },
+          {
+            "id": "kuramadera",
+            "name": "Kurama-dera",
+            "lat": 35.1185,
+            "lon": 135.7675
+          },
+          {
+            "id": "kibune",
+            "name": "Kibune",
+            "lat": 35.1213,
+            "lon": 135.7628,
+            "label": "l"
+          },
+          {
+            "id": "kibuneguchi",
+            "lat": 35.1075,
+            "lon": 135.7663
+          },
+          {
+            "id": "ginkakuji",
+            "name": "Ginkaku-ji",
+            "lat": 35.027,
+            "lon": 135.7982
+          },
+          {
+            "id": "keage",
+            "name": "Keage (Nanzen-ji)",
+            "lat": 35.0074,
+            "lon": 135.7908,
+            "label": "l"
+          },
+          {
+            "id": "arashiyama",
+            "lat": 35.0157,
+            "lon": 135.678
+          },
+          {
+            "id": "bamboo",
+            "name": "Bambouseraie",
+            "lat": 35.017,
+            "lon": 135.6716,
+            "label": "l"
+          },
+          {
+            "id": "adashino",
+            "name": "Adashino",
+            "lat": 35.0255,
+            "lon": 135.6665,
+            "label": "l"
+          },
+          {
+            "id": "toriimoto",
+            "name": "Saga-Toriimoto",
+            "lat": 35.0295,
+            "lon": 135.663,
+            "label": "t"
+          },
+          {
+            "id": "sagaarashiyama",
+            "name": "Gare Saga-Arashiyama",
+            "lat": 35.01874,
+            "lon": 135.68131
+          }
+        ],
+        "legs": [
+          {
+            "path": [
+              "kyoto",
+              "demachi",
+              "kibuneguchi",
+              "kurama"
+            ],
+            "mode": "train"
+          },
+          {
+            "path": [
+              "kurama",
+              "kuramadera"
+            ],
+            "mode": "ropeway"
+          },
+          {
+            "path": [
+              "kuramadera",
+              "kibune"
+            ],
+            "mode": "walk"
+          },
+          {
+            "path": [
+              "kibune",
+              "kibuneguchi"
+            ],
+            "mode": "train"
+          },
+          {
+            "path": [
+              "demachi",
+              "ginkakuji"
+            ],
+            "mode": "train"
+          },
+          {
+            "path": [
+              "ginkakuji",
+              "keage"
+            ],
+            "mode": "walk"
+          },
+          {
+            "path": [
+              "keage",
+              "arashiyama"
+            ],
+            "mode": "train"
+          },
+          {
+            "path": [
+              "arashiyama",
+              "bamboo",
+              "adashino",
+              "toriimoto",
+              "sagaarashiyama"
+            ],
+            "mode": "walk"
+          },
+          {
+            "path": [
+              "sagaarashiyama",
+              "kyoto"
+            ],
+            "mode": "train"
+          }
+        ],
+        "directions": [
+          {
+            "label": "Itinéraire Gare de Kyoto → Kurama (transports, Plans)",
+            "from": "Kyoto Station",
+            "to": "Kurama Station, Kyoto",
+            "mode": "r"
+          },
+          {
+            "label": "Itinéraire Keage → Arashiyama (transports, Plans)",
+            "from": "Keage Station, Kyoto",
+            "to": "Arashiyama Station, Kyoto",
+            "mode": "r"
+          }
+        ],
+        "padX": 78
+      }
     },
     {
       "date": "2026-11-03",
@@ -1896,23 +2105,31 @@
       "time": "06:15",
       "tz": "Asia/Tokyo",
       "title": "Petit-déjeuner à 6h30",
-      "body": "Buffet du Mercure Kyoto dès l'ouverture (6h30) : départ pour le Chemin des Philosophes à 7h15."
+      "body": "Buffet du Mercure Kyoto dès l'ouverture (6h30) : départ vers Kurama à 7h15. Parapluie."
     },
     {
       "id": "n-kyoto-matin",
       "date": "2026-11-02",
       "time": "06:45",
       "tz": "Asia/Tokyo",
-      "title": "Départ 7h15 : Chemin des Philosophes",
-      "body": "Métro vers Keage, Chemin des Philosophes à 7h45, puis Eizan Densha vers Kurama vers 9h00."
+      "title": "Départ 7h15 : Kurama",
+      "body": "JR vers Tofukuji puis Keihan jusqu'à Demachiyanagi, Eizan Densha ~8h00, funiculaire du Kurama-dera dès 8h40."
     },
     {
       "id": "n-kibune",
       "date": "2026-11-02",
-      "time": "13:35",
+      "time": "11:45",
       "tz": "Asia/Tokyo",
       "title": "Quitter Kibune",
-      "body": "Bus vers Kibune-guchi puis Eizan Densha : Adashino Nenbutsuji, dernière entrée vers 16h."
+      "body": "Bus vers Kibune-guchi puis Eizan Densha : Chemin des Philosophes à 13h00, Adashino avant 16h."
+    },
+    {
+      "id": "n-sagano",
+      "date": "2026-11-02",
+      "time": "13:45",
+      "tz": "Asia/Tokyo",
+      "title": "Partir pour Sagano",
+      "body": "Métro Tozai + Randen (~50 min) ou taxi : Adashino Nenbutsuji, dernière entrée ~16h ; boutiques de Saga-Toriimoto jusqu'à ~17h."
     },
     {
       "id": "n-pdj-3nov",
