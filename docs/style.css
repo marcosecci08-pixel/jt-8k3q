@@ -109,3 +109,4 @@ footer { text-align: center; color: var(--muted); margin: 28px 0 8px; }
 .pack { display: flex; align-items: center; gap: 10px; min-height: 44px; border-bottom: 1px solid var(--line); }
 .pack:last-child { border-bottom: 0; }
 .pack input { width: 20px; height: 20px; }
+.lg-train::before { border-top: 3px dashed var(--muted); }
