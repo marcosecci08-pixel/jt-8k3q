@@ -2,7 +2,7 @@
 // Voyage au Japon 2026 — web app hors ligne. Toutes les données viennent de trip.json.
 
 const TZ = 'Asia/Tokyo';
-const BUILD = '56f0e93 · 01/11 10:29'; // remplacé par make_web.py
+const BUILD = '84fd138 · 02/11 10:00'; // remplacé par make_web.py
 const CAT = {
   flight: ['✈️', 'Vol'], transport: ['🚆', 'Transport'], hotel: ['🏨', 'Hôtel'], sightseeing: ['⛩', 'Visite'],
   food: ['🍜', 'Repas'], aikido: ['🥋', 'Aïkido'], onsen: ['♨️', 'Onsen'], hike: ['🥾', 'Randonnée'],
@@ -118,8 +118,11 @@ function routeMap(m) {
   const kx = Math.cos(lat0 * Math.PI / 180);
   const minX = Math.min(...all.map(p => p.lon * kx)), maxX = Math.max(...all.map(p => p.lon * kx));
   const minY = Math.min(...all.map(p => -p.lat)), maxY = Math.max(...all.map(p => -p.lat));
-  const W = 340, pad = 22, padX = m.padX || pad, s = (W - 2 * padX) / (maxX - minX), H = Math.round((maxY - minY) * s + 2 * pad);
-  const xy = p => [((p.lon * kx - minX) * s + padX).toFixed(1), ((-p.lat - minY) * s + pad).toFixed(1)];
+  // maxH : limite la hauteur d'un plan très étiré du nord au sud (il est alors centré horizontalement).
+  const W = 340, pad = 22, padX = m.padX || pad, sW = (W - 2 * padX) / (maxX - minX);
+  const s = m.maxH ? Math.min(sW, (m.maxH - 2 * pad) / (maxY - minY)) : sW;
+  const H = Math.round((maxY - minY) * s + 2 * pad), offX = (W - (maxX - minX) * s) / 2;
+  const xy = p => [((p.lon * kx - minX) * s + offX).toFixed(1), ((-p.lat - minY) * s + pad).toFixed(1)];
   const STYLE = {
     walk: 'stroke="var(--ok)" stroke-width="3.5"',
     ropeway: 'stroke="var(--accent)" stroke-width="2.5" stroke-dasharray="6 4"',
@@ -136,7 +139,7 @@ function routeMap(m) {
     svg += `<circle cx="${x}" cy="${y}" r="5" fill="var(--card)" stroke="var(--text)" stroke-width="2"/>` +
       `<text x="${+x + dx}" y="${+y + dy}" text-anchor="${anchor}" class="maplbl">${esc(p.name)}</text>`;
   }
-  const legend = [['walk', '🥾 À pied'], ['ropeway', m.ropewayLabel || '🚡 Téléphérique'], ['boat', '⛴ Bateau'], ['train', '🚆 Train / métro / bus']]
+  const legend = [['walk', '🥾 À pied'], ['ropeway', m.ropewayLabel || '🚡 Téléphérique'], ['boat', '⛴ Bateau'], ['train', m.trainLabel || '🚆 Train / métro / bus']]
     .filter(([k]) => m.legs.some(l => l.mode === k)).map(([k, t]) => `<span class="lg lg-${k}">${t}</span>`).join('');
   return `<h2>${esc(m.title)}</h2><div class="card">
     <svg class="routemap" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(m.title)}">${svg}</svg>

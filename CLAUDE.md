@@ -34,11 +34,11 @@ Météo : Open-Meteo (prévisions ~16 jours), dernière valeur gardée en local.
 - Vols : KL1944 BSL→AMS 26/10 10h05–11h40 ; KL0861 AMS→NRT 26/10 14h15 → 27/10 11h45 ;
   AF0279 HND→CDG 6/11 22h55 → 7/11 05h50 ; AF1192 CDG→BSL 7/11 08h50–10h00. Dossier XRYOXU.
 - 31/10 : Owakudani → marche Togendai → Hakone Shrine → bateau → téléphérique (9h–15h20), Shinkansen Odawara → Nagoya ~17h (non réservé). Valises Hakone → Kyoto directement (plus d'envoi Nagoya → Kyoto). 1/11 : Ghibli (entrée 10h, départ Nagoya 8h35, retour Kyoto ~18h).
-- 2/11 (pluie le matin) : Kurama (funiculaire 8h40) → traversée ou Eizan vers Kibune → déjeuner court → Chemin des Philosophes 13h → bambouseraie → Adashino (avant 16h) → Saga-Toriimoto (boutiques ~17h, musée fermé le lundi) → JR vers Kyoto.
-- 3/11 : Kyoto → Nagoya (château, palais Hommaru 13h15–15h) → Hiroshima ~17h50, check-in ~18h10.
+- 2/11 : Kurama (funiculaire 8h40) → Kibune → Chemin des Philosophes 13h → Fushimi Inari + Gion l'après-midi (déplacés du 3/11) ; Pontocho/Nishiki en option le soir.
+- 3/11 : matin Sagano (déplacé du 2/11) — takkyubin + check-out 7h40, bambouseraie 8h25, Adashino 9h25, Saga-Toriimoto 10h, retour gare de Kyoto ~10h50 ; puis Kyoto → Nagoya 11h30 (château 13h15–15h) → Hiroshima ~17h50, check-in ~18h10.
 - 4/11 : journée calme — pas de réveil, Parc de la Paix 9h45–12h, okonomiyaki, Shinkansen Hiroshima → Osaka ~16h, check-in Osaka ~17h50.
 - 5/11 : Osaka — Hozenji, Kuromon, Den Den Town, château d'Osaka (12h30–15h), Shinsaibashi, Umeda Sky (option), Dotonbori, croisière Tombori (option).
-- Takkyubin : livraison le lendemain seulement si dépôt la veille avant midi. 3/11 au check-out (~11h, avant midi) : valises Kyoto → Mercure Osaka Namba, livraison le 4/11 ; plus d'envoi Hiroshima → Osaka.
+- Takkyubin : livraison le lendemain seulement si dépôt la veille avant midi. 3/11 avant de partir (7h40, avant midi) : valises Kyoto → Mercure Osaka Namba, livraison le 4/11 ; plus d'envoi Hiroshima → Osaka.
 - 28/10 : cours Doshu 6h30 (hôtel 5h10, dojo 6h00). Enseignants vérifiés sur le planning officiel Hombu.
 - Pas de JR Pass (non rentable, Nozomi avec supplément) : Shinkansen achetés à l'unité (smartEX/EX).
 - Points encore ouverts : voir `toVerify` (station du dojo, billets Shinkansen,

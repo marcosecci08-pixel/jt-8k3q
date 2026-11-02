@@ -1043,12 +1043,11 @@
       "date": "2026-11-02",
       "weekday": "lundi",
       "label": "Lundi 2 novembre",
-      "title": "Kurama + Kibune (matin pluvieux) · Chemin des Philosophes · Sagano",
+      "title": "Kurama + Kibune · Chemin des Philosophes · Fushimi Inari + Gion",
       "city": "kyoto",
       "overnightHotel": "kyoto",
       "alerts": [
-        "Pluie annoncée le matin : Kurama et Kibune d'abord (temples couverts, funiculaire), Chemin des Philosophes l'après-midi au sec, Sagano en fin de journée. Vérifier la météo dans l'app ce soir.",
-        "Lundi : le musée de Saga-Toriimoto est fermé (la rue reste ouverte, boutiques jusqu'à ~17h). Adashino : dernière entrée ~16h."
+        "Programme modifié : Fushimi Inari et Gion faits l'après-midi (déplacés du 3 nov) ; bambouseraie, Adashino et Saga-Toriimoto reportés au 3 nov matin."
       ],
       "images": [
         "kurama.jpg"
@@ -1132,56 +1131,46 @@
           "endTime": "13:45",
           "title": "Chemin des Philosophes (Tetsugaku-no-michi)",
           "category": "sightseeing",
-          "detail": "Du nord (Ginkaku-ji) vers le sud (Nanzen-ji / Keage), ~2 km le long du canal, érables d'automne. Normalement au sec l'après-midi.",
+          "detail": "Du nord (Ginkaku-ji) vers le sud (Nanzen-ji / Keage), ~2 km le long du canal, érables d'automne.",
           "duration": "45 min",
           "mapQuery": "Philosopher's Path, Kyoto"
         },
         {
-          "time": "13:50",
-          "title": "Keage → Arashiyama",
+          "time": null,
+          "slot": "afternoon",
+          "title": "Keage → Fushimi Inari",
           "category": "transport",
-          "approx": true,
-          "detail": "~50 min : métro Tozai jusqu'à Uzumasa-Tenjingawa, puis tram Randen jusqu'à Arashiyama. Ou taxi ~35 min. À vérifier dans Plans.",
-          "mapQuery": "Arashiyama Station, Kyoto"
+          "detail": "Métro Tozai jusqu'à Sanjo-Keihan, puis Keihan jusqu'à Fushimi-Inari (~25 min).",
+          "mapQuery": "Fushimi-Inari Station"
         },
         {
-          "time": "14:45",
-          "endTime": "15:15",
-          "title": "Bambouseraie d'Arashiyama",
+          "title": "Fushimi Inari Taisha",
           "category": "sightseeing",
-          "detail": "Puis montée à pied vers Saga-Toriimoto (~20 min).",
-          "mapQuery": "Arashiyama Bamboo Grove"
+          "detail": "Fait l'après-midi (déplacé du 3 nov). Allée des milliers de torii rouges, ouverte 24h/24.",
+          "duration": "1h30–2h",
+          "mapQuery": "Fushimi Inari Taisha, Kyoto",
+          "slot": "afternoon"
         },
         {
-          "time": "15:35",
-          "endTime": "16:15",
-          "title": "Adashino Nenbutsuji (Sagano)",
+          "title": "Gion / Higashiyama",
           "category": "sightseeing",
-          "detail": "8 000 statues de pierre, petite bambouseraie. Ouvert 9h–16h30, dernière entrée ~16h. 500 ¥.",
-          "cost": "¥500",
-          "mapQuery": "Adashino Nenbutsuji, Kyoto"
+          "detail": "Fait l'après-midi (déplacé du 3 nov). Ruelle Hanamikoji.",
+          "mapQuery": "Hanamikoji Street, Gion, Kyoto",
+          "slot": "afternoon"
         },
         {
-          "time": "16:15",
-          "endTime": "16:50",
-          "title": "Rue de Saga-Toriimoto",
-          "category": "sightseeing",
-          "detail": "Maisons au toit de chaume jusqu'au torii d'Atago (Hiranoya). Rue ouverte en permanence, boutiques jusqu'à ~17h. Musée fermé le lundi.",
-          "mapQuery": "Saga-Toriimoto, Kyoto"
-        },
-        {
-          "time": "17:15",
-          "title": "Retour Kyoto (JR Saga-Arashiyama → Kyoto)",
-          "category": "transport",
-          "approx": true,
-          "detail": "~20 min à pied jusqu'à la gare de Saga-Arashiyama (ou bus), puis ligne JR Sagano, ~15 min. Hôtel à côté de la gare.",
-          "mapQuery": "Saga-Arashiyama Station"
+          "title": "Pontocho (dîner) + marché Nishiki",
+          "category": "food",
+          "detail": "Déplacé du 3 nov (plus de place demain matin). Pontocho, ruelle à lanternes à côté de Gion, idéale pour dîner. Marché Nishiki : la plupart des étals ferment vers 17–18h.",
+          "mapQuery": "Nishiki Market, Kyoto",
+          "slot": "evening",
+          "optional": true
         }
       ],
       "map": {
         "title": "Plan de la journée",
         "ropewayLabel": "🚡 Funiculaire",
-        "note": "Schéma hors ligne, nord en haut, ~15 km du nord au sud. Positions approximatives (sauf la gare de Saga-Arashiyama) : pour s'orienter, pas pour naviguer. Les trajets en train, métro et bus sont tracés en ligne droite.",
+        "note": "Schéma hors ligne, nord en haut, ~17 km du nord au sud. Positions approximatives : pour s'orienter, pas pour naviguer. Les trajets en train, métro et bus sont tracés en ligne droite.",
         "points": [
           {
             "id": "kyoto",
@@ -1230,40 +1219,20 @@
             "id": "keage",
             "name": "Keage (Nanzen-ji)",
             "lat": 35.0074,
-            "lon": 135.7908,
+            "lon": 135.7908
+          },
+          {
+            "id": "gion",
+            "name": "Gion",
+            "lat": 35.0028,
+            "lon": 135.776,
             "label": "l"
           },
           {
-            "id": "arashiyama",
-            "lat": 35.0157,
-            "lon": 135.678
-          },
-          {
-            "id": "bamboo",
-            "name": "Bambouseraie",
-            "lat": 35.017,
-            "lon": 135.6716,
-            "label": "l"
-          },
-          {
-            "id": "adashino",
-            "name": "Adashino",
-            "lat": 35.0255,
-            "lon": 135.6665,
-            "label": "l"
-          },
-          {
-            "id": "toriimoto",
-            "name": "Saga-Toriimoto",
-            "lat": 35.0295,
-            "lon": 135.663,
-            "label": "t"
-          },
-          {
-            "id": "sagaarashiyama",
-            "name": "Gare Saga-Arashiyama",
-            "lat": 35.01874,
-            "lon": 135.68131
+            "id": "inari",
+            "name": "Fushimi Inari",
+            "lat": 34.9671,
+            "lon": 135.7727
           }
         ],
         "legs": [
@@ -1314,23 +1283,8 @@
           {
             "path": [
               "keage",
-              "arashiyama"
-            ],
-            "mode": "train"
-          },
-          {
-            "path": [
-              "arashiyama",
-              "bamboo",
-              "adashino",
-              "toriimoto",
-              "sagaarashiyama"
-            ],
-            "mode": "walk"
-          },
-          {
-            "path": [
-              "sagaarashiyama",
+              "inari",
+              "gion",
               "kyoto"
             ],
             "mode": "train"
@@ -1344,25 +1298,26 @@
             "mode": "r"
           },
           {
-            "label": "Itinéraire Keage → Arashiyama (transports, Plans)",
+            "label": "Itinéraire Keage → Fushimi Inari (transports, Plans)",
             "from": "Keage Station, Kyoto",
-            "to": "Arashiyama Station, Kyoto",
+            "to": "Fushimi-Inari Station, Kyoto",
             "mode": "r"
           }
         ],
-        "padX": 78
+        "padX": 78,
+        "maxH": 470
       }
     },
     {
       "date": "2026-11-03",
       "weekday": "mardi",
       "label": "Mardi 3 novembre",
-      "title": "Kyoto → Château de Nagoya → Hiroshima",
+      "title": "Sagano (Arashiyama) → Château de Nagoya → Hiroshima",
       "city": "kyoto",
       "overnightHotel": "hiroshima",
       "alerts": [
-        "★ Au check-out (~11h, avant midi) : takkyubin des valises vers Mercure Osaka Namba, livraison demain. Ensuite seulement le sac de nuit (consigne possible à la gare de Nagoya).",
-        "3 nov = jour férié au Japon (Jour de la culture) : affluence probable au château et dans les trains. Réserver les places Shinkansen à l'avance."
+        "★ Avant de partir (7h40) : takkyubin des valises vers Mercure Osaka Namba (dépôt avant midi garanti, livraison demain) + check-out ; sac de nuit laissé à la réception, repris vers 10h55.",
+        "3 nov = jour férié au Japon (Jour de la culture) : bambouseraie avant 9h (la foule arrive vite), affluence au château et dans les trains. Réserver les places Shinkansen à l'avance."
       ],
       "images": [
         "fushimi-inari.jpg",
@@ -1370,47 +1325,76 @@
       ],
       "events": [
         {
-          "time": "06:30",
-          "endTime": "07:00",
+          "time": "07:00",
+          "endTime": "07:40",
           "title": "Petit-déjeuner · Mercure Kyoto Station",
           "category": "food",
-          "detail": "Buffet 6h30–9h30. Dès l'ouverture : départ vers 7h05 pour Fushimi Inari (JR ligne Nara, ~5 min jusqu'à Inari)."
+          "detail": "Buffet 6h30–9h30. Sans se presser : départ à 7h55."
         },
         {
-          "time": "07:30",
-          "title": "Fushimi Inari Taisha",
-          "category": "sightseeing",
-          "detail": "Ouvert 24h/24, idéal tôt.",
-          "duration": "1h30–2h",
-          "mapQuery": "Fushimi Inari Taisha, Kyoto"
-        },
-        {
-          "time": "09:30",
-          "title": "Gion / Higashiyama",
-          "category": "sightseeing",
-          "detail": "Ruelle Hanamikoji.",
-          "mapQuery": "Hanamikoji Street, Gion, Kyoto"
-        },
-        {
-          "time": "10:00",
-          "title": "Nishiki Koji + Pontocho",
-          "category": "food",
-          "endTime": "11:00",
-          "detail": "Marché couvert (400 m) + ruelle à lanternes.",
-          "mapQuery": "Nishiki Market, Kyoto"
-        },
-        {
-          "time": "11:00",
-          "title": "★ Takkyubin : valises → Mercure Osaka Namba",
+          "time": "07:40",
+          "title": "★ Takkyubin : valises → Mercure Osaka Namba + check-out",
           "category": "logistics",
-          "detail": "À déposer à la réception au check-out, avant midi : livraison demain à Osaka. Demander le créneau de livraison. Si Nishiki se prolonge, revenir à l'hôtel avant midi.",
+          "detail": "À la réception avant de partir : dépôt avant midi = livraison demain à Osaka. Demander le créneau de livraison. Sac de nuit laissé à la réception (repris vers 10h55) ; le garder sur soi fait gagner ~10 min au retour.",
           "mapQuery": "Mercure Kyoto Station"
         },
         {
-          "time": "11:00",
-          "title": "Check-out Mercure Kyoto",
+          "time": "07:55",
+          "endTime": "08:25",
+          "title": "Hôtel → bambouseraie d'Arashiyama",
+          "category": "transport",
+          "approx": true,
+          "detail": "JR ligne Sagano de la gare de Kyoto à Saga-Arashiyama (~15 min, Suica), puis ~10 min à pied.",
+          "mapQuery": "Saga-Arashiyama Station"
+        },
+        {
+          "time": "08:25",
+          "endTime": "08:55",
+          "title": "Bambouseraie d'Arashiyama",
+          "category": "sightseeing",
+          "detail": "Avant 9h : encore calme. Le sanctuaire Nonomiya (torii en bois brut) est sur le chemin.",
+          "mapQuery": "Arashiyama Bamboo Grove"
+        },
+        {
+          "time": "08:55",
+          "endTime": "09:25",
+          "title": "Marche vers Adashino à travers Sagano",
+          "category": "hike",
+          "detail": "~2 km vers le nord, ~25–30 min. Itinéraire à pied à vérifier dans Plans.",
+          "mapQuery": "Adashino Nenbutsuji, Kyoto"
+        },
+        {
+          "time": "09:25",
+          "endTime": "10:00",
+          "title": "Adashino Nenbutsuji (Sagano)",
+          "category": "sightseeing",
+          "detail": "8 000 statues de pierre, petite bambouseraie. Ouvert dès 9h (fermeture 16h30). 500 ¥.",
+          "cost": "¥500",
+          "mapQuery": "Adashino Nenbutsuji, Kyoto"
+        },
+        {
+          "time": "10:00",
+          "endTime": "10:20",
+          "title": "Rue de Saga-Toriimoto",
+          "category": "sightseeing",
+          "detail": "Maisons au toit de chaume jusqu'au torii d'Atago. Le musée de la rue ouvre à 10h (ouvert ce mardi, fermé seulement le lundi) ; boutiques à partir de ~10h.",
+          "mapQuery": "Saga-Toriimoto, Kyoto"
+        },
+        {
+          "time": "10:20",
+          "endTime": "10:50",
+          "title": "Retour vers la gare de Kyoto",
+          "category": "transport",
+          "approx": true,
+          "detail": "Taxi jusqu'à la gare de Saga-Arashiyama (~10 min, conseillé ; en haut de la rue, il faut parfois en appeler un avec l'app GO) ou ~25 min à pied, puis JR ligne Sagano (~15 min).",
+          "mapQuery": "Saga-Arashiyama Station"
+        },
+        {
+          "time": "10:55",
+          "title": "Récupérer le sac de nuit à l'hôtel",
           "category": "hotel",
-          "detail": "Ensuite seulement le sac de nuit."
+          "detail": "Hôtel à côté de la gare de Kyoto.",
+          "mapQuery": "Mercure Kyoto Station"
         },
         {
           "time": "11:30",
@@ -1472,7 +1456,82 @@
           "detail": "Hôtel neuf (ouverture mai 2026). Sac de nuit seulement : les valises arrivent à Osaka demain.",
           "mapQuery": "Mercure Tokyu Stay Hiroshima"
         }
-      ]
+      ],
+      "map": {
+        "title": "Plan de la matinée",
+        "padX": 78,
+        "trainLabel": "🚆 Train / taxi",
+        "note": "Schéma hors ligne, nord en haut, ~9 km d'est en ouest. Positions approximatives (sauf la gare de Saga-Arashiyama) : pour s'orienter, pas pour naviguer. Train et taxi tracés en ligne droite.",
+        "points": [
+          {
+            "id": "kyoto",
+            "name": "Gare de Kyoto · hôtel",
+            "lat": 34.9858,
+            "lon": 135.7588,
+            "label": "t"
+          },
+          {
+            "id": "sagaarashiyama",
+            "name": "Gare Saga-Arashiyama",
+            "lat": 35.01874,
+            "lon": 135.68131
+          },
+          {
+            "id": "bamboo",
+            "name": "Bambouseraie",
+            "lat": 35.017,
+            "lon": 135.6716,
+            "label": "l"
+          },
+          {
+            "id": "adashino",
+            "name": "Adashino",
+            "lat": 35.0255,
+            "lon": 135.6665,
+            "label": "l"
+          },
+          {
+            "id": "toriimoto",
+            "name": "Saga-Toriimoto",
+            "lat": 35.0295,
+            "lon": 135.663,
+            "label": "t"
+          }
+        ],
+        "legs": [
+          {
+            "path": [
+              "kyoto",
+              "sagaarashiyama"
+            ],
+            "mode": "train"
+          },
+          {
+            "path": [
+              "sagaarashiyama",
+              "bamboo",
+              "adashino",
+              "toriimoto"
+            ],
+            "mode": "walk"
+          },
+          {
+            "path": [
+              "toriimoto",
+              "sagaarashiyama"
+            ],
+            "mode": "train"
+          }
+        ],
+        "directions": [
+          {
+            "label": "Itinéraire à pied bambouseraie → Adashino (Plans)",
+            "from": "Arashiyama Bamboo Grove, Kyoto",
+            "to": "Adashino Nenbutsuji, Kyoto",
+            "mode": "w"
+          }
+        ]
+      }
     },
     {
       "date": "2026-11-04",
@@ -1790,7 +1849,7 @@
         "id": "tk4",
         "when": {
           "date": "2026-11-03",
-          "label": "3 nov · au check-out (~11h, avant midi)"
+          "label": "3 nov · avant de partir (7h40, avant midi)"
         },
         "from": "Mercure Kyoto Station",
         "to": "Mercure Tokyu Stay Osaka Namba",
@@ -1802,7 +1861,7 @@
         "key": true
       }
     ],
-    "keyNote": "★ L'envoi du 3 novembre au check-out est le plus important : déposé à Kyoto vers 11h (avant midi), il arrive à Osaka le 4, le jour de votre arrivée. Un envoi Hiroshima → Osaka est impossible (arrivée à Hiroshima à 18h10). Garder un sac de nuit pour le 3 (Nagoya, nuit à Hiroshima)."
+    "keyNote": "★ L'envoi du 3 novembre est le plus important : déposé à Kyoto le matin avant de partir pour Arashiyama (7h40, bien avant midi), il arrive à Osaka le 4, le jour de votre arrivée. Un envoi Hiroshima → Osaka est impossible (arrivée à Hiroshima à 18h10). Garder un sac de nuit pour le 3 (Arashiyama, Nagoya, nuit à Hiroshima)."
   },
   "aikido": {
     "dojo": {
@@ -2115,28 +2174,28 @@
       "body": "Bus vers Kibune-guchi puis Eizan Densha : Chemin des Philosophes à 13h00, Adashino avant 16h."
     },
     {
-      "id": "n-sagano",
-      "date": "2026-11-02",
-      "time": "13:45",
-      "tz": "Asia/Tokyo",
-      "title": "Partir pour Sagano",
-      "body": "Métro Tozai + Randen (~50 min) ou taxi : Adashino Nenbutsuji, dernière entrée ~16h ; boutiques de Saga-Toriimoto jusqu'à ~17h."
-    },
-    {
       "id": "n-pdj-3nov",
       "date": "2026-11-03",
-      "time": "06:15",
+      "time": "06:45",
       "tz": "Asia/Tokyo",
-      "title": "Petit-déjeuner à 6h30",
-      "body": "Buffet du Mercure Kyoto dès l'ouverture (6h30) : départ vers 7h05 pour Fushimi Inari (JR ligne Nara)."
+      "title": "Petit-déjeuner à 7h00",
+      "body": "Buffet du Mercure Kyoto, puis takkyubin + check-out à 7h40 et départ à 7h55 pour Arashiyama (JR ligne Sagano)."
     },
     {
       "id": "n-tk4",
       "date": "2026-11-03",
-      "time": "10:45",
+      "time": "07:30",
       "tz": "Asia/Tokyo",
-      "title": "★ Takkyubin au check-out",
-      "body": "Valises → Mercure Tokyu Stay Osaka Namba, à déposer à la réception avant midi (livraison demain). Garder le sac de nuit."
+      "title": "★ Takkyubin avant de partir",
+      "body": "Valises → Mercure Tokyu Stay Osaka Namba, à déposer à la réception avant de partir (dépôt avant midi = livraison demain). Check-out ; sac de nuit à la bagagerie."
+    },
+    {
+      "id": "n-retour-sagano",
+      "date": "2026-11-03",
+      "time": "10:15",
+      "tz": "Asia/Tokyo",
+      "title": "Quitter Saga-Toriimoto",
+      "body": "Taxi (ou ~25 min à pied) vers la gare de Saga-Arashiyama, JR vers Kyoto, sac de nuit à l'hôtel vers 10h55 : Shinkansen vers Nagoya à 11h30."
     },
     {
       "id": "n-nagoya-castle",
