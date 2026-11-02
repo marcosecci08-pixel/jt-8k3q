@@ -1316,7 +1316,7 @@
       "city": "kyoto",
       "overnightHotel": "hiroshima",
       "alerts": [
-        "★ Avant de partir (7h40) : takkyubin des valises vers Mercure Osaka Namba (dépôt avant midi garanti, livraison demain) + check-out ; sac de nuit laissé à la réception, repris vers 10h55.",
+        "★ Avant de partir (7h40) : takkyubin des valises vers Mercure Osaka Namba (dépôt avant midi garanti, livraison demain) + check-out ; sacs de nuit dans un casier de la gare de Kyoto, repris au retour vers 10h50 (pas de détour par l'hôtel).",
         "3 nov = jour férié au Japon (Jour de la culture) : bambouseraie avant 9h (la foule arrive vite), affluence au château et dans les trains. Réserver les places Shinkansen à l'avance."
       ],
       "images": [
@@ -1335,16 +1335,23 @@
           "time": "07:40",
           "title": "★ Takkyubin : valises → Mercure Osaka Namba + check-out",
           "category": "logistics",
-          "detail": "À la réception avant de partir : dépôt avant midi = livraison demain à Osaka. Demander le créneau de livraison. Sac de nuit laissé à la réception (repris vers 10h55) ; le garder sur soi fait gagner ~10 min au retour.",
+          "detail": "À la réception avant de partir : dépôt avant midi = livraison demain à Osaka. Demander le créneau de livraison. Puis sacs de nuit au casier de la gare.",
           "mapQuery": "Mercure Kyoto Station"
         },
         {
-          "time": "07:55",
+          "time": "07:50",
+          "title": "Sacs de nuit au casier · gare de Kyoto",
+          "category": "logistics",
+          "detail": "Casier ~300–700 ¥ selon la taille ; beaucoup acceptent la Suica, sinon pièces de 100 ¥. Choisir un casier près des portiques JR / Shinkansen pour le retour. Tôt le matin il y a de la place (un jour férié, ils se remplissent vite) ; si tout est plein : bagagerie de l'hôtel.",
+          "mapQuery": "Kyoto Station"
+        },
+        {
+          "time": "08:00",
           "endTime": "08:25",
-          "title": "Hôtel → bambouseraie d'Arashiyama",
+          "title": "Gare de Kyoto → bambouseraie d'Arashiyama",
           "category": "transport",
           "approx": true,
-          "detail": "JR ligne Sagano de la gare de Kyoto à Saga-Arashiyama (~15 min, Suica), puis ~10 min à pied.",
+          "detail": "JR ligne Sagano jusqu'à Saga-Arashiyama (~15 min, Suica), puis ~10 min à pied.",
           "mapQuery": "Saga-Arashiyama Station"
         },
         {
@@ -1390,11 +1397,11 @@
           "mapQuery": "Saga-Arashiyama Station"
         },
         {
-          "time": "10:55",
-          "title": "Récupérer le sac de nuit à l'hôtel",
-          "category": "hotel",
-          "detail": "Hôtel à côté de la gare de Kyoto.",
-          "mapQuery": "Mercure Kyoto Station"
+          "time": "10:50",
+          "title": "Récupérer les sacs au casier · gare de Kyoto",
+          "category": "logistics",
+          "detail": "Puis directement aux portiques du Shinkansen (départ à 11h30) : plus de détour par l'hôtel.",
+          "mapQuery": "Kyoto Station"
         },
         {
           "time": "11:30",
@@ -2179,7 +2186,7 @@
       "time": "06:45",
       "tz": "Asia/Tokyo",
       "title": "Petit-déjeuner à 7h00",
-      "body": "Buffet du Mercure Kyoto, puis takkyubin + check-out à 7h40 et départ à 7h55 pour Arashiyama (JR ligne Sagano)."
+      "body": "Buffet du Mercure Kyoto, puis takkyubin + check-out à 7h40, sacs de nuit au casier de la gare et JR vers Arashiyama vers 8h00."
     },
     {
       "id": "n-tk4",
@@ -2187,7 +2194,7 @@
       "time": "07:30",
       "tz": "Asia/Tokyo",
       "title": "★ Takkyubin avant de partir",
-      "body": "Valises → Mercure Tokyu Stay Osaka Namba, à déposer à la réception avant de partir (dépôt avant midi = livraison demain). Check-out ; sac de nuit à la bagagerie."
+      "body": "Valises → Mercure Tokyu Stay Osaka Namba, à déposer à la réception avant de partir (dépôt avant midi = livraison demain). Check-out ; sacs de nuit au casier de la gare de Kyoto."
     },
     {
       "id": "n-retour-sagano",
@@ -2195,7 +2202,7 @@
       "time": "10:15",
       "tz": "Asia/Tokyo",
       "title": "Quitter Saga-Toriimoto",
-      "body": "Taxi (ou ~25 min à pied) vers la gare de Saga-Arashiyama, JR vers Kyoto, sac de nuit à l'hôtel vers 10h55 : Shinkansen vers Nagoya à 11h30."
+      "body": "Taxi (ou ~25 min à pied) vers la gare de Saga-Arashiyama, JR vers Kyoto, sacs au casier vers 10h50 : Shinkansen vers Nagoya à 11h30."
     },
     {
       "id": "n-nagoya-castle",
