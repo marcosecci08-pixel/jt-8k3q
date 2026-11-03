@@ -36,7 +36,7 @@ Météo : Open-Meteo (prévisions ~16 jours), dernière valeur gardée en local.
 - 31/10 : Owakudani → marche Togendai → Hakone Shrine → bateau → téléphérique (9h–15h20), Shinkansen Odawara → Nagoya ~17h (non réservé). Valises Hakone → Kyoto directement (plus d'envoi Nagoya → Kyoto). 1/11 : Ghibli (entrée 10h, départ Nagoya 8h35, retour Kyoto ~18h).
 - 2/11 : Kurama (funiculaire 8h40) → Kibune → Chemin des Philosophes 13h → Fushimi Inari + Gion l'après-midi (déplacés du 3/11) ; Pontocho/Nishiki en option le soir.
 - 3/11 : matin Sagano (déplacé du 2/11) — takkyubin + check-out 7h40, sacs de nuit au casier de la gare de Kyoto (repris ~10h50), bambouseraie 8h25, Adashino 9h25, Saga-Toriimoto 10h, retour gare de Kyoto ~10h50 ; puis Kyoto → Nagoya 11h30 (château 13h15–15h) → Hiroshima ~17h50, check-in ~18h10.
-- 4/11 : journée calme — pas de réveil, Parc de la Paix 9h45–12h, okonomiyaki, Shinkansen Hiroshima → Osaka ~16h, check-in Osaka ~17h50.
+- 4/11 : Parc de la Paix 9h–11h, Shukkei-en 1h, Miyajima 13h35–15h50 (sans pause déjeuner), sacs au casier de la gare de Hiroshima, Shinkansen ~17h05 → Shin-Osaka ~18h25, check-in Osaka ~18h55.
 - 5/11 : Osaka — Hozenji, Kuromon, Den Den Town, château d'Osaka (12h30–15h), Shinsaibashi, Umeda Sky (option), Dotonbori, croisière Tombori (option).
 - Takkyubin : livraison le lendemain seulement si dépôt la veille avant midi. 3/11 avant de partir (7h40, avant midi) : valises Kyoto → Mercure Osaka Namba, livraison le 4/11 ; plus d'envoi Hiroshima → Osaka.
 - 28/10 : cours Doshu 6h30 (hôtel 5h10, dojo 6h00). Enseignants vérifiés sur le planning officiel Hombu.
