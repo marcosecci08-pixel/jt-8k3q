@@ -1545,94 +1545,123 @@
       "date": "2026-11-04",
       "weekday": "mercredi",
       "label": "Mercredi 4 novembre",
-      "title": "Hiroshima au calme → Osaka",
+      "title": "Hiroshima → Miyajima → Osaka",
       "city": "hiroshima",
       "overnightHotel": "osaka",
       "alerts": [
-        "Journée tranquille après des jours chargés : pas de réveil, Shinkansen vers Osaka vers 16h. Valises livrées à Osaka dans la journée."
+        "Journée remplie : Parc de la Paix, jardin Shukkei-en (1h), île de Miyajima. Pas de pause déjeuner : en-cas à Miyajima. Arrivée à Shin-Osaka vers 18h25, hôtel vers 19h.",
+        "Marée à Miyajima : basse vers 11h–11h45, haute vers 18h. En début d'après-midi on peut encore s'approcher du grand torii ; il ne « flotte » qu'en fin de journée."
       ],
       "images": [],
       "events": [
         {
           "time": "08:00",
-          "endTime": "09:00",
-          "title": "Petit-déjeuner tranquille · Mercure Tokyu Stay Hiroshima",
+          "endTime": "08:40",
+          "title": "Petit-déjeuner · Mercure Tokyu Stay Hiroshima",
           "category": "food",
-          "detail": "Pas de réveil. Horaire du buffet à confirmer à la réception le 3 au soir (082-221-0109)."
+          "detail": "Horaire du buffet à confirmer à la réception (082-221-0109)."
         },
         {
-          "time": "09:30",
-          "title": "Check-out Mercure Hiroshima + sac de nuit à la réception",
+          "time": "08:45",
+          "title": "Check-out Mercure Hiroshima",
           "category": "hotel",
-          "detail": "Sac récupéré vers 15h15 avant la gare.",
+          "detail": "Sac de nuit avec vous jusqu'au casier de la gare (12h40). Valises déjà en route vers Osaka.",
           "mapQuery": "Mercure Tokyu Stay Hiroshima"
         },
         {
-          "time": "09:45",
-          "endTime": "12:00",
+          "time": "09:00",
+          "endTime": "11:00",
           "title": "Musée Mémorial de la Paix + Parc + Dôme de la Bombe atomique",
           "category": "sightseeing",
-          "detail": "À son rythme. Musée ouvert dès 7h30, 200 ¥.",
+          "detail": "Musée ouvert dès 7h30, 200 ¥.",
           "cost": "¥200",
-          "duration": "2h15",
+          "duration": "2h",
           "mapQuery": "Hiroshima Peace Memorial Museum"
         },
         {
-          "time": "12:15",
-          "endTime": "13:30",
-          "title": "Déjeuner : okonomiyaki à Okonomimura",
-          "category": "food",
-          "detail": "Bâtiment de 4 étages près de Hatchobori, une vingtaine de comptoirs d'okonomiyaki à la mode de Hiroshima. Horaires des comptoirs à vérifier sur place.",
-          "mapQuery": "Okonomimura, Hiroshima"
-        },
-        {
-          "time": "13:45",
-          "endTime": "15:00",
-          "title": "Jardin Shukkei-en ou temps libre",
-          "category": "sightseeing",
-          "optional": true,
-          "detail": "Jardin paysager près de la gare, 9h–18h, 260 ¥. Ou café, flânerie, repos.",
-          "cost": "¥260",
+          "time": "11:00",
+          "endTime": "11:20",
+          "title": "Parc de la Paix → jardin Shukkei-en",
+          "category": "transport",
+          "approx": true,
+          "detail": "Tram ou taxi, ~15–20 min. À vérifier dans Plans.",
           "mapQuery": "Shukkeien Garden, Hiroshima"
         },
         {
-          "time": null,
-          "slot": "afternoon",
-          "title": "Île de Miyajima",
+          "time": "11:20",
+          "endTime": "12:20",
+          "title": "Jardin Shukkei-en",
           "category": "sightseeing",
-          "optional": true,
-          "detail": "Alternative plus chargée au Shukkei-en : torii dans la mer, ~45 min + ferry JR (à payer sur place), compter ~3h ; prendre alors un Shinkansen plus tard."
+          "detail": "Jardin paysager, 9h–18h, 260 ¥. Visite resserrée à 1h.",
+          "cost": "¥260",
+          "duration": "1h",
+          "mapQuery": "Shukkeien Garden, Hiroshima"
         },
         {
-          "time": "15:15",
-          "title": "Récupérer le sac → gare de Hiroshima",
-          "category": "transport",
-          "approx": true,
+          "time": "12:20",
+          "endTime": "12:40",
+          "title": "Shukkei-en → gare de Hiroshima + sacs au casier",
+          "category": "logistics",
+          "detail": "~15 min à pied. Casier à la gare (Suica ou pièces) ; si tout est plein, garder le sac sur soi.",
           "mapQuery": "Hiroshima Station"
         },
         {
-          "time": "16:00",
-          "endTime": "17:20",
+          "time": "12:45",
+          "endTime": "13:35",
+          "title": "Gare de Hiroshima → Miyajima",
+          "category": "transport",
+          "approx": true,
+          "detail": "JR ligne Sanyo jusqu'à Miyajimaguchi (~30 min, ~420 ¥, Suica), puis ferry JR ou Matsudai (~10 min, départs ~toutes les 15 min) : 200 ¥ + taxe de visite de Miyajima 100 ¥ à l'aller. Suica acceptée.",
+          "mapQuery": "Miyajimaguchi Station"
+        },
+        {
+          "time": "13:35",
+          "endTime": "15:50",
+          "title": "Île de Miyajima : sanctuaire d'Itsukushima + grand torii",
+          "category": "sightseeing",
+          "detail": "Sanctuaire 300 ¥ (ouvert jusqu'en fin d'après-midi, à vérifier sur place). Rue Omotesando : en-cas au lieu du déjeuner (momiji manju, huîtres grillées). Marée encore assez basse en début d'après-midi pour s'approcher du torii.",
+          "cost": "¥300",
+          "duration": "2h15",
+          "mapQuery": "Itsukushima Shrine, Miyajima"
+        },
+        {
+          "time": "15:50",
+          "endTime": "16:45",
+          "title": "Miyajima → gare de Hiroshima",
+          "category": "transport",
+          "approx": true,
+          "detail": "Ferry vers Miyajimaguchi au plus tard vers 16h00, puis JR (~30 min).",
+          "mapQuery": "Hiroshima Station"
+        },
+        {
+          "time": "16:50",
+          "title": "Récupérer les sacs au casier · gare de Hiroshima",
+          "category": "logistics",
+          "mapQuery": "Hiroshima Station"
+        },
+        {
+          "time": "17:05",
+          "endTime": "18:25",
           "title": "Shinkansen Hiroshima → Shin-Osaka",
           "category": "transport",
           "approx": true,
-          "detail": "Nozomi ~1h20, puis métro Midosuji jusqu'à Namba (~15 min).",
+          "detail": "Nozomi ~1h20 (départs fréquents : prendre le premier après 17h). Arrivée à Osaka vers 18h25.",
           "mapQuery": "Hiroshima Station"
         },
         {
-          "time": "17:50",
+          "time": "18:55",
           "title": "Check-in Mercure Tokyu Stay Osaka Namba",
           "category": "hotel",
           "approx": true,
-          "detail": "Valises livrées aujourd'hui (takkyubin depuis Kyoto).",
+          "detail": "Métro Midosuji de Shin-Osaka à Namba (~15 min). Valises livrées aujourd'hui (takkyubin depuis Kyoto).",
           "mapQuery": "Mercure Tokyu Stay Osaka Namba"
         },
         {
           "time": null,
           "slot": "evening",
-          "title": "Soirée libre à Namba",
+          "title": "Dîner à Namba",
           "category": "food",
-          "detail": "Repos ; Dotonbori est prévu demain soir."
+          "detail": "Dîner tranquille près de l'hôtel ; Dotonbori est prévu demain soir."
         }
       ]
     },
@@ -2212,6 +2241,22 @@
       "tz": "Asia/Tokyo",
       "title": "Quitter le château de Nagoya",
       "body": "Retour à la gare de Nagoya (~20–25 min) pour le Shinkansen vers Hiroshima vers 15h40."
+    },
+    {
+      "id": "n-shukkeien",
+      "date": "2026-11-04",
+      "time": "12:15",
+      "tz": "Asia/Tokyo",
+      "title": "Quitter Shukkei-en",
+      "body": "~15 min à pied jusqu'à la gare de Hiroshima, sacs au casier, JR vers Miyajimaguchi vers 12h45."
+    },
+    {
+      "id": "n-miyajima",
+      "date": "2026-11-04",
+      "time": "15:45",
+      "tz": "Asia/Tokyo",
+      "title": "Quitter Miyajima",
+      "body": "Ferry vers Miyajimaguchi (au plus tard vers 16h00), JR vers Hiroshima, sacs au casier, Shinkansen vers Shin-Osaka vers 17h05."
     },
     {
       "id": "n-haneda",
