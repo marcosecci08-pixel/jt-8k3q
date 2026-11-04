@@ -1673,7 +1673,7 @@
       "city": "osaka",
       "overnightHotel": "osaka",
       "alerts": [
-        "Journée pour profiter d'Osaka : matin sans hâte, château l'après-midi, soirée à Dotonbori. Tout est à pied ou à quelques stations de métro de l'hôtel."
+        "Journée pour profiter d'Osaka : matin sans hâte, château l'après-midi, soirée à Dotonbori. Den Den Town passe à demain (sur le chemin de Shinsekai)."
       ],
       "images": [],
       "events": [
@@ -1694,22 +1694,14 @@
         },
         {
           "time": "10:00",
-          "endTime": "11:15",
+          "endTime": "11:30",
           "title": "Marché de Kuromon (Kuromon Ichiba)",
           "category": "food",
           "detail": "« La cuisine d'Osaka » : dégustations sur le pouce (fruits de mer grillés, wagyu, fruits). ~10 min à pied. Étals ~9h–17h, certains ferment tôt.",
           "mapQuery": "Kuromon Ichiba Market, Osaka"
         },
         {
-          "time": "11:15",
-          "endTime": "12:00",
-          "title": "Nipponbashi / Den Den Town",
-          "category": "shopping",
-          "detail": "Juste à côté de Kuromon : électronique, jeux, culture otaku.",
-          "mapQuery": "Den Den Town, Osaka"
-        },
-        {
-          "time": "12:00",
+          "time": "11:30",
           "title": "Métro → château d'Osaka",
           "category": "transport",
           "approx": true,
@@ -1717,17 +1709,17 @@
           "mapQuery": "Osaka Castle"
         },
         {
-          "time": "12:30",
-          "endTime": "15:00",
+          "time": "12:00",
+          "endTime": "14:45",
           "title": "Château d'Osaka + parc",
           "category": "sightseeing",
           "detail": "Douves, remparts et donjon-musée (9h–18h, dernière entrée 17h30, 1 200 ¥), vue du dernier étage. Déjeuner léger sur place (Jo-Terrace, à l'entrée du parc).",
           "cost": "¥1 200",
-          "duration": "2h30",
+          "duration": "2h45",
           "mapQuery": "Osaka Castle"
         },
         {
-          "time": "15:30",
+          "time": "15:15",
           "endTime": "17:00",
           "title": "Shinsaibashi-suji + Amerikamura",
           "category": "shopping",
@@ -1770,53 +1762,97 @@
       "city": "osaka",
       "overnightHotel": null,
       "alerts": [
-        "⚠ Vol retour depuis HANEDA (Tokyo), pas depuis Osaka. Quitter Osaka vers 16h30 pour arriver à Haneda vers 19h30."
+        "⚠ Vol retour depuis HANEDA (Tokyo, terminal 3), pas depuis Osaka. Quitter Namba vers 16h45 pour arriver à Haneda vers 19h55, 3h avant le vol de 22h55."
       ],
       "images": [],
       "events": [
         {
-          "time": "07:30",
-          "endTime": "08:30",
+          "time": "08:00",
+          "endTime": "08:45",
           "title": "Petit-déjeuner · Mercure Tokyu Stay Osaka Namba",
           "category": "food",
-          "detail": "Buffet 6h30–10h, ~2 750 ¥ si non inclus. Check-out à 11h."
+          "detail": "Buffet 6h30–10h, ~2 750 ¥ si non inclus."
         },
         {
           "time": "09:00",
+          "title": "Check-out Mercure Osaka Namba + valises à la consigne",
+          "category": "hotel",
+          "detail": "Valises gardées par l'hôtel jusqu'à 16h15.",
+          "mapQuery": "Mercure Tokyu Stay Osaka Namba"
+        },
+        {
+          "time": "09:15",
+          "endTime": "09:30",
+          "title": "Namba → Sumiyoshi-taisha (Nankai)",
+          "category": "transport",
+          "approx": true,
+          "detail": "Ligne Nankai depuis Namba, ~10 min, Suica.",
+          "mapQuery": "Sumiyoshitaisha Station"
+        },
+        {
+          "time": "09:30",
+          "endTime": "10:30",
           "title": "Sumiyoshi Taisha Shrine",
           "category": "sightseeing",
-          "detail": "~30 min au sud de Namba par Nankai.",
+          "detail": "Pont rouge en arc (Sorihashi) et sanctuaires au style ancien. Entrée gratuite.",
           "mapQuery": "Sumiyoshi Taisha, Osaka"
         },
         {
           "time": "10:30",
-          "title": "Shinsekai",
-          "category": "food",
-          "endTime": "12:00",
-          "detail": "Quartier rétro années 50, kushikatsu.",
+          "endTime": "10:50",
+          "title": "Sumiyoshi → Shinsekai",
+          "category": "transport",
+          "approx": true,
+          "detail": "Nankai jusqu'à Shin-Imamiya (~10 min) puis ~5 min à pied, ou tram Hankai.",
           "mapQuery": "Shinsekai, Osaka"
         },
         {
-          "time": "11:00",
-          "title": "Check-out Mercure Osaka Namba",
-          "category": "hotel",
-          "detail": "Laisser les bagages à la consigne."
+          "time": "10:50",
+          "endTime": "12:30",
+          "title": "Shinsekai + déjeuner kushikatsu",
+          "category": "food",
+          "detail": "Quartier rétro années 50, tour Tsutenkaku ; kushikatsu pour le déjeuner.",
+          "mapQuery": "Shinsekai, Osaka"
         },
         {
-          "time": "16:30",
-          "title": "Départ Osaka → Haneda",
+          "time": "12:45",
+          "endTime": "14:30",
+          "title": "Nipponbashi / Den Den Town",
+          "category": "shopping",
+          "detail": "~15 min à pied au nord de Shinsekai par l'avenue Sakaisuji : électronique, jeux, culture otaku. Dernier shopping au Japon.",
+          "mapQuery": "Den Den Town, Osaka"
+        },
+        {
+          "time": "14:30",
+          "endTime": "16:15",
+          "title": "Temps libre à Namba",
+          "category": "shopping",
+          "optional": true,
+          "detail": "Namba Parks, cafés, derniers achats près de l'hôtel.",
+          "mapQuery": "Namba Parks, Osaka"
+        },
+        {
+          "time": "16:15",
+          "title": "Récupérer les valises à l'hôtel",
+          "category": "hotel",
+          "mapQuery": "Mercure Tokyu Stay Osaka Namba"
+        },
+        {
+          "time": "16:45",
+          "endTime": "19:55",
+          "title": "Namba → aéroport de Haneda",
           "category": "transport",
           "approx": true,
-          "detail": "Shinkansen → Shinagawa (~2h20) + Keikyu → Haneda (~20 min).",
+          "detail": "Métro Midosuji jusqu'à Shin-Osaka (~15 min), Shinkansen Nozomi jusqu'à Shinagawa vers 17h10 (~2h15), puis Keikyu jusqu'à Haneda terminal 3 (~15 min).",
           "mapQuery": "Shin-Osaka Station"
         },
         {
-          "time": "19:30",
-          "title": "Arrivée aéroport Haneda",
+          "time": "19:55",
+          "title": "Arrivée aéroport Haneda (terminal 3)",
           "category": "flight",
           "approx": true,
-          "detail": "Dîner, enregistrement.",
-          "mapQuery": "Haneda Airport"
+          "detail": "3h avant le vol : enregistrement, dîner.",
+          "mapQuery": "Haneda Airport Terminal 3"
         },
         {
           "time": "22:55",
@@ -2261,10 +2297,10 @@
     {
       "id": "n-haneda",
       "date": "2026-11-06",
-      "time": "15:30",
+      "time": "16:00",
       "tz": "Asia/Tokyo",
       "title": "Départ pour Haneda",
-      "body": "Récupérer les bagages à la consigne — départ d'Osaka vers 16h30. Vol AF0279 à 22h55."
+      "body": "Récupérer les valises à l'hôtel (16h15) — départ de Namba vers 16h45, Shinkansen vers 17h10, Haneda vers 19h55. Vol AF0279 à 22h55."
     }
   ],
   "hike": {
